@@ -1,0 +1,3953 @@
+categories:
+  cook:generated_original_dishes:
+    name: "<!i><white><l10n:category.cook.generated_original_dishes>"
+    icon: cook:candied_potato
+    hidden: true
+    list:
+      - cook:candied_potato
+      - cook:stuffed_tiger_skin_pepper
+      - cook:spicy_rabbit_head
+      - cook:fried_caterpillar
+      - cook:fried_spring_roll
+      - cook:braised_pork_ribs
+      - cook:cold_roasted_meat
+      - cook:oil_splashed_fish
+      - cook:dough_drop_soup
+      - cook:four_joy_meatball_soup
+      - cook:numbing_spicy_chicken
+      - cook:spicy_blood_stew
+      - cook:brown_mushroom_pot_soup
+      - cook:red_mushroom_pot_soup
+      - cook:warped_fungus_pot_soup
+      - cook:crimson_fungus_pot_soup
+      - cook:buddha_jumps_over_the_wall
+  cook:generated_original_plates:
+    name: "<!i><white><l10n:category.cook.generated_original_plates>"
+    icon: cook:baozi_plate
+    hidden: true
+    list:
+      - cook:shengjian_mantou_plate
+      - cook:baozi_plate
+      - cook:qingtuan_plate
+      - cook:sticky_candy_plate
+      - cook:sticky_rice_cake_plate
+      - cook:zongzi_plate
+      - cook:berry_platter
+      - cook:apple_platter
+      - cook:tomato_platter
+      - cook:watermelon_platter
+      - cook:chorus_fruit_platter
+
+items:
+  cook:candied_potato:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#E8A33D><lang:item.cook.candied_potato>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/candied_potato
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:candied_potato
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:candied_potato
+        variants:
+          ground:
+            elements:
+              - item: cook:candied_potato_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:candied_potato_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:candied_potato_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:candied_potato_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 5
+              - type: set_saturation
+                add: true
+                saturation: 2.75
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:candied_potato_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/candied_potato_0
+  cook:candied_potato_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/candied_potato_1
+  cook:candied_potato_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/candied_potato_2
+  cook:candied_potato_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/candied_potato_3
+
+  cook:stuffed_tiger_skin_pepper:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#6B8E23><lang:item.cook.stuffed_tiger_skin_pepper>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/stuffed_tiger_skin_pepper
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:stuffed_tiger_skin_pepper
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:stuffed_tiger_skin_pepper
+        variants:
+          ground:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:stuffed_tiger_skin_pepper_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:stuffed_tiger_skin_pepper_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_0
+  cook:stuffed_tiger_skin_pepper_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_1
+  cook:stuffed_tiger_skin_pepper_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_2
+  cook:stuffed_tiger_skin_pepper_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_3
+  cook:stuffed_tiger_skin_pepper_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_4
+  cook:stuffed_tiger_skin_pepper_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/stuffed_tiger_skin_pepper_5
+
+  cook:spicy_rabbit_head:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#B22222><lang:item.cook.spicy_rabbit_head>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/spicy_rabbit_head
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:spicy_rabbit_head
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:spicy_rabbit_head
+        variants:
+          ground:
+            elements:
+              - item: cook:spicy_rabbit_head_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:spicy_rabbit_head_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:spicy_rabbit_head_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:spicy_rabbit_head_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:spicy_rabbit_head_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_rabbit_head_0
+  cook:spicy_rabbit_head_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_rabbit_head_1
+  cook:spicy_rabbit_head_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_rabbit_head_2
+  cook:spicy_rabbit_head_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_rabbit_head_3
+
+  cook:fried_caterpillar:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#7FB069><lang:item.cook.fried_caterpillar>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/fried_caterpillar
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:fried_caterpillar
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:fried_caterpillar
+        variants:
+          ground:
+            elements:
+              - item: cook:fried_caterpillar_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:fried_caterpillar_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:fried_caterpillar_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:fried_caterpillar_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 4
+              - type: set_saturation
+                add: true
+                saturation: 3.2
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:fried_caterpillar_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_caterpillar_0
+  cook:fried_caterpillar_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_caterpillar_1
+  cook:fried_caterpillar_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_caterpillar_2
+  cook:fried_caterpillar_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_caterpillar_3
+
+  cook:fried_spring_roll:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#D4A017><lang:item.cook.fried_spring_roll>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/fried_spring_roll
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:fried_spring_roll
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:fried_spring_roll
+        variants:
+          ground:
+            elements:
+              - item: cook:fried_spring_roll_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:fried_spring_roll_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:fried_spring_roll_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:fried_spring_roll_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:fried_spring_roll_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_spring_roll_0
+  cook:fried_spring_roll_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_spring_roll_1
+  cook:fried_spring_roll_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_spring_roll_2
+  cook:fried_spring_roll_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/fried_spring_roll_3
+
+  cook:braised_pork_ribs:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#A0522D><lang:item.cook.braised_pork_ribs>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/braised_pork_ribs
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:braised_pork_ribs
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:braised_pork_ribs
+        variants:
+          ground:
+            elements:
+              - item: cook:braised_pork_ribs_display_left_0
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:braised_pork_ribs_display_right_0
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:braised_pork_ribs_display_left_1
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:braised_pork_ribs_display_right_1
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:braised_pork_ribs_display_left_2
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:braised_pork_ribs_display_right_2
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:braised_pork_ribs_display_left_3
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:braised_pork_ribs_display_right_3
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:braised_pork_ribs_display_left_4
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:braised_pork_ribs_display_right_4
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 4
+              - type: set_saturation
+                add: true
+                saturation: 3.2
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:braised_pork_ribs_display_left_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_left_0
+  cook:braised_pork_ribs_display_right_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_right_0
+  cook:braised_pork_ribs_display_left_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_left_1
+  cook:braised_pork_ribs_display_right_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_right_1
+  cook:braised_pork_ribs_display_left_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_left_2
+  cook:braised_pork_ribs_display_right_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_right_2
+  cook:braised_pork_ribs_display_left_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_left_3
+  cook:braised_pork_ribs_display_right_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_right_3
+  cook:braised_pork_ribs_display_left_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_left_4
+  cook:braised_pork_ribs_display_right_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/braised_pork_ribs_right_4
+
+  cook:cold_roasted_meat:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#B8860B><lang:item.cook.cold_roasted_meat>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/cold_roasted_meat
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:cold_roasted_meat
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:cold_roasted_meat
+        variants:
+          ground:
+            elements:
+              - item: cook:cold_roasted_meat_display_left_0
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:cold_roasted_meat_display_right_0
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:cold_roasted_meat_display_left_1
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:cold_roasted_meat_display_right_1
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:cold_roasted_meat_display_left_2
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:cold_roasted_meat_display_right_2
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:cold_roasted_meat_display_left_3
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:cold_roasted_meat_display_right_3
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 4
+              - type: set_saturation
+                add: true
+                saturation: 3.2
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:cold_roasted_meat_display_left_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_left_0
+  cook:cold_roasted_meat_display_right_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_right_0
+  cook:cold_roasted_meat_display_left_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_left_1
+  cook:cold_roasted_meat_display_right_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_right_1
+  cook:cold_roasted_meat_display_left_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_left_2
+  cook:cold_roasted_meat_display_right_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_right_2
+  cook:cold_roasted_meat_display_left_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_left_3
+  cook:cold_roasted_meat_display_right_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/cold_roasted_meat_right_3
+
+  cook:oil_splashed_fish:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#F4A460><lang:item.cook.oil_splashed_fish>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/oil_splashed_fish
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:oil_splashed_fish
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:oil_splashed_fish
+        variants:
+          ground:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_0
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_0
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_1
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_1
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_2
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_2
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_3
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_3
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_4
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_4
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:oil_splashed_fish_display_left_5
+                scale: 1
+                position: -0.45,0.5,0
+              - item: cook:oil_splashed_fish_display_right_5
+                scale: 1
+                position: 0.45,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 2
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:oil_splashed_fish_display_left_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_0
+  cook:oil_splashed_fish_display_right_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_0
+  cook:oil_splashed_fish_display_left_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_1
+  cook:oil_splashed_fish_display_right_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_1
+  cook:oil_splashed_fish_display_left_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_2
+  cook:oil_splashed_fish_display_right_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_2
+  cook:oil_splashed_fish_display_left_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_3
+  cook:oil_splashed_fish_display_right_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_3
+  cook:oil_splashed_fish_display_left_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_4
+  cook:oil_splashed_fish_display_right_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_4
+  cook:oil_splashed_fish_display_left_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_left_5
+  cook:oil_splashed_fish_display_right_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/oil_splashed_fish_right_5
+
+  cook:dough_drop_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#EAD9B0><lang:item.cook.dough_drop_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/dough_drop_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:dough_drop_soup
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:dough_drop_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:dough_drop_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:dough_drop_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:dough_drop_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:dough_drop_soup_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 2
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:dough_drop_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/dough_drop_soup_0
+  cook:dough_drop_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/dough_drop_soup_1
+  cook:dough_drop_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/dough_drop_soup_2
+  cook:dough_drop_soup_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/dough_drop_soup_3
+
+  cook:four_joy_meatball_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#A0522D><lang:item.cook.four_joy_meatball_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/four_joy_meatball_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:four_joy_meatball_soup
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:four_joy_meatball_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:four_joy_meatball_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:four_joy_meatball_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:four_joy_meatball_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:four_joy_meatball_soup_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:four_joy_meatball_soup_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:four_joy_meatball_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/four_joy_meatball_soup_0
+  cook:four_joy_meatball_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/four_joy_meatball_soup_1
+  cook:four_joy_meatball_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/four_joy_meatball_soup_2
+  cook:four_joy_meatball_soup_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/four_joy_meatball_soup_3
+  cook:four_joy_meatball_soup_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/four_joy_meatball_soup_4
+
+  cook:numbing_spicy_chicken:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#D2691E><lang:item.cook.numbing_spicy_chicken>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/numbing_spicy_chicken
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:numbing_spicy_chicken
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:numbing_spicy_chicken
+        variants:
+          ground:
+            elements:
+              - item: cook:numbing_spicy_chicken_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:numbing_spicy_chicken_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:numbing_spicy_chicken_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:numbing_spicy_chicken_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:numbing_spicy_chicken_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/numbing_spicy_chicken_0
+  cook:numbing_spicy_chicken_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/numbing_spicy_chicken_1
+  cook:numbing_spicy_chicken_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/numbing_spicy_chicken_2
+  cook:numbing_spicy_chicken_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/numbing_spicy_chicken_3
+
+  cook:spicy_blood_stew:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#8B0000><lang:item.cook.spicy_blood_stew>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/spicy_blood_stew
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:spicy_blood_stew
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:spicy_blood_stew
+        variants:
+          ground:
+            elements:
+              - item: cook:spicy_blood_stew_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:spicy_blood_stew_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:spicy_blood_stew_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:spicy_blood_stew_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 2.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:spicy_blood_stew_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_blood_stew_0
+  cook:spicy_blood_stew_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_blood_stew_1
+  cook:spicy_blood_stew_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_blood_stew_2
+  cook:spicy_blood_stew_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/spicy_blood_stew_3
+
+  cook:brown_mushroom_pot_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#B5651D><lang:item.cook.brown_mushroom_pot_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/brown_mushroom_pot_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:brown_mushroom_pot_soup
+          hit_times: 2
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:brown_mushroom_pot_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:brown_mushroom_pot_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:brown_mushroom_pot_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:brown_mushroom_pot_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 6
+              - type: set_saturation
+                add: true
+                saturation: 4.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:brown_mushroom_pot_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/brown_mushroom_pot_soup_0
+  cook:brown_mushroom_pot_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/brown_mushroom_pot_soup_1
+  cook:brown_mushroom_pot_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/brown_mushroom_pot_soup_2
+
+  cook:red_mushroom_pot_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#C0392B><lang:item.cook.red_mushroom_pot_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/red_mushroom_pot_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:red_mushroom_pot_soup
+          hit_times: 2
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:red_mushroom_pot_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:red_mushroom_pot_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:red_mushroom_pot_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:red_mushroom_pot_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 6
+              - type: set_saturation
+                add: true
+                saturation: 4.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:red_mushroom_pot_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/red_mushroom_pot_soup_0
+  cook:red_mushroom_pot_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/red_mushroom_pot_soup_1
+  cook:red_mushroom_pot_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/red_mushroom_pot_soup_2
+
+  cook:warped_fungus_pot_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#1ABC9C><lang:item.cook.warped_fungus_pot_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/warped_fungus_pot_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:warped_fungus_pot_soup
+          hit_times: 2
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:warped_fungus_pot_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:warped_fungus_pot_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:warped_fungus_pot_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:warped_fungus_pot_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 6
+              - type: set_saturation
+                add: true
+                saturation: 4.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:warped_fungus_pot_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/warped_fungus_pot_soup_0
+  cook:warped_fungus_pot_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/warped_fungus_pot_soup_1
+  cook:warped_fungus_pot_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/warped_fungus_pot_soup_2
+
+  cook:crimson_fungus_pot_soup:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#8B1A1A><lang:item.cook.crimson_fungus_pot_soup>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/crimson_fungus_pot_soup
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:crimson_fungus_pot_soup
+          hit_times: 2
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:crimson_fungus_pot_soup
+        variants:
+          ground:
+            elements:
+              - item: cook:crimson_fungus_pot_soup_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:crimson_fungus_pot_soup_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:crimson_fungus_pot_soup_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 6
+              - type: set_saturation
+                add: true
+                saturation: 4.0
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:crimson_fungus_pot_soup_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/crimson_fungus_pot_soup_0
+  cook:crimson_fungus_pot_soup_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/crimson_fungus_pot_soup_1
+  cook:crimson_fungus_pot_soup_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/crimson_fungus_pot_soup_2
+
+  cook:buddha_jumps_over_the_wall:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#C49A4A><lang:item.cook.buddha_jumps_over_the_wall>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/buddha_jumps_over_the_wall
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:buddha_jumps_over_the_wall
+          hit_times: 2
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:buddha_jumps_over_the_wall
+        variants:
+          ground:
+            elements:
+              - item: cook:buddha_jumps_over_the_wall_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:buddha_jumps_over_the_wall_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:buddha_jumps_over_the_wall_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 7
+              - type: set_saturation
+                add: true
+                saturation: 3.65
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:buddha_jumps_over_the_wall_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/buddha_jumps_over_the_wall_0
+  cook:buddha_jumps_over_the_wall_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/buddha_jumps_over_the_wall_1
+  cook:buddha_jumps_over_the_wall_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/food/buddha_jumps_over_the_wall_2
+
+  cook:shengjian_mantou_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.shengjian_mantou_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/shengjian_mantou_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:shengjian_mantou_plate
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:shengjian_mantou_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:shengjian_mantou_plate_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:shengjian_mantou_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_5
+  cook:shengjian_mantou_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_4
+  cook:shengjian_mantou_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_3
+  cook:shengjian_mantou_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_2
+  cook:shengjian_mantou_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_1
+  cook:shengjian_mantou_plate_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/shengjian_mantou_plate_0
+
+  cook:baozi_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.baozi_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/baozi_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:baozi_plate
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:baozi_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:baozi_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:baozi_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:baozi_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:baozi_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:baozi_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:baozi_plate_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:baozi_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_5
+  cook:baozi_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_4
+  cook:baozi_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_3
+  cook:baozi_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_2
+  cook:baozi_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_1
+  cook:baozi_plate_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/baozi_plate_0
+
+  cook:qingtuan_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.qingtuan_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/qingtuan_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:qingtuan_plate
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:qingtuan_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:qingtuan_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:qingtuan_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:qingtuan_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:qingtuan_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:qingtuan_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:qingtuan_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/qingtuan_plate_4
+  cook:qingtuan_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/qingtuan_plate_3
+  cook:qingtuan_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/qingtuan_plate_2
+  cook:qingtuan_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/qingtuan_plate_1
+  cook:qingtuan_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/qingtuan_plate_0
+
+  cook:sticky_candy_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.sticky_candy_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/sticky_candy_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:sticky_candy_plate
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:sticky_candy_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:sticky_candy_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:sticky_candy_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:sticky_candy_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:sticky_candy_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:sticky_candy_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:sticky_candy_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_candy_plate_4
+  cook:sticky_candy_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_candy_plate_3
+  cook:sticky_candy_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_candy_plate_2
+  cook:sticky_candy_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_candy_plate_1
+  cook:sticky_candy_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_candy_plate_0
+
+  cook:sticky_rice_cake_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.sticky_rice_cake_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/sticky_rice_cake_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:sticky_rice_cake_plate
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:sticky_rice_cake_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:sticky_rice_cake_plate_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:sticky_rice_cake_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_5
+  cook:sticky_rice_cake_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_4
+  cook:sticky_rice_cake_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_3
+  cook:sticky_rice_cake_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_2
+  cook:sticky_rice_cake_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_1
+  cook:sticky_rice_cake_plate_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/sticky_rice_cake_plate_0
+
+  cook:zongzi_plate:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.zongzi_plate>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/zongzi_plate
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:zongzi_plate
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:zongzi_plate
+        variants:
+          ground:
+            elements:
+              - item: cook:zongzi_plate_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:zongzi_plate_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:zongzi_plate_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:zongzi_plate_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:zongzi_plate_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:zongzi_plate_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/zongzi_plate_4
+  cook:zongzi_plate_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/zongzi_plate_3
+  cook:zongzi_plate_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/zongzi_plate_2
+  cook:zongzi_plate_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/zongzi_plate_1
+  cook:zongzi_plate_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/zongzi_plate_0
+
+  cook:berry_platter:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.berry_platter>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/berry_platter
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:berry_platter
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:berry_platter
+        variants:
+          ground:
+            elements:
+              - item: cook:berry_platter_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:berry_platter_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:berry_platter_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:berry_platter_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:berry_platter_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:berry_platter_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/berry_platter_4
+  cook:berry_platter_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/berry_platter_3
+  cook:berry_platter_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/berry_platter_2
+  cook:berry_platter_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/berry_platter_1
+  cook:berry_platter_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/berry_platter_0
+
+  cook:apple_platter:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.apple_platter>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/apple_platter
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:apple_platter
+          hit_times: 4
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:apple_platter
+        variants:
+          ground:
+            elements:
+              - item: cook:apple_platter_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:apple_platter_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:apple_platter_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:apple_platter_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:apple_platter_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:apple_platter_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/apple_platter_4
+  cook:apple_platter_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/apple_platter_3
+  cook:apple_platter_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/apple_platter_2
+  cook:apple_platter_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/apple_platter_1
+  cook:apple_platter_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/apple_platter_0
+
+  cook:tomato_platter:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.tomato_platter>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/tomato_platter
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:tomato_platter
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:tomato_platter
+        variants:
+          ground:
+            elements:
+              - item: cook:tomato_platter_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:tomato_platter_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:tomato_platter_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:tomato_platter_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:tomato_platter_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:tomato_platter_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:tomato_platter_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_5
+  cook:tomato_platter_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_4
+  cook:tomato_platter_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_3
+  cook:tomato_platter_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_2
+  cook:tomato_platter_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_1
+  cook:tomato_platter_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/tomato_platter_0
+
+  cook:watermelon_platter:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.watermelon_platter>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/watermelon_platter
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:watermelon_platter
+          hit_times: 3
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:watermelon_platter
+        variants:
+          ground:
+            elements:
+              - item: cook:watermelon_platter_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:watermelon_platter_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:watermelon_platter_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:watermelon_platter_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:watermelon_platter_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/watermelon_platter_3
+  cook:watermelon_platter_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/watermelon_platter_2
+  cook:watermelon_platter_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/watermelon_platter_1
+  cook:watermelon_platter_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/watermelon_platter_0
+
+  cook:chorus_fruit_platter:
+    category: cook:food
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><#FFFFFF><lang:item.cook.chorus_fruit_platter>"
+      components:
+        minecraft:max_stack_size: 1
+    texture: minecraft:item/custom/cook/food/chorus_fruit_platter
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: any
+          alignment: any
+      furniture:
+        settings:
+          item: cook:chorus_fruit_platter
+          hit_times: 5
+          sounds:
+            place: minecraft:block.wood.place
+            break: minecraft:block.wood.break
+            hit: minecraft:block.wood.hit
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: cook:chorus_fruit_platter
+        variants:
+          ground:
+            elements:
+              - item: cook:chorus_fruit_platter_display_0
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_1:
+            elements:
+              - item: cook:chorus_fruit_platter_display_1
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_2:
+            elements:
+              - item: cook:chorus_fruit_platter_display_2
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_3:
+            elements:
+              - item: cook:chorus_fruit_platter_display_3
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_4:
+            elements:
+              - item: cook:chorus_fruit_platter_display_4
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+          stage_5:
+            elements:
+              - item: cook:chorus_fruit_platter_display_5
+                scale: 1
+                position: 0,0.5,0
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 0.5
+                interactive: true
+        events:
+          - on: right_click
+            functions:
+              - type: set_food
+                add: true
+                food: 3
+              - type: set_saturation
+                add: true
+                saturation: 1.5
+              - type: play_sound
+                sound: minecraft:entity.generic.eat
+              - type: swing_hand
+              - type: when
+                source: <arg:furniture.variant>
+                cases:
+                  - when: ground
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_1
+                  - when: stage_1
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_2
+                  - when: stage_2
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_3
+                  - when: stage_3
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_4
+                  - when: stage_4
+                    functions:
+                      - type: set_furniture_variant
+                        variant: stage_5
+                  - when: stage_5
+                    functions:
+                      - type: remove_furniture
+                        drop-loot: false
+
+  cook:chorus_fruit_platter_display_0:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_5
+  cook:chorus_fruit_platter_display_1:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_4
+  cook:chorus_fruit_platter_display_2:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_3
+  cook:chorus_fruit_platter_display_3:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_2
+  cook:chorus_fruit_platter_display_4:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_1
+  cook:chorus_fruit_platter_display_5:
+    material: minecraft:nether_brick
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/plate/chorus_fruit_platter_0
+

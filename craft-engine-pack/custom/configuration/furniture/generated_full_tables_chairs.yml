@@ -1,0 +1,524 @@
+categories:
+  kaleidoscopecookery:generated_original_furniture:
+    name: "<!i><white><l10n:category.kaleidoscopecookery.generated_original_furniture>"
+    icon: kaleidoscopecookery:chair_oak
+    hidden: true
+    list:
+      - kaleidoscopecookery:chair_oak
+      - kaleidoscopecookery:chair_spruce
+      - kaleidoscopecookery:chair_acacia
+      - kaleidoscopecookery:chair_bamboo
+      - kaleidoscopecookery:chair_birch
+      - kaleidoscopecookery:chair_cherry
+      - kaleidoscopecookery:chair_crimson
+      - kaleidoscopecookery:chair_dark_oak
+      - kaleidoscopecookery:chair_jungle
+      - kaleidoscopecookery:chair_mangrove
+      - kaleidoscopecookery:chair_warped
+
+items:
+  kaleidoscopecookery:chair_oak:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_oak>"
+    model: minecraft:block/custom/cook/block/chair/oak
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_oak
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_oak
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_oak
+
+  kaleidoscopecookery:chair_spruce:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_spruce>"
+    model: minecraft:block/custom/cook/block/chair/spruce
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_spruce
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_spruce
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_spruce
+
+  kaleidoscopecookery:chair_acacia:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_acacia>"
+    model: minecraft:block/custom/cook/block/chair/acacia
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_acacia
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_acacia
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_acacia
+
+  kaleidoscopecookery:chair_bamboo:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_bamboo>"
+    model: minecraft:block/custom/cook/block/chair/bamboo
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_bamboo
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_bamboo
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_bamboo
+
+  kaleidoscopecookery:chair_birch:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_birch>"
+    model: minecraft:block/custom/cook/block/chair/birch
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_birch
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_birch
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_birch
+
+  kaleidoscopecookery:chair_cherry:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_cherry>"
+    model: minecraft:block/custom/cook/block/chair/cherry
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_cherry
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_cherry
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_cherry
+
+  kaleidoscopecookery:chair_crimson:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_crimson>"
+    model: minecraft:block/custom/cook/block/chair/crimson
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_crimson
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_crimson
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_crimson
+
+  kaleidoscopecookery:chair_dark_oak:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_dark_oak>"
+    model: minecraft:block/custom/cook/block/chair/dark_oak
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_dark_oak
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_dark_oak
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_dark_oak
+
+  kaleidoscopecookery:chair_jungle:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_jungle>"
+    model: minecraft:block/custom/cook/block/chair/jungle
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_jungle
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_jungle
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_jungle
+
+  kaleidoscopecookery:chair_mangrove:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_mangrove>"
+    model: minecraft:block/custom/cook/block/chair/mangrove
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_mangrove
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_mangrove
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_mangrove
+
+  kaleidoscopecookery:chair_warped:
+    material: minecraft:nether_brick
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chair_warped>"
+    model: minecraft:block/custom/cook/block/chair/warped
+    behavior:
+      type: furniture_item
+      rules:
+        ground:
+          rotation: four
+          alignment: center
+      furniture:
+        events:
+          - template: default:rotatable_furniture_4
+        settings:
+          item: kaleidoscopecookery:chair_warped
+          hit_times: 3
+          sounds:
+            break: minecraft:block.wood.break
+            place: minecraft:block.wood.place
+            hit: minecraft:block.wood.hit
+        variants:
+          ground:
+            loot_spawn_offset: 0.5,0.5,0
+            elements:
+              - item: kaleidoscopecookery:chair_warped
+                display_transform: none
+                billboard: fixed
+                position: 0,0,0
+                translation: 0,0.5,0
+                shadow_radius: 0
+                shadow_strength: 0.2
+            hitboxes:
+              - position: 0,0,0
+                type: interaction
+                width: 1
+                height: 1
+                interactive: true
+                interaction_entity: true
+                seats:
+                  - 0,-0.15,0
+        loot:
+          template: default:loot_table/furniture
+          arguments:
+            item: kaleidoscopecookery:chair_warped

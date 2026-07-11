@@ -1,0 +1,575 @@
+recipes:
+  # 配方：生粽子（kaleidoscopecookery:raw_zongzi）
+  # 材料：睡莲、稻米
+  kaleidoscopecookery:craftless_raw_zongzi_from_rice_seed_lily_pad:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:rice
+      - minecraft:lily_pad
+    result:
+      id: kaleidoscopecookery:raw_zongzi
+      count: 1
+  # 配方：生竹筒饭（kaleidoscopecookery:raw_bamboo_tube_rice）
+  # 材料：生牛肉、稻穗、竹子
+  kaleidoscopecookery:craftless_raw_bamboo_tube_rice_from_bamboo_grain_rice_raw_meats:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:bamboo
+      - kaleidoscopecookery:rice_panicle
+      - minecraft:beef
+    result:
+      id: kaleidoscopecookery:raw_bamboo_tube_rice
+      count: 1
+  # 配方：稻穗（kaleidoscopecookery:rice_panicle）
+  # 材料：稻草捆
+  kaleidoscopecookery:craftless_rice_panicle_from_straw_block:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:straw_block
+    result:
+      id: kaleidoscopecookery:rice_panicle
+      count: 9
+  # 配方：油脂（kaleidoscopecookery:oil）
+  # 材料：油脂块
+  kaleidoscopecookery:craftless_oil_from_oil_block:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:oil_block
+    result:
+      id: kaleidoscopecookery:oil
+      count: 9
+  # 配方：辣椒种子（kaleidoscopecookery:chili_seed）
+  # 材料：青辣椒
+  kaleidoscopecookery:craftless_chili_seed_from_green_chili:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:green_chili
+    result:
+      id: kaleidoscopecookery:chili_seed
+      count: 1
+  # 配方：辣椒种子（kaleidoscopecookery:chili_seed）
+  # 材料：红辣椒
+  kaleidoscopecookery:craftless_chili_seed_from_red_chili:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:red_chili
+    result:
+      id: kaleidoscopecookery:chili_seed
+      count: 1
+  # 配方：番茄种子（kaleidoscopecookery:tomato_seed）
+  # 材料：番茄
+  kaleidoscopecookery:craftless_tomato_seed_from_tomato:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:tomato
+    result:
+      id: kaleidoscopecookery:tomato_seed
+      count: 1
+  # 配方：裹馅面食（kaleidoscopecookery:stuffed_dough_food）
+  # 材料：生牛肉、生菜、生面团
+  kaleidoscopecookery:craftless_stuffed_dough_food_from_raw_meats_vegetables_dough:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:beef
+      - kaleidoscopecookery:lettuce
+      - kaleidoscopecookery:raw_dough
+    result:
+      id: kaleidoscopecookery:stuffed_dough_food
+      count: 1
+  # 配方：食谱（kaleidoscopecookery:recipe_item_no_recipe）
+  # 材料：食谱
+  kaleidoscopecookery:craftless_reset_recipe_item:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:recipe_item_no_recipe
+    result:
+      id: kaleidoscopecookery:recipe_item_no_recipe
+      count: 1
+  # 配方：生丸子（kaleidoscopecookery:raw_meatball）
+  # 材料：生牛肉 x2、生菜
+  kaleidoscopecookery:craftless_raw_meatball_from_2_raw_meats_vegetables:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:beef
+      - minecraft:beef
+      - kaleidoscopecookery:lettuce
+    result:
+      id: kaleidoscopecookery:raw_meatball
+      count: 1
+  # 配方：空茶杯（kaleidoscopecookery:empty_cup）
+  # 材料：花盆
+  kaleidoscopecookery:craftless_empty_cup_from_flower_pot:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:flower_pot
+    result:
+      id: kaleidoscopecookery:empty_cup
+      count: 1
+  # 配方：浆果拼盘（cook:berry_platter）
+  # 材料：发光浆果 x4、甜浆果 x4、碗
+  kaleidoscopecookery:craftless_berry_platter_from_sweet_glow_berries_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:sweet_berries
+      - minecraft:sweet_berries
+      - minecraft:sweet_berries
+      - minecraft:sweet_berries
+      - minecraft:glow_berries
+      - minecraft:glow_berries
+      - minecraft:glow_berries
+      - minecraft:glow_berries
+      - minecraft:bowl
+    result:
+      id: cook:berry_platter
+      count: 1
+  # 配方：黄金沙拉（cook:golden_salad）
+  # 材料：碗、金胡萝卜 x2、金苹果 x2、闪烁的西瓜片 x2
+  kaleidoscopecookery:craftless_golden_salad_from_golden_apple_carrot_melon_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:golden_apple
+      - minecraft:golden_apple
+      - minecraft:golden_carrot
+      - minecraft:golden_carrot
+      - minecraft:glistering_melon_slice
+      - minecraft:glistering_melon_slice
+      - minecraft:bowl
+    result:
+      id: cook:golden_salad
+      count: 1
+  # 配方：下界风味刺身（cook:nether_style_sashimi）
+  # 材料：刺身 x4、碗、绯红菌、诡异菌
+  kaleidoscopecookery:craftless_nether_style_sashimi_from_fungi_sashimi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:crimson_fungus
+      - minecraft:warped_fungus
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - minecraft:bowl
+    result:
+      id: cook:nether_style_sashimi
+      count: 1
+  # 配方：沙漠风味刺身（cook:desert_style_sashimi）
+  # 材料：仙人掌 x2、刺身 x4、碗
+  kaleidoscopecookery:craftless_desert_style_sashimi_from_cactus_sashimi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:cactus
+      - minecraft:cactus
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - minecraft:bowl
+    result:
+      id: cook:desert_style_sashimi
+      count: 1
+  # 配方：寒带风味刺身（cook:cold_style_sashimi）
+  # 材料：刺身 x4、碗、雪球 x3
+  kaleidoscopecookery:craftless_cold_style_sashimi_from_snowball_sashimi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:snowball
+      - minecraft:snowball
+      - minecraft:snowball
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - minecraft:bowl
+    result:
+      id: cook:cold_style_sashimi
+      count: 1
+  # 配方：末地风味刺身（cook:end_style_sashimi）
+  # 材料：刺身 x4、碗、紫颂果 x3
+  kaleidoscopecookery:craftless_end_style_sashimi_from_chorus_sashimi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - minecraft:bowl
+    result:
+      id: cook:end_style_sashimi
+      count: 1
+  # 配方：苔原风味刺身（cook:tundra_style_sashimi）
+  # 材料：刺身 x4、碗、蒲公英 x2
+  kaleidoscopecookery:craftless_tundra_style_sashimi_from_flowers_sashimi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:dandelion
+      - minecraft:dandelion
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:sashimi
+      - minecraft:bowl
+    result:
+      id: cook:tundra_style_sashimi
+      count: 1
+  # 配方：冷肉炙（cook:cold_roasted_meat）
+  # 材料：牛排 x3、碗
+  kaleidoscopecookery:craftless_cold_roasted_meat_from_cooked_beef_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:cooked_beef
+      - minecraft:cooked_beef
+      - minecraft:cooked_beef
+      - minecraft:bowl
+    result:
+      id: cook:cold_roasted_meat
+      count: 1
+  # 配方：冷切火腿片（kaleidoscopecookery:cold_cut_ham_slices）
+  # 材料：熟五花肉 x8、碗
+  kaleidoscopecookery:craftless_cold_cut_ham_slices_from_cooked_pork_belly_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_pork_belly
+      - minecraft:bowl
+    result:
+      id: kaleidoscopecookery:cold_cut_ham_slices
+      count: 1
+  # 配方：番茄炒蛋盖饭（kaleidoscopecookery:scramble_egg_with_tomatoes_rice_bowl）
+  # 材料：番茄炒蛋
+  kaleidoscopecookery:craftless_scramble_egg_with_tomatoes_rice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:scramble_egg_with_tomatoes
+    result:
+      id: kaleidoscopecookery:scramble_egg_with_tomatoes_rice_bowl
+      count: 1
+  # 配方：红烧牛肉盖饭（kaleidoscopecookery:braised_beef_rice_bowl）
+  # 材料：红烧牛肉
+  kaleidoscopecookery:craftless_braised_beef_rice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:braised_beef
+    result:
+      id: kaleidoscopecookery:braised_beef_rice_bowl
+      count: 1
+  # 配方：青椒炒肉盖饭（kaleidoscopecookery:stir_fried_pork_with_peppers_rice_bowl）
+  # 材料：青椒炒肉
+  kaleidoscopecookery:craftless_stir_fried_pork_with_peppers_rice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:stir_fried_pork_with_peppers
+    result:
+      id: kaleidoscopecookery:stir_fried_pork_with_peppers_rice_bowl
+      count: 1
+  # 配方：糖醋里脊盖饭（kaleidoscopecookery:sweet_and_sour_pork_rice_bowl）
+  # 材料：糖醋里脊
+  kaleidoscopecookery:craftless_sweet_and_sour_pork_rice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:sweet_and_sour_pork
+    result:
+      id: kaleidoscopecookery:sweet_and_sour_pork_rice_bowl
+      count: 1
+  # 配方：鱼香肉丝盖饭（kaleidoscopecookery:fish_flavored_shredded_pork_rice_bowl）
+  # 材料：鱼香肉丝
+  kaleidoscopecookery:craftless_fish_flavored_shredded_pork_rice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:fish_flavored_shredded_pork
+    result:
+      id: kaleidoscopecookery:fish_flavored_shredded_pork_rice_bowl
+      count: 1
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉
+  kaleidoscopecookery:craftless_raw_dough_from_1_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 1
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x2
+  kaleidoscopecookery:craftless_raw_dough_from_2_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 2
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x3
+  kaleidoscopecookery:craftless_raw_dough_from_3_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 3
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x4
+  kaleidoscopecookery:craftless_raw_dough_from_4_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 4
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x5
+  kaleidoscopecookery:craftless_raw_dough_from_5_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 5
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x6
+  kaleidoscopecookery:craftless_raw_dough_from_6_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 6
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x7
+  kaleidoscopecookery:craftless_raw_dough_from_7_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 7
+  # 配方：生面团（kaleidoscopecookery:raw_dough）
+  # 材料：水桶、面粉 x8
+  kaleidoscopecookery:craftless_raw_dough_from_8_flour:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:water_bucket
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:flour
+    result:
+      id: kaleidoscopecookery:raw_dough
+      count: 8
+  # 配方：一盘水煎包（cook:shengjian_mantou_plate）
+  # 材料：水煎包 x5、碗
+  kaleidoscopecookery:craftless_shengjian_mantou_plate_from_5_shengjian_mantou_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - cook:shengjian_mantou
+      - cook:shengjian_mantou
+      - cook:shengjian_mantou
+      - cook:shengjian_mantou
+      - cook:shengjian_mantou
+      - minecraft:bowl
+    result:
+      id: cook:shengjian_mantou_plate
+      count: 1
+  # 配方：一盘包子（cook:baozi_plate）
+  # 材料：包子 x5、碗
+  kaleidoscopecookery:craftless_baozi_plate_from_5_baozi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:baozi
+      - kaleidoscopecookery:baozi
+      - kaleidoscopecookery:baozi
+      - kaleidoscopecookery:baozi
+      - kaleidoscopecookery:baozi
+      - minecraft:bowl
+    result:
+      id: cook:baozi_plate
+      count: 1
+  # 配方：一盘青团（cook:qingtuan_plate）
+  # 材料：碗、青团 x4
+  kaleidoscopecookery:craftless_qingtuan_plate_from_4_qingtuan_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:qingtuan
+      - kaleidoscopecookery:qingtuan
+      - kaleidoscopecookery:qingtuan
+      - kaleidoscopecookery:qingtuan
+      - minecraft:bowl
+    result:
+      id: cook:qingtuan_plate
+      count: 1
+  # 配方：一盘牛皮糖（cook:sticky_candy_plate）
+  # 材料：牛皮糖 x4、碗
+  kaleidoscopecookery:craftless_sticky_candy_plate_from_4_sticky_candy_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:sticky_candy
+      - kaleidoscopecookery:sticky_candy
+      - kaleidoscopecookery:sticky_candy
+      - kaleidoscopecookery:sticky_candy
+      - minecraft:bowl
+    result:
+      id: cook:sticky_candy_plate
+      count: 1
+  # 配方：一盘糍粑（cook:sticky_rice_cake_plate）
+  # 材料：碗、糍粑 x5
+  kaleidoscopecookery:craftless_sticky_rice_cake_plate_from_5_sticky_rice_cake_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:sticky_rice_cake
+      - kaleidoscopecookery:sticky_rice_cake
+      - kaleidoscopecookery:sticky_rice_cake
+      - kaleidoscopecookery:sticky_rice_cake
+      - kaleidoscopecookery:sticky_rice_cake
+      - minecraft:bowl
+    result:
+      id: cook:sticky_rice_cake_plate
+      count: 1
+  # 配方：一盘粽子（cook:zongzi_plate）
+  # 材料：熟粽子 x4、碗
+  kaleidoscopecookery:craftless_zongzi_plate_from_4_zongzi_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:zongzi
+      - kaleidoscopecookery:zongzi
+      - kaleidoscopecookery:zongzi
+      - kaleidoscopecookery:zongzi
+      - minecraft:bowl
+    result:
+      id: cook:zongzi_plate
+      count: 1
+  # 配方：番茄拼盘（cook:tomato_platter）
+  # 材料：番茄 x5、碗
+  kaleidoscopecookery:craftless_tomato_platter_from_5_tomato_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - kaleidoscopecookery:tomato
+      - kaleidoscopecookery:tomato
+      - kaleidoscopecookery:tomato
+      - kaleidoscopecookery:tomato
+      - kaleidoscopecookery:tomato
+      - minecraft:bowl
+    result:
+      id: cook:tomato_platter
+      count: 1
+  # 配方：苹果拼盘（cook:apple_platter）
+  # 材料：碗、苹果 x4
+  kaleidoscopecookery:craftless_apple_platter_from_4_apple_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:apple
+      - minecraft:apple
+      - minecraft:apple
+      - minecraft:apple
+      - minecraft:bowl
+    result:
+      id: cook:apple_platter
+      count: 1
+  # 配方：西瓜拼盘（cook:watermelon_platter）
+  # 材料：碗、西瓜片 x3
+  kaleidoscopecookery:craftless_watermelon_platter_from_3_melon_slice_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:melon_slice
+      - minecraft:melon_slice
+      - minecraft:melon_slice
+      - minecraft:bowl
+    result:
+      id: cook:watermelon_platter
+      count: 1
+  # 配方：紫颂果拼盘（cook:chorus_fruit_platter）
+  # 材料：碗、紫颂果 x5
+  kaleidoscopecookery:craftless_chorus_fruit_platter_from_5_chorus_fruit_bowl:
+    type: shapeless
+    category: misc
+    ingredients:
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - minecraft:chorus_fruit
+      - minecraft:bowl
+    result:
+      id: cook:chorus_fruit_platter
+      count: 1

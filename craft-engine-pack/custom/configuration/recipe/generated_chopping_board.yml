@@ -1,0 +1,547 @@
+chopping_board_raws:
+  # 砧板：生羊排（kaleidoscopecookery:raw_lamb_chops）
+  # 材料：生羊肉
+  kaleidoscopecookery:chop_raw_lamb_chops_from_mutton:
+    require: minecraft:mutton
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_lamb_chops
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_lamb_chops 2 100
+  # 砧板：熟羊排（kaleidoscopecookery:cooked_lamb_chops）
+  # 材料：熟羊肉
+  kaleidoscopecookery:chop_cooked_lamb_chops_from_cooked_mutton:
+    require: minecraft:cooked_mutton
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_lamb_chops
+    mode: single
+    result:
+      - kaleidoscopecookery:cooked_lamb_chops 2 100
+  # 砧板：刺身（kaleidoscopecookery:sashimi）
+  # 材料：热带鱼
+  kaleidoscopecookery:chop_sashimi_from_tropical_fish:
+    require: minecraft:tropical_fish
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/sashimi
+    mode: single
+    result:
+      - kaleidoscopecookery:sashimi 2 100
+  # 砧板：刺身（kaleidoscopecookery:sashimi）
+  # 材料：生鳕鱼
+  kaleidoscopecookery:chop_sashimi_from_cod:
+    require: minecraft:cod
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cod
+    mode: single
+    result:
+      - kaleidoscopecookery:sashimi 2 100
+  # 砧板：骨头（minecraft:bone）
+  # 材料：熟鳕鱼
+  kaleidoscopecookery:chop_bone_from_cooked_cod:
+    require: minecraft:cooked_cod
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_cod
+    mode: single
+    result:
+      - minecraft:bone 2 100
+  # 砧板：刺身（kaleidoscopecookery:sashimi）
+  # 材料：生鲑鱼
+  kaleidoscopecookery:chop_sashimi_from_salmon:
+    require: minecraft:salmon
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/salmon
+    mode: single
+    result:
+      - kaleidoscopecookery:sashimi 2 100
+  # 砧板：骨头（minecraft:bone）
+  # 材料：熟鲑鱼
+  kaleidoscopecookery:chop_bone_from_cooked_salmon:
+    require: minecraft:cooked_salmon
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_salmon
+    mode: single
+    result:
+      - minecraft:bone 2 100
+  # 砧板：生牛杂（kaleidoscopecookery:raw_cow_offal）
+  # 材料：生牛肉
+  kaleidoscopecookery:chop_raw_cow_offal_from_beef:
+    require: minecraft:beef
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_cow_offal
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_cow_offal 2 100
+  # 砧板：熟牛杂（kaleidoscopecookery:cooked_cow_offal）
+  # 材料：牛排
+  kaleidoscopecookery:chop_cooked_cow_offal_from_cooked_beef:
+    require: minecraft:cooked_beef
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_cow_offal
+    mode: single
+    result:
+      - kaleidoscopecookery:cooked_cow_offal 2 100
+  # 砧板：生五花肉（kaleidoscopecookery:raw_pork_belly）
+  # 材料：生猪排
+  kaleidoscopecookery:chop_raw_pork_belly_from_porkchop:
+    require: minecraft:porkchop
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_pork_belly
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_pork_belly 2 100
+  # 砧板：熟五花肉（kaleidoscopecookery:cooked_pork_belly）
+  # 材料：熟猪排
+  kaleidoscopecookery:chop_cooked_pork_belly_from_cooked_porkchop:
+    require: minecraft:cooked_porkchop
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_pork_belly
+    mode: single
+    result:
+      - kaleidoscopecookery:cooked_pork_belly 2 100
+  # 砧板：生切制小肉（kaleidoscopecookery:raw_cut_small_meats）
+  # 材料：生鸡肉
+  kaleidoscopecookery:chop_raw_cut_small_meats_from_chicken:
+    require: minecraft:chicken
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_chicken
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_cut_small_meats 2 100
+  # 砧板：熟切制小肉（kaleidoscopecookery:cooked_cut_small_meats）
+  # 材料：熟鸡肉
+  kaleidoscopecookery:chop_cooked_cut_small_meats_from_cooked_chicken:
+    require: minecraft:cooked_chicken
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_chicken
+    mode: single
+    result:
+      - kaleidoscopecookery:cooked_cut_small_meats 2 100
+  # 砧板：生切制小肉（kaleidoscopecookery:raw_cut_small_meats）
+  # 材料：生兔肉
+  kaleidoscopecookery:chop_raw_cut_small_meats_from_rabbit:
+    require: minecraft:rabbit
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_rabbit
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_cut_small_meats 2 100
+  # 砧板：熟切制小肉（kaleidoscopecookery:cooked_cut_small_meats）
+  # 材料：熟兔肉
+  kaleidoscopecookery:chop_cooked_cut_small_meats_from_cooked_rabbit:
+    require: minecraft:cooked_rabbit
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_rabbit
+    mode: single
+    result:
+      - kaleidoscopecookery:cooked_cut_small_meats 2 100
+  # 砧板：生面条（kaleidoscopecookery:raw_noodles）
+  # 材料：生面团
+  kaleidoscopecookery:chop_raw_noodles_from_dough_tag:
+    require: kaleidoscopecookery:raw_dough
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/raw_dough
+    mode: single
+    result:
+      - kaleidoscopecookery:raw_noodles 2 100
+
+items:
+  cb:block/custom/cook/block/chopping_board/cod/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cod/0
+  cb:block/custom/cook/block/chopping_board/cod/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cod/1
+  cb:block/custom/cook/block/chopping_board/cod/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cod/2
+  cb:block/custom/cook/block/chopping_board/cod/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cod/3
+  cb:block/custom/cook/block/chopping_board/cod/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cod/4
+  cb:block/custom/cook/block/chopping_board/cooked_chicken/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_chicken/0
+  cb:block/custom/cook/block/chopping_board/cooked_chicken/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_chicken/1
+  cb:block/custom/cook/block/chopping_board/cooked_chicken/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_chicken/2
+  cb:block/custom/cook/block/chopping_board/cooked_chicken/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_chicken/3
+  cb:block/custom/cook/block/chopping_board/cooked_chicken/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_chicken/4
+  cb:block/custom/cook/block/chopping_board/cooked_cod/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cod/0
+  cb:block/custom/cook/block/chopping_board/cooked_cod/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cod/1
+  cb:block/custom/cook/block/chopping_board/cooked_cod/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cod/2
+  cb:block/custom/cook/block/chopping_board/cooked_cod/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cod/3
+  cb:block/custom/cook/block/chopping_board/cooked_cod/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cod/4
+  cb:block/custom/cook/block/chopping_board/cooked_cow_offal/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cow_offal/0
+  cb:block/custom/cook/block/chopping_board/cooked_cow_offal/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cow_offal/1
+  cb:block/custom/cook/block/chopping_board/cooked_cow_offal/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cow_offal/2
+  cb:block/custom/cook/block/chopping_board/cooked_cow_offal/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cow_offal/3
+  cb:block/custom/cook/block/chopping_board/cooked_cow_offal/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_cow_offal/4
+  cb:block/custom/cook/block/chopping_board/cooked_lamb_chops/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_lamb_chops/0
+  cb:block/custom/cook/block/chopping_board/cooked_lamb_chops/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_lamb_chops/1
+  cb:block/custom/cook/block/chopping_board/cooked_lamb_chops/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_lamb_chops/2
+  cb:block/custom/cook/block/chopping_board/cooked_lamb_chops/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_lamb_chops/3
+  cb:block/custom/cook/block/chopping_board/cooked_lamb_chops/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_lamb_chops/4
+  cb:block/custom/cook/block/chopping_board/cooked_pork_belly/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_pork_belly/0
+  cb:block/custom/cook/block/chopping_board/cooked_pork_belly/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_pork_belly/1
+  cb:block/custom/cook/block/chopping_board/cooked_pork_belly/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_pork_belly/2
+  cb:block/custom/cook/block/chopping_board/cooked_pork_belly/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_pork_belly/3
+  cb:block/custom/cook/block/chopping_board/cooked_pork_belly/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_pork_belly/4
+  cb:block/custom/cook/block/chopping_board/cooked_rabbit/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_rabbit/0
+  cb:block/custom/cook/block/chopping_board/cooked_rabbit/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_rabbit/1
+  cb:block/custom/cook/block/chopping_board/cooked_rabbit/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_rabbit/2
+  cb:block/custom/cook/block/chopping_board/cooked_rabbit/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_rabbit/3
+  cb:block/custom/cook/block/chopping_board/cooked_rabbit/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_rabbit/4
+  cb:block/custom/cook/block/chopping_board/cooked_salmon/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_salmon/0
+  cb:block/custom/cook/block/chopping_board/cooked_salmon/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_salmon/1
+  cb:block/custom/cook/block/chopping_board/cooked_salmon/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_salmon/2
+  cb:block/custom/cook/block/chopping_board/cooked_salmon/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_salmon/3
+  cb:block/custom/cook/block/chopping_board/cooked_salmon/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/cooked_salmon/4
+  cb:block/custom/cook/block/chopping_board/raw_chicken/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_chicken/0
+  cb:block/custom/cook/block/chopping_board/raw_chicken/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_chicken/1
+  cb:block/custom/cook/block/chopping_board/raw_chicken/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_chicken/2
+  cb:block/custom/cook/block/chopping_board/raw_chicken/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_chicken/3
+  cb:block/custom/cook/block/chopping_board/raw_chicken/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_chicken/4
+  cb:block/custom/cook/block/chopping_board/raw_cow_offal/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_cow_offal/0
+  cb:block/custom/cook/block/chopping_board/raw_cow_offal/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_cow_offal/1
+  cb:block/custom/cook/block/chopping_board/raw_cow_offal/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_cow_offal/2
+  cb:block/custom/cook/block/chopping_board/raw_cow_offal/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_cow_offal/3
+  cb:block/custom/cook/block/chopping_board/raw_cow_offal/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_cow_offal/4
+  cb:block/custom/cook/block/chopping_board/raw_dough/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_dough/0
+  cb:block/custom/cook/block/chopping_board/raw_dough/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_dough/1
+  cb:block/custom/cook/block/chopping_board/raw_dough/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_dough/2
+  cb:block/custom/cook/block/chopping_board/raw_dough/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_dough/3
+  cb:block/custom/cook/block/chopping_board/raw_dough/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_dough/4
+  cb:block/custom/cook/block/chopping_board/raw_lamb_chops/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_lamb_chops/0
+  cb:block/custom/cook/block/chopping_board/raw_lamb_chops/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_lamb_chops/1
+  cb:block/custom/cook/block/chopping_board/raw_lamb_chops/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_lamb_chops/2
+  cb:block/custom/cook/block/chopping_board/raw_lamb_chops/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_lamb_chops/3
+  cb:block/custom/cook/block/chopping_board/raw_lamb_chops/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_lamb_chops/4
+  cb:block/custom/cook/block/chopping_board/raw_pork_belly/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_pork_belly/0
+  cb:block/custom/cook/block/chopping_board/raw_pork_belly/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_pork_belly/1
+  cb:block/custom/cook/block/chopping_board/raw_pork_belly/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_pork_belly/2
+  cb:block/custom/cook/block/chopping_board/raw_pork_belly/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_pork_belly/3
+  cb:block/custom/cook/block/chopping_board/raw_pork_belly/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_pork_belly/4
+  cb:block/custom/cook/block/chopping_board/raw_rabbit/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_rabbit/0
+  cb:block/custom/cook/block/chopping_board/raw_rabbit/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_rabbit/1
+  cb:block/custom/cook/block/chopping_board/raw_rabbit/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_rabbit/2
+  cb:block/custom/cook/block/chopping_board/raw_rabbit/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_rabbit/3
+  cb:block/custom/cook/block/chopping_board/raw_rabbit/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/raw_rabbit/4
+  cb:block/custom/cook/block/chopping_board/salmon/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/salmon/0
+  cb:block/custom/cook/block/chopping_board/salmon/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/salmon/1
+  cb:block/custom/cook/block/chopping_board/salmon/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/salmon/2
+  cb:block/custom/cook/block/chopping_board/salmon/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/salmon/3
+  cb:block/custom/cook/block/chopping_board/salmon/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/salmon/4
+  cb:block/custom/cook/block/chopping_board/sashimi/0:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/sashimi/0
+  cb:block/custom/cook/block/chopping_board/sashimi/1:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/sashimi/1
+  cb:block/custom/cook/block/chopping_board/sashimi/2:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/sashimi/2
+  cb:block/custom/cook/block/chopping_board/sashimi/3:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/sashimi/3
+  cb:block/custom/cook/block/chopping_board/sashimi/4:
+    material: minecraft:paper
+    model:
+      type: minecraft:model
+      path: minecraft:block/custom/cook/block/chopping_board/sashimi/4

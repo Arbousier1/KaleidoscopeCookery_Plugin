@@ -1,0 +1,596 @@
+accurate_foods:
+  # 石磨：品红色染料（minecraft:magenta_dye）
+  # 材料：绒球葱
+  kaleidoscopecookery:millstone_magenta_dye_from_allium:
+    require: minecraft:allium
+    result: minecraft:magenta_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：紫水晶碎片（minecraft:amethyst_shard）
+  # 材料：紫水晶块
+  kaleidoscopecookery:millstone_amethyst_shard_from_amethyst_block:
+    require: minecraft:amethyst_block
+    result: minecraft:amethyst_shard
+    cook: millstone
+    rotations: 1
+  # 石磨：淡灰色染料（minecraft:light_gray_dye）
+  # 材料：茜草花
+  kaleidoscopecookery:millstone_light_gray_dye_from_azure_bluet:
+    require: minecraft:azure_bluet
+    result: minecraft:light_gray_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制玄武岩（minecraft:polished_basalt）
+  # 材料：玄武岩
+  kaleidoscopecookery:millstone_polished_basalt_from_basalt:
+    require: minecraft:basalt
+    result: minecraft:polished_basalt
+    cook: millstone
+    rotations: 1
+  # 石磨：红色染料（minecraft:red_dye）
+  # 材料：甜菜根
+  kaleidoscopecookery:millstone_red_dye_from_beetroot:
+    require: minecraft:beetroot
+    result: minecraft:red_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：黑色羊毛
+  kaleidoscopecookery:millstone_string_from_black_wool:
+    require: minecraft:black_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制黑石（minecraft:polished_blackstone）
+  # 材料：黑石
+  kaleidoscopecookery:millstone_polished_blackstone_from_blackstone:
+    require: minecraft:blackstone
+    result: minecraft:polished_blackstone
+    cook: millstone
+    rotations: 1
+  # 石磨：淡蓝色染料（minecraft:light_blue_dye）
+  # 材料：兰花
+  kaleidoscopecookery:millstone_light_blue_dye_from_blue_orchid:
+    require: minecraft:blue_orchid
+    result: minecraft:light_blue_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：蓝色羊毛
+  kaleidoscopecookery:millstone_string_from_blue_wool:
+    require: minecraft:blue_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：骨粉（minecraft:bone_meal）
+  # 材料：骨头
+  kaleidoscopecookery:millstone_bone_meal_from_bone:
+    require: minecraft:bone
+    result: minecraft:bone_meal
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：棕色羊毛
+  kaleidoscopecookery:millstone_string_from_brown_wool:
+    require: minecraft:brown_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：绿色染料（minecraft:green_dye）
+  # 材料：仙人掌
+  kaleidoscopecookery:millstone_green_dye_from_cactus:
+    require: minecraft:cactus
+    result: minecraft:green_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：錾制石英块
+  kaleidoscopecookery:millstone_quartz_from_chiseled_quartz_block:
+    require: minecraft:chiseled_quartz_block
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：煤炭（minecraft:coal）
+  # 材料：煤矿石
+  kaleidoscopecookery:millstone_coal_from_coal_ore:
+    require: minecraft:coal_ore
+    result: minecraft:coal
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制深板岩（minecraft:polished_deepslate）
+  # 材料：深板岩圆石
+  kaleidoscopecookery:millstone_polished_deepslate_from_cobbled_deepslate:
+    require: minecraft:cobbled_deepslate
+    result: minecraft:polished_deepslate
+    cook: millstone
+    rotations: 1
+  # 石磨：平滑石头（minecraft:smooth_stone）
+  # 材料：圆石
+  kaleidoscopecookery:millstone_smooth_stone_from_cobblestone:
+    require: minecraft:cobblestone
+    result: minecraft:smooth_stone
+    cook: millstone
+    rotations: 1
+  # 石磨：粗铜（minecraft:raw_copper）
+  # 材料：铜矿石
+  kaleidoscopecookery:millstone_raw_copper_from_copper_ore:
+    require: minecraft:copper_ore
+    result: minecraft:raw_copper
+    cook: millstone
+    rotations: 1
+  # 石磨：蓝色染料（minecraft:blue_dye）
+  # 材料：矢车菊
+  kaleidoscopecookery:millstone_blue_dye_from_cornflower:
+    require: minecraft:cornflower
+    result: minecraft:blue_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：青色羊毛
+  kaleidoscopecookery:millstone_string_from_cyan_wool:
+    require: minecraft:cyan_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：黄色染料（minecraft:yellow_dye）
+  # 材料：蒲公英
+  kaleidoscopecookery:millstone_yellow_dye_from_dandelion:
+    require: minecraft:dandelion
+    result: minecraft:yellow_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制深板岩（minecraft:polished_deepslate）
+  # 材料：深板岩
+  kaleidoscopecookery:millstone_polished_deepslate_from_deepslate:
+    require: minecraft:deepslate
+    result: minecraft:polished_deepslate
+    cook: millstone
+    rotations: 1
+  # 石磨：煤炭（minecraft:coal）
+  # 材料：深层煤矿石
+  kaleidoscopecookery:millstone_coal_from_deepslate_coal_ore:
+    require: minecraft:deepslate_coal_ore
+    result: minecraft:coal
+    cook: millstone
+    rotations: 1
+  # 石磨：粗铜（minecraft:raw_copper）
+  # 材料：深层铜矿石
+  kaleidoscopecookery:millstone_raw_copper_from_deepslate_copper_ore:
+    require: minecraft:deepslate_copper_ore
+    result: minecraft:raw_copper
+    cook: millstone
+    rotations: 1
+  # 石磨：钻石（minecraft:diamond）
+  # 材料：深层钻石矿石
+  kaleidoscopecookery:millstone_diamond_from_deepslate_diamond_ore:
+    require: minecraft:deepslate_diamond_ore
+    result: minecraft:diamond
+    cook: millstone
+    rotations: 1
+  # 石磨：绿宝石（minecraft:emerald）
+  # 材料：深层绿宝石矿石
+  kaleidoscopecookery:millstone_emerald_from_deepslate_emerald_ore:
+    require: minecraft:deepslate_emerald_ore
+    result: minecraft:emerald
+    cook: millstone
+    rotations: 1
+  # 石磨：粗金（minecraft:raw_gold）
+  # 材料：深层金矿石
+  kaleidoscopecookery:millstone_raw_gold_from_deepslate_gold_ore:
+    require: minecraft:deepslate_gold_ore
+    result: minecraft:raw_gold
+    cook: millstone
+    rotations: 1
+  # 石磨：粗铁（minecraft:raw_iron）
+  # 材料：深层铁矿石
+  kaleidoscopecookery:millstone_raw_iron_from_deepslate_iron_ore:
+    require: minecraft:deepslate_iron_ore
+    result: minecraft:raw_iron
+    cook: millstone
+    rotations: 1
+  # 石磨：青金石（minecraft:lapis_lazuli）
+  # 材料：深层青金石矿石
+  kaleidoscopecookery:millstone_lapis_lazuli_from_deepslate_lapis_ore:
+    require: minecraft:deepslate_lapis_ore
+    result: minecraft:lapis_lazuli
+    cook: millstone
+    rotations: 1
+  # 石磨：红石粉（minecraft:redstone）
+  # 材料：深层红石矿石
+  kaleidoscopecookery:millstone_redstone_from_deepslate_redstone_ore:
+    require: minecraft:deepslate_redstone_ore
+    result: minecraft:redstone
+    cook: millstone
+    rotations: 1
+  # 石磨：钻石（minecraft:diamond）
+  # 材料：钻石矿石
+  kaleidoscopecookery:millstone_diamond_from_diamond_ore:
+    require: minecraft:diamond_ore
+    result: minecraft:diamond
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制闪长岩（minecraft:polished_diorite）
+  # 材料：闪长岩
+  kaleidoscopecookery:millstone_polished_diorite_from_diorite:
+    require: minecraft:diorite
+    result: minecraft:polished_diorite
+    cook: millstone
+    rotations: 1
+  # 石磨：绿宝石（minecraft:emerald）
+  # 材料：绿宝石矿石
+  kaleidoscopecookery:millstone_emerald_from_emerald_ore:
+    require: minecraft:emerald_ore
+    result: minecraft:emerald
+    cook: millstone
+    rotations: 1
+  # 石磨：火药（minecraft:gunpowder）
+  # 材料：燧石
+  kaleidoscopecookery:millstone_gunpowder_from_flint:
+    require: minecraft:flint
+    result: minecraft:gunpowder
+    cook: millstone
+    rotations: 1
+  # 石磨：金粒（minecraft:gold_nugget）
+  # 材料：镶金黑石
+  kaleidoscopecookery:millstone_gold_nugget_from_gilded_blackstone:
+    require: minecraft:gilded_blackstone
+    result: minecraft:gold_nugget
+    cook: millstone
+    rotations: 1
+  # 石磨：粗金（minecraft:raw_gold）
+  # 材料：金矿石
+  kaleidoscopecookery:millstone_raw_gold_from_gold_ore:
+    require: minecraft:gold_ore
+    result: minecraft:raw_gold
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制花岗岩（minecraft:polished_granite）
+  # 材料：花岗岩
+  kaleidoscopecookery:millstone_polished_granite_from_granite:
+    require: minecraft:granite
+    result: minecraft:polished_granite
+    cook: millstone
+    rotations: 1
+  # 石磨：沙子（minecraft:sand）
+  # 材料：沙砾
+  kaleidoscopecookery:millstone_sand_from_gravel:
+    require: minecraft:gravel
+    result: minecraft:sand
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：灰色羊毛
+  kaleidoscopecookery:millstone_string_from_gray_wool:
+    require: minecraft:gray_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：绿色羊毛
+  kaleidoscopecookery:millstone_string_from_green_wool:
+    require: minecraft:green_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：粗铁（minecraft:raw_iron）
+  # 材料：铁矿石
+  kaleidoscopecookery:millstone_raw_iron_from_iron_ore:
+    require: minecraft:iron_ore
+    result: minecraft:raw_iron
+    cook: millstone
+    rotations: 1
+  # 石磨：青金石（minecraft:lapis_lazuli）
+  # 材料：青金石矿石
+  kaleidoscopecookery:millstone_lapis_lazuli_from_lapis_ore:
+    require: minecraft:lapis_ore
+    result: minecraft:lapis_lazuli
+    cook: millstone
+    rotations: 1
+  # 石磨：绿色染料（minecraft:green_dye）
+  # 材料：大型蕨
+  kaleidoscopecookery:millstone_green_dye_from_large_fern:
+    require: minecraft:large_fern
+    result: minecraft:green_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：淡蓝色羊毛
+  kaleidoscopecookery:millstone_string_from_light_blue_wool:
+    require: minecraft:light_blue_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：淡灰色羊毛
+  kaleidoscopecookery:millstone_string_from_light_gray_wool:
+    require: minecraft:light_gray_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：品红色染料（minecraft:magenta_dye）
+  # 材料：丁香
+  kaleidoscopecookery:millstone_magenta_dye_from_lilac:
+    require: minecraft:lilac
+    result: minecraft:magenta_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：白色染料（minecraft:white_dye）
+  # 材料：铃兰
+  kaleidoscopecookery:millstone_white_dye_from_lily_of_the_valley:
+    require: minecraft:lily_of_the_valley
+    result: minecraft:white_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：黄绿色羊毛
+  kaleidoscopecookery:millstone_string_from_lime_wool:
+    require: minecraft:lime_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：品红色羊毛
+  kaleidoscopecookery:millstone_string_from_magenta_wool:
+    require: minecraft:magenta_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：金粒（minecraft:gold_nugget）
+  # 材料：下界金矿石
+  kaleidoscopecookery:millstone_gold_nugget_from_nether_gold_ore:
+    require: minecraft:nether_gold_ore
+    result: minecraft:gold_nugget
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：下界石英矿石
+  kaleidoscopecookery:millstone_quartz_from_nether_quartz_ore:
+    require: minecraft:nether_quartz_ore
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：橙色染料（minecraft:orange_dye）
+  # 材料：橙色郁金香
+  kaleidoscopecookery:millstone_orange_dye_from_orange_tulip:
+    require: minecraft:orange_tulip
+    result: minecraft:orange_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：橙色羊毛
+  kaleidoscopecookery:millstone_string_from_orange_wool:
+    require: minecraft:orange_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：淡灰色染料（minecraft:light_gray_dye）
+  # 材料：滨菊
+  kaleidoscopecookery:millstone_light_gray_dye_from_oxeye_daisy:
+    require: minecraft:oxeye_daisy
+    result: minecraft:light_gray_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：粉红色染料（minecraft:pink_dye）
+  # 材料：牡丹
+  kaleidoscopecookery:millstone_pink_dye_from_peony:
+    require: minecraft:peony
+    result: minecraft:pink_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：粉红色染料（minecraft:pink_dye）
+  # 材料：粉红色花簇
+  kaleidoscopecookery:millstone_pink_dye_from_pink_petals:
+    require: minecraft:pink_petals
+    result: minecraft:pink_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：粉红色染料（minecraft:pink_dye）
+  # 材料：粉红色郁金香
+  kaleidoscopecookery:millstone_pink_dye_from_pink_tulip:
+    require: minecraft:pink_tulip
+    result: minecraft:pink_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：粉红色羊毛
+  kaleidoscopecookery:millstone_string_from_pink_wool:
+    require: minecraft:pink_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：青色染料（minecraft:cyan_dye）
+  # 材料：瓶子草
+  kaleidoscopecookery:millstone_cyan_dye_from_pitcher_plant:
+    require: minecraft:pitcher_plant
+    result: minecraft:cyan_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：红色染料（minecraft:red_dye）
+  # 材料：虞美人
+  kaleidoscopecookery:millstone_red_dye_from_poppy:
+    require: minecraft:poppy
+    result: minecraft:red_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：紫色羊毛
+  kaleidoscopecookery:millstone_string_from_purple_wool:
+    require: minecraft:purple_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：石英块
+  kaleidoscopecookery:millstone_quartz_from_quartz_block:
+    require: minecraft:quartz_block
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：石英砖
+  kaleidoscopecookery:millstone_quartz_from_quartz_bricks:
+    require: minecraft:quartz_bricks
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：石英柱
+  kaleidoscopecookery:millstone_quartz_from_quartz_pillar:
+    require: minecraft:quartz_pillar
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：平滑红砂岩（minecraft:smooth_red_sandstone）
+  # 材料：红沙
+  kaleidoscopecookery:millstone_smooth_red_sandstone_from_red_sand:
+    require: minecraft:red_sand
+    result: minecraft:smooth_red_sandstone
+    cook: millstone
+    rotations: 1
+  # 石磨：平滑红砂岩（minecraft:smooth_red_sandstone）
+  # 材料：红砂岩
+  kaleidoscopecookery:millstone_smooth_red_sandstone_from_red_sandstone:
+    require: minecraft:red_sandstone
+    result: minecraft:smooth_red_sandstone
+    cook: millstone
+    rotations: 1
+  # 石磨：红色染料（minecraft:red_dye）
+  # 材料：红色郁金香
+  kaleidoscopecookery:millstone_red_dye_from_red_tulip:
+    require: minecraft:red_tulip
+    result: minecraft:red_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：红色羊毛
+  kaleidoscopecookery:millstone_string_from_red_wool:
+    require: minecraft:red_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：红石粉（minecraft:redstone）
+  # 材料：红石矿石
+  kaleidoscopecookery:millstone_redstone_from_redstone_ore:
+    require: minecraft:redstone_ore
+    result: minecraft:redstone
+    cook: millstone
+    rotations: 1
+  # 石磨：红色染料（minecraft:red_dye）
+  # 材料：玫瑰丛
+  kaleidoscopecookery:millstone_red_dye_from_rose_bush:
+    require: minecraft:rose_bush
+    result: minecraft:red_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：平滑砂岩（minecraft:smooth_sandstone）
+  # 材料：沙子
+  kaleidoscopecookery:millstone_smooth_sandstone_from_sand:
+    require: minecraft:sand
+    result: minecraft:smooth_sandstone
+    cook: millstone
+    rotations: 1
+  # 石磨：平滑砂岩（minecraft:smooth_sandstone）
+  # 材料：砂岩
+  kaleidoscopecookery:millstone_smooth_sandstone_from_sandstone:
+    require: minecraft:sandstone
+    result: minecraft:smooth_sandstone
+    cook: millstone
+    rotations: 1
+  # 石磨：绿色染料（minecraft:green_dye）
+  # 材料：蕨
+  kaleidoscopecookery:millstone_green_dye_from_fern:
+    require: minecraft:fern
+    result: minecraft:green_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制玄武岩（minecraft:polished_basalt）
+  # 材料：平滑玄武岩
+  kaleidoscopecookery:millstone_polished_basalt_from_smooth_basalt:
+    require: minecraft:smooth_basalt
+    result: minecraft:polished_basalt
+    cook: millstone
+    rotations: 1
+  # 石磨：磨制安山岩（minecraft:polished_andesite）
+  # 材料：安山岩
+  kaleidoscopecookery:millstone_polished_andesite_from_andesite:
+    require: minecraft:andesite
+    result: minecraft:polished_andesite
+    cook: millstone
+    rotations: 1
+  # 石磨：下界石英（minecraft:quartz）
+  # 材料：平滑石英块
+  kaleidoscopecookery:millstone_quartz_from_smooth_quartz:
+    require: minecraft:smooth_quartz
+    result: minecraft:quartz
+    cook: millstone
+    rotations: 1
+  # 石磨：圆石（minecraft:cobblestone）
+  # 材料：石头
+  kaleidoscopecookery:millstone_cobblestone_from_stone:
+    require: minecraft:stone
+    result: minecraft:cobblestone
+    cook: millstone
+    rotations: 1
+  # 石磨：黄色染料（minecraft:yellow_dye）
+  # 材料：向日葵
+  kaleidoscopecookery:millstone_yellow_dye_from_sunflower:
+    require: minecraft:sunflower
+    result: minecraft:yellow_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：橙色染料（minecraft:orange_dye）
+  # 材料：火把花
+  kaleidoscopecookery:millstone_orange_dye_from_torchflower:
+    require: minecraft:torchflower
+    result: minecraft:orange_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：白色染料（minecraft:white_dye）
+  # 材料：白色郁金香
+  kaleidoscopecookery:millstone_white_dye_from_white_tulip:
+    require: minecraft:white_tulip
+    result: minecraft:white_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：白色羊毛
+  kaleidoscopecookery:millstone_string_from_white_wool:
+    require: minecraft:white_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：黑色染料（minecraft:black_dye）
+  # 材料：凋灵玫瑰
+  kaleidoscopecookery:millstone_black_dye_from_wither_rose:
+    require: minecraft:wither_rose
+    result: minecraft:black_dye
+    cook: millstone
+    rotations: 1
+  # 石磨：线（minecraft:string）
+  # 材料：黄色羊毛
+  kaleidoscopecookery:millstone_string_from_yellow_wool:
+    require: minecraft:yellow_wool
+    result: minecraft:string
+    cook: millstone
+    rotations: 1
+  # 石磨：面粉（kaleidoscopecookery:flour）
+  # 材料：小麦
+  kaleidoscopecookery:millstone_flour_from_wheat:
+    require: minecraft:wheat
+    result: kaleidoscopecookery:flour
+    cook: millstone
+    rotations: 1
+  # 石磨：油脂（kaleidoscopecookery:oil）
+  # 材料：小麦种子
+  kaleidoscopecookery:millstone_oil_from_seeds:
+    require: minecraft:wheat_seeds
+    result: kaleidoscopecookery:oil
+    cook: millstone
+    rotations: 1
+  # 石磨：稻米（kaleidoscopecookery:rice）
+  # 材料：稻穗
+  kaleidoscopecookery:millstone_rice_from_rice_panicle:
+    require: kaleidoscopecookery:rice_panicle
+    result: kaleidoscopecookery:rice
+    cook: millstone
+    rotations: 1

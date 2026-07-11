@@ -1,0 +1,131 @@
+items:
+
+# 石磨
+  kaleidoscopecookery:new_millstone:  
+    material: nether_brick  
+    data:  
+      item-name: <!i><lang:item.kaleidoscopecookery.new_millstone>
+    texture: minecraft:item/custom/cook/millstone  
+    behavior:  
+      type: furniture_item  
+      rules:  
+        ground:
+          rotation: four
+          alignment: CENTER  
+      furniture:  
+        settings:  
+          item: kaleidoscopecookery:new_millstone  
+          hit_times: 3  
+          sounds:  
+            break: minecraft:block.metal.break  
+            place: minecraft:block.metal.place  
+            hit: minecraft:block.metal.hit  
+        behavior:  
+          - type: kaleidoscopecookery:millstone
+        loot:  
+          template: default:loot_table/furniture  
+          arguments:  
+            item: kaleidoscopecookery:new_millstone  
+        variants:  
+          ground: 
+            loot_spawn_offset: 0,0,0.3  
+            elements:  
+              - type: item_display  
+                item: show:new_millstone  
+                position: 0,0.5,0   
+                billboard: fixed  
+            hitboxes:  
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0.5,0,0.5 
+                scale: 0.95
+                peek: 0
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0.5,0,-0.5 
+                scale: 0.95
+                peek: 0
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.5,0,-0.5 
+                scale: 0.95
+                peek: 0
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.5,0,0.5 
+                scale: 0.95
+                peek: 0
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0,1,0 
+                scale: 0.68
+                peek: 100
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+
+      
+#石磨
+#  show:millstone:
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/millstone
+#  show:millstone_stone:
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/millstone_stone
+#  show:millstone_stick:
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/millstone_stick
+#  show:millstone_stick2:
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/millstone_stick2
+      
+  show:new_millstone:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/new_millstone
+
+  show:new_millstone_stone:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/new_millstone_stone
+
+  show:new_millstone_stick:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/new_millstone_stick
+
+  show:new_millstone_stick2:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/new_millstone_stick2

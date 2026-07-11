@@ -1,0 +1,58 @@
+# 配置：炒锅食材分类和炒锅配方。
+# ========== 炒锅分类食材 ==========
+pot_food_raw:
+  meat:
+    - minecraft:beef
+    - minecraft:porkchop
+    - minecraft:chicken
+    - minecraft:rabbit
+  vegetable:
+    - minecraft:carrot
+    - minecraft:potato
+  rubbish:
+    - minecraft:rotten_flesh
+
+# ========== 炒锅模糊配方 ==========
+pot_flex_foods:
+  # 炒锅：牛排（minecraft:cooked_beef）
+  # 材料：生牛肉
+  kaleidoscopecookery:pot_cooked_beef:
+    result: minecraft:cooked_beef
+    require:
+      - minecraft:beef
+    raw:
+      - "meat 1"
+      - "vegetable 0"
+      - "rubbish 0"
+    preferred:
+      - minecraft:potato
+      - minecraft:carrot
+    unpreferred:
+      - minecraft:rotten_flesh
+    lore:
+      - require: minecraft:potato 1
+        data: "<dark_gray><lang:lore.kaleidoscopecookery.recipe.potato_plain>"
+      - when:
+          - require: minecraft:potato 3
+        data:
+          - "<gold><lang:lore.kaleidoscopecookery.recipe.potato_maniac>"
+          - "<dark_gray><lang:lore.kaleidoscopecookery.recipe.second_line>"
+      - when:
+          - require: minecraft:potato 1
+          - require: minecraft:carrot 1
+        unpreferred: false
+        data: "<green><lang:lore.kaleidoscopecookery.recipe.potato_carrot>"
+      - require: minecraft:rotten_flesh 1
+        data: "<dark_gray><lang:lore.kaleidoscopecookery.recipe.rotten_taste>"
+      - when:
+          - require: minecraft:rotten_flesh 2
+        data: "<red><lang:lore.kaleidoscopecookery.recipe.too_rotten>"
+
+  # 炒锅：熟兔肉（minecraft:cooked_rabbit）
+  # 材料：生兔肉
+  kaleidoscopecookery:pot_cooked_rabbit:
+    result: minecraft:cooked_rabbit
+    require:
+      - minecraft:rabbit
+    raw:
+      - "meat 1"

@@ -19,7 +19,7 @@ jobs:
   build:
     name: CraftEngine main compatibility
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Check out repository
@@ -71,6 +71,15 @@ jobs:
           --stacktrace
           --no-daemon
 
+      - name: Build latest CraftEngine server plugin
+        working-directory: craft-engine
+        run: >-
+          bash ./gradlew
+          :bukkit:loader:shadowJar
+          -Dorg.gradle.jvmargs=-Xmx4G
+          --stacktrace
+          --no-daemon
+
       - name: Build and test against latest CraftEngine source
         run: >-
           bash ./gradlew build
@@ -87,12 +96,56 @@ jobs:
           echo "- Version: \`${{ steps.craft_engine.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- Commit: \`${{ steps.craft_engine.outputs.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Prepare CraftEngine resource-pack integration test
+        shell: bash
+        run: |
+          mkdir -p run/plugins/CraftEngine/resources
+          mkdir -p run/plugins/KaleidoscopeCookeryPlugin
+          cp craft-engine/target/craft-engine-bukkit-plugin-*.jar run/plugins/
+          cp -R craft-engine-pack/custom run/plugins/CraftEngine/resources/custom
+          cat > run/plugins/KaleidoscopeCookeryPlugin/config.yml <<'EOF'
+          console:
+            language: en_us
+          metrics:
+            enabled: false
+          EOF
+          echo 'eula=true' > run/eula.txt
+
+      - name: Load plugin and resource pack on Paper
+        shell: bash
+        run: |
+          set +e
+          timeout --signal=INT --kill-after=30s 180s bash ./gradlew runServer \
+            -PcraftEngineVersion=${{ steps.craft_engine.outputs.version }} \
+            -PcraftEngineNmsHelperVersion=${{ steps.craft_engine.outputs.nms_helper_version }} \
+            --stacktrace --no-daemon
+          status=$?
+          set -e
+          if [[ $status -ne 0 && $status -ne 124 ]]; then
+            exit "$status"
+          fi
+          test -f run/logs/latest.log
+          grep -F 'CraftEngine block registry check passed' run/logs/latest.log
+          if grep -E 'Found [1-9][0-9]* issue\(s\)|CraftEngine block registry check failed' run/logs/latest.log; then
+            echo 'CraftEngine reported resource configuration errors.' >&2
+            exit 1
+          fi
+
       - name: Upload plugin JAR
         if: success()
         uses: actions/upload-artifact@v4
         with:
           name: KaleidoscopeCookeryPlugin-${{ github.sha }}
           path: build/libs/*.jar
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload CraftEngine pack
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KaleidoscopeCookery-CraftEngine-pack-${{ github.sha }}
+          path: craft-engine-pack/custom
           if-no-files-found: error
           retention-days: 14
 
@@ -104,5 +157,6 @@ jobs:
           path: |
             build/reports/**
             build/test-results/**
+            run/logs/**
           if-no-files-found: ignore
           retention-days: 7

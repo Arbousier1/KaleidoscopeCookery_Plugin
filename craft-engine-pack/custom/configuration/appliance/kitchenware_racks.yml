@@ -1,0 +1,76 @@
+items:
+
+# 厨具架
+  kaleidoscopecookery:kitchenware_racks:        
+    material: nether_brick        
+    data:        
+      item-name: <!i><lang:item.kaleidoscopecookery.kitchenware_racks>      
+    model: minecraft:block/custom/cook/block/kitchenware_racks       
+    behavior:        
+      type: block_item        
+      block:        
+        loot:        
+          template: default:loot_table/self        
+        settings:        
+          template:        
+            - default:sound/metal        
+          overrides:        
+            hardness: 3.0        
+            resistance: 4.5        
+            replaceable: false        
+            is-redstone-conductor: true        
+            is-suffocating: true        
+            instrument: basedrum        
+            map-color: 15        
+            tags:        
+              - minecraft:mineable/pickaxe        
+            correct-tools:        
+              template: default:pickaxe_power/level_1     
+        behaviors:  
+          - type: kaleidoscopecookery:kitchenware_racks
+          - type: directional_attached_block
+        states:        
+          properties:        
+            facing:        
+              type: 4-direction        
+              default: north        
+          appearances:        
+            north:        
+              state: iron_trapdoor[facing=north, open=true, half=bottom, powered=true]  
+              transparent: true 
+              entity-renderer:        
+                item: show:kitchenware_racks       
+                yaw: 180        
+            south:        
+              state: iron_trapdoor[facing=south, open=true, half=bottom, powered=true]      
+              transparent: true 
+              entity-renderer:        
+                item: show:kitchenware_racks       
+            east:        
+              state: iron_trapdoor[facing=east, open=true, half=bottom, powered=true]      
+              transparent: true 
+              entity-renderer:        
+                item: show:kitchenware_racks        
+                yaw: -90      
+            west:        
+              state: iron_trapdoor[facing=west, open=true, half=bottom, powered=true]  
+              transparent: true 
+              entity-renderer:        
+                item: show:kitchenware_racks       
+                yaw: 90        
+          variants:        
+            facing=north:        
+              appearance: north        
+            facing=south:        
+              appearance: south        
+            facing=east:        
+              appearance: east        
+            facing=west:        
+              appearance: west
+
+      
+# 厨具架子
+  show:kitchenware_racks:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/kitchenware_racks

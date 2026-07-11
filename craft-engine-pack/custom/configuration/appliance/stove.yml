@@ -1,0 +1,126 @@
+items:
+              
+  kaleidoscopecookery:stove:          
+    material: nether_brick          
+    data:          
+      item-name: <!i><lang:item.kaleidoscopecookery.stove>        
+    model: minecraft:block/custom/cook/block/stove         
+    behavior:          
+      type: block_item          
+      block:          
+        loot:          
+          template: default:loot_table/self          
+        settings:          
+          template:          
+            - default:sound/metal          
+          overrides:          
+            hardness: 3.0          
+            resistance: 4.5          
+            replaceable: false          
+            is-redstone-conductor: true          
+            is-suffocating: true          
+            instrument: basedrum          
+            map-color: 15          
+            tags:          
+              - minecraft:mineable/pickaxe          
+            correct-tools:          
+              template: default:pickaxe_power/level_1  
+        behaviors:  
+          - type: kaleidoscopecookery:stove  
+            particle_interval: 20
+            particle_count: 3
+        states:          
+          properties:          
+            facing:          
+              type: 4-direction          
+              default: north  
+            lit:  
+              type: boolean  
+              default: false  
+          appearances:          
+            north:          
+              state: barrier    
+              entity-renderer:          
+                item: show:stove          
+                yaw: 180          
+            south:          
+              state: barrier       
+              entity-renderer:          
+                item: show:stove        
+            east:          
+              state: barrier        
+              entity-renderer:          
+                item: show:stove         
+                yaw: -90        
+            west:          
+              state: barrier    
+              entity-renderer:          
+                item: show:stove   
+                yaw: 90  
+            north_lit:  
+              state: barrier  
+              entity-renderer:  
+                item: show:stove_lit  
+                yaw: 180  
+            south_lit:  
+              state: barrier  
+              entity-renderer:  
+                item: show:stove_lit  
+            east_lit:  
+              state: barrier  
+              entity-renderer:  
+                item: show:stove_lit  
+                yaw: -90  
+            west_lit:  
+              state: barrier  
+              entity-renderer:  
+                item: show:stove_lit  
+                yaw: 90  
+          variants:          
+            facing=north,lit=false:          
+              appearance: north          
+            facing=south,lit=false:          
+              appearance: south          
+            facing=east,lit=false:          
+              appearance: east          
+            facing=west,lit=false:          
+              appearance: west  
+            facing=north,lit=true:  
+              appearance: north_lit  
+            facing=south,lit=true:  
+              appearance: south_lit  
+            facing=east,lit=true:  
+              appearance: east_lit  
+            facing=west,lit=true:  
+              appearance: west_lit
+
+
+# 以下为方块实体的显示物品，无实际用途 
+# 热源
+  show:stove:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stove
+
+  show:stove_lit:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stove_lit
+
+      
+  show:stove_finished:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stove_finished
+
+      
+  show:stove_lava:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stove_lava
+
+      
+  show:stove_water:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stove_water

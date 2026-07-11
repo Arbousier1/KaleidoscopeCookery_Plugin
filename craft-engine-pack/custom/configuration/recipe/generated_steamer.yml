@@ -1,0 +1,25 @@
+accurate_foods:
+  # 蒸笼：包子（kaleidoscopecookery:baozi）
+  # 材料：裹馅面食
+  kaleidoscopecookery:steamer_baozi_from_stuffed_dough_food:
+    require: kaleidoscopecookery:stuffed_dough_food
+    result: kaleidoscopecookery:baozi
+    cook: steamer
+  # 蒸笼：馒头（kaleidoscopecookery:mantou）
+  # 材料：生面团
+  kaleidoscopecookery:steamer_mantou_from_dough_tag:
+    require: kaleidoscopecookery:raw_dough
+    result: kaleidoscopecookery:mantou
+    cook: steamer
+  # 蒸笼：青团（kaleidoscopecookery:qingtuan）
+  # 材料：黏液球
+  kaleidoscopecookery:steamer_qingtuan_from_slime_ball:
+    require: minecraft:slime_ball
+    result: kaleidoscopecookery:qingtuan
+    cook: steamer
+  # 蒸笼：熟竹筒饭（kaleidoscopecookery:bamboo_tube_rice）
+  # 材料：生竹筒饭
+  kaleidoscopecookery:steamer_bamboo_tube_rice_from_raw_bamboo_tube_rice:
+    require: kaleidoscopecookery:raw_bamboo_tube_rice
+    result: kaleidoscopecookery:bamboo_tube_rice
+    cook: steamer

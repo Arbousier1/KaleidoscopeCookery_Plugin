@@ -1,0 +1,272 @@
+pot_flex_foods:
+  # 炒锅：驴肉火烧（kaleidoscopecookery:donkey_burger）
+  # 材料：生切制小肉 x2、生面团 x2、红辣椒 x2
+  kaleidoscopecookery:pot_donkey_burger_from_chilipepper_dough_meat:
+    result: kaleidoscopecookery:donkey_burger
+    require:
+      - "kaleidoscopecookery:red_chili 2"
+      - "kaleidoscopecookery:raw_dough 2"
+      - "kaleidoscopecookery:raw_cut_small_meats 2"
+  # 炒锅：蛋炒饭（kaleidoscopecookery:egg_fried_rice）
+  # 材料：米饭、鸡蛋 x2
+  kaleidoscopecookery:pot_egg_fried_rice_from_eggs_rice:
+    result: kaleidoscopecookery:egg_fried_rice
+    require:
+      - "minecraft:egg 2"
+      - "kaleidoscopecookery:cooked_rice 1"
+  # 炒锅：番茄炒蛋（kaleidoscopecookery:scramble_egg_with_tomatoes）
+  # 材料：番茄 x3、鸡蛋 x3
+  kaleidoscopecookery:pot_scramble_egg_with_tomatoes_from_eggs_tomato:
+    result: kaleidoscopecookery:scramble_egg_with_tomatoes
+    require:
+      - "minecraft:egg 3"
+      - "kaleidoscopecookery:tomato 3"
+  # 炒锅：红烧牛肉（kaleidoscopecookery:braised_beef）
+  # 材料：生牛肉 x3、红辣椒 x3
+  kaleidoscopecookery:pot_braised_beef_from_rawbeef_redchili:
+    result: kaleidoscopecookery:braised_beef
+    require:
+      - "minecraft:beef 3"
+      - "kaleidoscopecookery:red_chili 3"
+  # 炒锅：青椒炒肉（kaleidoscopecookery:stir_fried_pork_with_peppers）
+  # 材料：生猪排 x3、青辣椒 x3
+  kaleidoscopecookery:pot_stir_fried_pork_with_peppers_from_greenchili_rawpork:
+    result: kaleidoscopecookery:stir_fried_pork_with_peppers
+    require:
+      - "kaleidoscopecookery:green_chili 3"
+      - "minecraft:porkchop 3"
+  # 炒锅：糖醋里脊（kaleidoscopecookery:sweet_and_sour_pork）
+  # 材料：生猪排 x3、糖 x3
+  kaleidoscopecookery:pot_sweet_and_sour_pork_from_sugar_rawpork:
+    result: kaleidoscopecookery:sweet_and_sour_pork
+    require:
+      - "minecraft:sugar 3"
+      - "minecraft:porkchop 3"
+  # 炒锅：鱼香肉丝（kaleidoscopecookery:fish_flavored_shredded_pork）
+  # 材料：棕色蘑菇 x2、生猪排 x2、红辣椒 x2
+  kaleidoscopecookery:pot_fish_flavored_shredded_pork_from_mushroom_rawpork_chili:
+    result: kaleidoscopecookery:fish_flavored_shredded_pork
+    require:
+      - "minecraft:brown_mushroom 2"
+      - "minecraft:porkchop 2"
+      - "kaleidoscopecookery:red_chili 2"
+  # 炒锅：牛皮糖（kaleidoscopecookery:sticky_candy）
+  # 材料：皮革、糖 x4
+  kaleidoscopecookery:pot_sticky_candy_from_leather_sugar:
+    result: kaleidoscopecookery:sticky_candy
+    require:
+      - "minecraft:leather 1"
+      - "minecraft:sugar 4"
+  # 炒锅：翻糖派（cook:fondant_pie）
+  # 材料：南瓜派 x4、糖 x4
+  kaleidoscopecookery:pot_pot_fondant_pie:
+    result: cook:fondant_pie
+    require:
+      - "minecraft:sugar 4"
+      - "minecraft:pumpkin_pie 4"
+  # 炒锅：东坡肉（cook:dongpo_pork）
+  # 材料：生猪排 x6、竹子 x2
+  kaleidoscopecookery:pot_pot_dongpo_pork:
+    result: cook:dongpo_pork
+    require:
+      - "minecraft:bamboo 2"
+      - "minecraft:porkchop 6"
+  # 炒锅：翻糖蛛眼（cook:fondant_spider_eye）
+  # 材料：糖 x4、蜘蛛眼 x4
+  kaleidoscopecookery:pot_pot_fondant_spider_eye:
+    result: cook:fondant_spider_eye
+    require:
+      - "minecraft:sugar 4"
+      - "minecraft:spider_eye 4"
+  # 炒锅：荷包紫颂烧（cook:chorus_fried_egg）
+  # 材料：紫颂果 x3、鸡蛋 x3
+  kaleidoscopecookery:pot_pot_chorus_fried_egg:
+    result: cook:chorus_fried_egg
+    require:
+      - "minecraft:chorus_fruit 3"
+      - "minecraft:egg 3"
+  # 炒锅：辣子鸡（cook:spicy_chicken）
+  # 材料：生鸡肉 x4、红辣椒 x4
+  kaleidoscopecookery:pot_pot_spicy_chicken:
+    result: cook:spicy_chicken
+    require:
+      - "minecraft:chicken 4"
+      - "kaleidoscopecookery:red_chili 4"
+  # 炒锅：香煎骑士牛排（cook:pan_seared_knight_steak）
+  # 材料：甜浆果 x3、生牛肉 x2、骨头 x3
+  kaleidoscopecookery:pot_pot_pan_seared_knight_steak:
+    result: cook:pan_seared_knight_steak
+    require:
+      - "minecraft:bone 3"
+      - "minecraft:sweet_berries 3"
+      - "minecraft:beef 2"
+  # 炒锅：仰望星空派（cook:stargazy_pie）
+  # 材料：南瓜派、生鳕鱼 x5
+  kaleidoscopecookery:pot_pot_stargazy_pie:
+    result: cook:stargazy_pie
+    require:
+      - "minecraft:pumpkin_pie 1"
+      - "minecraft:cod 5"
+  # 炒锅：珍珠咕噜肉（cook:sweet_and_sour_ender_pearls）
+  # 材料：末影之眼、末影珍珠 x2
+  kaleidoscopecookery:pot_pot_sweet_and_sour_ender_pearls:
+    result: cook:sweet_and_sour_ender_pearls
+    require:
+      - "minecraft:ender_pearl 2"
+      - "minecraft:ender_eye 1"
+  # 炒锅：水晶羊排（cook:crystal_lamb_chop）
+  # 材料：生羊肉 x3、紫水晶碎片 x3
+  kaleidoscopecookery:pot_pot_crystal_lamb_chop:
+    result: cook:crystal_lamb_chop
+    require:
+      - "minecraft:amethyst_shard 3"
+      - "minecraft:mutton 3"
+  # 炒锅：烈焰羊排（cook:blaze_lamb_chop）
+  # 材料：烈焰粉 x3、生羊肉 x3
+  kaleidoscopecookery:pot_pot_blaze_lamb_chop:
+    result: cook:blaze_lamb_chop
+    require:
+      - "minecraft:blaze_powder 3"
+      - "minecraft:mutton 3"
+  # 炒锅：凛冬羊排（cook:frost_lamb_chop）
+  # 材料：生羊肉 x3、蓝冰 x3
+  kaleidoscopecookery:pot_pot_frost_lamb_chop:
+    result: cook:frost_lamb_chop
+    require:
+      - "minecraft:blue_ice 3"
+      - "minecraft:mutton 3"
+  # 炒锅：拔丝土豆（cook:candied_potato）
+  # 材料：糖 x2、马铃薯 x4
+  kaleidoscopecookery:pot_pot_candied_potato:
+    result: cook:candied_potato
+    require:
+      - "minecraft:potato 4"
+      - "minecraft:sugar 2"
+  # 炒锅：虎皮青椒酿肉（cook:stuffed_tiger_skin_pepper）
+  # 材料：生切制小肉 x4、青辣椒 x4
+  kaleidoscopecookery:pot_pot_stuffed_tiger_skin_pepper:
+    result: cook:stuffed_tiger_skin_pepper
+    require:
+      - "kaleidoscopecookery:green_chili 4"
+      - "kaleidoscopecookery:raw_cut_small_meats 4"
+  # 炒锅：麻辣兔头（cook:spicy_rabbit_head）
+  # 材料：生兔肉 x3、红辣椒 x3
+  kaleidoscopecookery:pot_pot_spicy_rabbit_head:
+    result: cook:spicy_rabbit_head
+    require:
+      - "minecraft:rabbit 3"
+      - "kaleidoscopecookery:red_chili 3"
+  # 炒锅：油炸猪儿虫（cook:fried_caterpillar）
+  # 材料：猪儿虫 x3
+  kaleidoscopecookery:pot_pot_fried_caterpillar:
+    result: cook:fried_caterpillar
+    require:
+      - "kaleidoscopecookery:caterpillar 3"
+  # 炒锅：炸春卷（cook:fried_spring_roll）
+  # 材料：幻翼膜 x2、棕色蘑菇 x2、生猪排 x4
+  kaleidoscopecookery:pot_pot_fried_spring_roll:
+    result: cook:fried_spring_roll
+    require:
+      - "minecraft:phantom_membrane 2"
+      - "minecraft:porkchop 4"
+      - "minecraft:brown_mushroom 2"
+  # 炒锅：油泼鱼（cook:oil_splashed_fish）
+  # 材料：生鳕鱼 x6、红辣椒 x2
+  kaleidoscopecookery:pot_pot_oil_splashed_fish:
+    result: cook:oil_splashed_fish
+    require:
+      - "minecraft:cod 6"
+      - "kaleidoscopecookery:red_chili 2"
+  # 炒锅：红烧排骨（cook:braised_pork_ribs）
+  # 材料：生猪排 x4、骨头 x4
+  kaleidoscopecookery:pot_pot_braised_pork_ribs:
+    result: cook:braised_pork_ribs
+    require:
+      - "minecraft:bone 4"
+      - "minecraft:porkchop 4"
+  # 炒锅：黏液饭（cook:slime_ball_meal）
+  # 材料：黏液球 x6
+  kaleidoscopecookery:pot_pot_slime_ball_meal:
+    result: cook:slime_ball_meal
+    require:
+      - "minecraft:slime_ball 6"
+  kaleidoscopecookery:pot_simple_baked_potato:
+    result: minecraft:baked_potato
+    require:
+      - "minecraft:potato 1"
+  kaleidoscopecookery:pot_simple_dried_kelp:
+    result: minecraft:dried_kelp
+    require:
+      - "minecraft:kelp 1"
+  kaleidoscopecookery:pot_simple_popped_chorus_fruit:
+    result: minecraft:popped_chorus_fruit
+    require:
+      - "minecraft:chorus_fruit 1"
+  kaleidoscopecookery:pot_simple_fried_egg_from_egg:
+    result: kaleidoscopecookery:fried_egg
+    require:
+      - "minecraft:egg 1"
+  kaleidoscopecookery:pot_simple_fried_egg_from_turtle_egg:
+    result: kaleidoscopecookery:fried_egg
+    require:
+      - "minecraft:turtle_egg 1"
+  kaleidoscopecookery:pot_simple_fried_egg_from_fried_egg:
+    result: kaleidoscopecookery:fried_egg
+    require:
+      - "kaleidoscopecookery:fried_egg 1"
+  kaleidoscopecookery:pot_simple_cooked_beef:
+    result: minecraft:cooked_beef
+    require:
+      - "minecraft:beef 1"
+  kaleidoscopecookery:pot_simple_cooked_chicken:
+    result: minecraft:cooked_chicken
+    require:
+      - "minecraft:chicken 1"
+  kaleidoscopecookery:pot_simple_cooked_cod:
+    result: minecraft:cooked_cod
+    require:
+      - "minecraft:cod 1"
+  kaleidoscopecookery:pot_simple_cooked_salmon:
+    result: minecraft:cooked_salmon
+    require:
+      - "minecraft:salmon 1"
+  kaleidoscopecookery:pot_simple_cooked_mutton:
+    result: minecraft:cooked_mutton
+    require:
+      - "minecraft:mutton 1"
+  kaleidoscopecookery:pot_simple_cooked_porkchop:
+    result: minecraft:cooked_porkchop
+    require:
+      - "minecraft:porkchop 1"
+  kaleidoscopecookery:pot_simple_cooked_rabbit:
+    result: minecraft:cooked_rabbit
+    require:
+      - "minecraft:rabbit 1"
+  kaleidoscopecookery:pot_simple_cooked_lamb_chops:
+    result: kaleidoscopecookery:cooked_lamb_chops
+    require:
+      - "kaleidoscopecookery:raw_lamb_chops 1"
+  kaleidoscopecookery:pot_simple_cooked_cow_offal:
+    result: kaleidoscopecookery:cooked_cow_offal
+    require:
+      - "kaleidoscopecookery:raw_cow_offal 1"
+  kaleidoscopecookery:pot_simple_cooked_pork_belly:
+    result: kaleidoscopecookery:cooked_pork_belly
+    require:
+      - "kaleidoscopecookery:raw_pork_belly 1"
+  kaleidoscopecookery:pot_simple_cooked_cut_small_meats:
+    result: kaleidoscopecookery:cooked_cut_small_meats
+    require:
+      - "kaleidoscopecookery:raw_cut_small_meats 1"
+  kaleidoscopecookery:pot_simple_cooked_meatball:
+    result: kaleidoscopecookery:cooked_meatball
+    require:
+      - "kaleidoscopecookery:raw_meatball 1"
+  kaleidoscopecookery:pot_simple_meat_pie:
+    result: kaleidoscopecookery:meat_pie
+    require:
+      - "kaleidoscopecookery:stuffed_dough_food 1"
+  kaleidoscopecookery:pot_simple_sticky_rice_cake:
+    result: kaleidoscopecookery:sticky_rice_cake
+    require:
+      - "kaleidoscopecookery:cooked_rice 1"

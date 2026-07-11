@@ -1,0 +1,128 @@
+sounds:
+#面条
+  kaleidoscopecookery:dough_transform:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.item.dough_transform"
+    sounds:   
+      - name: custom/cook/item/dough_transform
+        volume: 1
+#石磨
+  kaleidoscopecookery:millstone_0:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_0
+        volume: 1
+  kaleidoscopecookery:millstone_1:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_1
+        volume: 1
+  kaleidoscopecookery:millstone_2:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_2
+        volume: 1
+  kaleidoscopecookery:millstone_3:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_3
+        volume: 1
+  kaleidoscopecookery:millstone_4:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_4
+        volume: 1
+  kaleidoscopecookery:millstone_5:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.millstone"
+    sounds:   
+      - name: custom/cook/block/millstone/millstone_5
+        volume: 1
+#汤锅
+  kaleidoscopecookery:stockpot_0:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_0
+        volume: 0.5
+  kaleidoscopecookery:stockpot_1:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_1
+        volume: 0.5
+  kaleidoscopecookery:stockpot_2:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_2
+        volume: 0.5
+  kaleidoscopecookery:stockpot_3:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_3
+        volume: 0.5
+  kaleidoscopecookery:stockpot_4:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_4
+        volume: 0.5
+  kaleidoscopecookery:stockpot_5:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_5
+        volume: 0.5
+  kaleidoscopecookery:stockpot_6:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.stockpot"
+    sounds:   
+      - name: custom/cook/block/stockpot/stockpot_6
+        volume: 0.5
+        
+#垃圾桶
+  kaleidoscopecookery:trashcan:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.trash_can"
+    sounds:   
+      - name: custom/cook/block/trash_can
+        volume: 0.5
+        
+# 茶壶
+  kaleidoscopecookery:teapot_0:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.teapot"
+    sounds:   
+      - name: custom/cook/block/teapot/processing/teapot_0
+        volume: 0.8
+  kaleidoscopecookery:teapot_1:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.teapot"
+    sounds:   
+      - name: custom/cook/block/teapot/processing/teapot_1
+        volume: 0.8
+  kaleidoscopecookery:teapot_2:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.teapot"
+    sounds:   
+      - name: custom/cook/block/teapot/processing/teapot_2
+        volume: 0.8
+  kaleidoscopecookery:teapot_3:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.teapot"
+    sounds:   
+      - name: custom/cook/block/teapot/processing/teapot_3
+        volume: 0.8
+  kaleidoscopecookery:teapot_4:
+    attenuation_distance: 5
+    subtitle: "subtitles.kaleidoscopecookery.block.teapot"
+    sounds:   
+      - name: custom/cook/block/teapot/processing/teapot_4
+        volume: 0.8

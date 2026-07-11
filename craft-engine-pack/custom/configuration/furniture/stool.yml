@@ -1,0 +1,113 @@
+categories:  
+  kaleidoscopecookery:cook_stool:  
+    priority: 10  
+    name: <!i><white><l10n:category.cook_furniture.name></white>  
+    lore:  
+      - <!i><gray><l10n:category.cook_furniture.lore>  
+    icon: kaleidoscopecookery:cook_stool_acacia  
+    list:  
+      - kaleidoscopecookery:cook_stool_acacia  
+      - kaleidoscopecookery:cook_stool_bamboo  
+      - kaleidoscopecookery:cook_stool_birch  
+      - kaleidoscopecookery:cook_stool_cherry  
+      - kaleidoscopecookery:cook_stool_crimson  
+      - kaleidoscopecookery:cook_stool_dark_oak  
+      - kaleidoscopecookery:cook_stool_jungle  
+      - kaleidoscopecookery:cook_stool_mangrove  
+      - kaleidoscopecookery:cook_stool_oak  
+      - kaleidoscopecookery:cook_stool_spruce  
+      - kaleidoscopecookery:cook_stool_warped  
+  
+templates:  
+  kaleidoscopecookery:cook_stool:  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.cook_stool_${wood_type}>  
+    model: minecraft:block/custom/cook/block/cook_stool/${wood_type}  
+    behavior:  
+      type: furniture_item  
+      rules:  
+        ground:  
+          rotation: four  
+          alignment: center  
+      furniture:  
+        events:  
+          - template: default:rotatable_furniture_4  
+        settings:  
+          item: kaleidoscopecookery:cook_stool_${wood_type}  
+          hit_times: 3  
+          sounds:  
+            break: minecraft:block.wood.break  
+            place: minecraft:block.wood.place  
+            hit: minecraft:block.wood.hit  
+        variants:  
+          ground:  
+            loot_spawn_offset: 0.5,0.5,0  
+            elements:  
+              - item: kaleidoscopecookery:cook_stool_${wood_type}  
+                display_transform: none  
+                billboard: fixed  
+                position: 0,0,0  
+                translation: 0,0.5,0  
+                shadow_radius: 0
+                shadow_strength: 0.2  
+            hitboxes:  
+              - position: -0.16,0,0  
+                type: shulker  
+                direction: east  
+                peek: 67  
+                scale: 0.42  
+                blocks_building: true  
+                interactive: true  
+                interaction_entity: true  
+                seats:  
+                  - 0,-0.15,0
+        loot:  
+          template: default:loot_table/furniture  
+          arguments:  
+            item: kaleidoscopecookery:cook_stool_${wood_type}
+
+items:  
+  kaleidoscopecookery:cook_stool_acacia:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: acacia  
+  kaleidoscopecookery:cook_stool_bamboo:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: bamboo  
+  kaleidoscopecookery:cook_stool_birch:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: birch  
+  kaleidoscopecookery:cook_stool_cherry:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: cherry  
+  kaleidoscopecookery:cook_stool_crimson:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: crimson  
+  kaleidoscopecookery:cook_stool_dark_oak:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: dark_oak  
+  kaleidoscopecookery:cook_stool_jungle:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: jungle  
+  kaleidoscopecookery:cook_stool_mangrove:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: mangrove  
+  kaleidoscopecookery:cook_stool_oak:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: oak  
+  kaleidoscopecookery:cook_stool_spruce:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: spruce  
+  kaleidoscopecookery:cook_stool_warped:  
+    template: kaleidoscopecookery:cook_stool  
+    arguments:  
+      wood_type: warped

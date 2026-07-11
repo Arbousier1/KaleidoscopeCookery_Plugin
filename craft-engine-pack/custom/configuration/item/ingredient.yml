@@ -1,0 +1,86 @@
+items:  
+  kaleidoscopecookery:raw_dough:  
+    category: cook:food
+    material: minecraft:paper  
+    data:  
+      item_name: <!i><white><lang:item.kaleidoscopecookery.raw_dough>  
+      components:  
+        minecraft:consumable:  
+          consume_seconds: 3  
+          animation: bow  
+          has_consume_particles: false  
+          sound: minecraft:intentionally_empty
+    model:  
+      type: minecraft:condition  
+      property: minecraft:using_item  
+      on_true:  
+        type: minecraft:range_dispatch  
+        property: minecraft:use_duration  
+        scale: 0.05
+        entries:  
+          - threshold: 0        # 12 ticks (0.6s)    
+            model:  
+              type: minecraft:model
+              path: minecraft:item/custom/cook/food/raw_dough_1  
+          - threshold: 1.2          # 24 ticks (1.2s)  
+            model:  
+              type: minecraft:model  
+              path: minecraft:item/custom/cook/food/raw_dough_2  
+          - threshold: 1.8          # 36 ticks (1.8s)  
+            model:  
+              type: minecraft:model  
+              path: minecraft:item/custom/cook/food/raw_dough_3  
+          - threshold: 2.4          # 48 ticks (2.4s)  
+            model:  
+              type: minecraft:model  
+              path: minecraft:item/custom/cook/food/raw_dough_4  
+        fallback:  
+          type: minecraft:model  
+          path: minecraft:item/custom/cook/food/raw_dough_0  
+      on_false:  
+        type: minecraft:model  
+        path: minecraft:item/custom/cook/food/raw_dough_0  
+    events:  
+      - on: consume  
+        functions:  
+          - type: play_sound  
+            target: self
+            sound: kaleidoscopecookery:dough_transform  
+    settings:  
+      disable_vanilla_behavior: true  
+      consume_replacement: kaleidoscopecookery:raw_noodles  
+  
+  kaleidoscopecookery:raw_noodles:  
+    category: cook:food
+    material: minecraft:paper  
+    data:  
+      item_name: <!i><white><lang:item.kaleidoscopecookery.raw_noodles>  
+    model:  
+      type: minecraft:model  
+      path: minecraft:item/custom/cook/food/raw_noodles  
+      generation:  
+        parent: minecraft:item/generated  
+        textures:  
+          layer0: minecraft:item/custom/cook/food/raw_noodles  
+    settings:  
+      disable_vanilla_behavior: true
+      
+  kaleidoscopecookery:mantou:  
+    category: cook:food
+    material: minecraft:paper  
+    data:  
+      item_name: <!i><white><lang:item.kaleidoscopecookery.mantou>
+    texture: minecraft:item/custom/cook/food/mantou
+    
+#  kaleidoscopecookery:food_bag:
+#    material: bundle                 # 原版收纳袋，自带下方内容显示
+#    data:
+#      item_name: "<!i><gold>收纳袋"
+#      components:
+#        minecraft:consumable:
+#          consume_seconds: 1.6
+#          animation: eat
+#          has_consume_particles: false
+#          can_always_eat: true       # 你要求的：方便测试
+#    behaviors:
+#      - type: kaleidoscopecookery:food_bag

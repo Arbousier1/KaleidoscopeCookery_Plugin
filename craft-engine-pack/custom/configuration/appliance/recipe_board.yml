@@ -1,0 +1,274 @@
+items:
+              
+# 石磨
+#  kaleidoscopecookery:millstone:        
+#    material: nether_brick        
+#    data:        
+#      item-name: <!i>石磨  
+#    texture: minecraft:item/custom/cook/millstone
+#    behavior:        
+#      type: block_item        
+#      block:        
+#        loot:        
+#          template: default:loot_table/self        
+#        settings:        
+#          template:        
+#            - default:sound/metal        
+#          overrides:        
+#            hardness: 0.5        
+#            resistance: 1.0        
+#            replaceable: false        
+#            is-redstone-conductor: false        
+#            is-suffocating: false        
+#            instrument: basedrum        
+#            map-color: 15        
+#            tags:        
+#              - minecraft:mineable/pickaxe        
+#            correct-tools:        
+#              template: default:pickaxe_power/level_1    
+#        behavior:  
+#          - type: kaleidoscopecookery:millstone
+#        states:            
+#          properties:            
+#            facing:            
+#              type: 4-direction            
+#              default: north    
+#          appearances:        
+#            # Without base, no oil  
+#            north:            
+#              state: barrier      
+#              transparent: true       
+#              entity-renderer:        
+#                item: show:millstone         
+#            south:        
+#              state: barrier      
+#              transparent: true       
+#              entity-renderer:        
+#                item: show:millstone  
+#                yaw: 180     
+#            east:        
+#              state: barrier  
+#              transparent: true       
+#              entity-renderer:        
+#                item: show:millstone       
+#                yaw: 90       
+#            west:        
+#              state: barrier     
+#              transparent: true       
+#              entity-renderer:        
+#                item: show:millstone     
+#                yaw: -90    
+#          variants:        
+#            facing=north:      
+#              appearance: north        
+#            facing=south:        
+#              appearance: south        
+#            facing=east:        
+#              appearance: east        
+#            facing=west:        
+#              appearance: west    
+
+# 食谱    
+  kaleidoscopecookery:recipe_item_no_recipe:  
+    material: nether_brick  
+    data:  
+      item-name: <!i><lang:item.kaleidoscopecookery.recipe_item_no_recipe>  
+    texture: minecraft:item/custom/cook/recipe_item_no_recipe  
+    behavior:  
+      type: furniture_item  
+      rules:  
+        wall:  
+          alignment: any  
+      furniture:  
+        settings:  
+          item: kaleidoscopecookery:recipe_item  
+          hit_times: 3  
+          sounds:  
+            break: minecraft:block.metal.break  
+            place: minecraft:block.metal.place  
+            hit: minecraft:block.metal.hit  
+        behavior:  
+          - type: kaleidoscopecookery:recipe_furniture
+        loot:  
+          template: default:loot_table/furniture  
+          arguments:  
+            item: kaleidoscopecookery:recipe_item  
+        variants:  
+          wall:  
+            loot_spawn_offset: 0,0,0.3  
+            elements:  
+              - type: item_display  
+                item: show:recipe_block  
+                position: 0,0,0.5  
+                pitch: 90 
+                billboard: fixed  
+            hitboxes:  
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0.3,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: true  
+                position: 0.2,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false  
+                position: 0.1,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false 
+                position: 0,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.1,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.2,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.3,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+
+                
+  kaleidoscopecookery:recipe_item_has_recipe:  
+    material: nether_brick  
+    data:  
+      item-name: <!i><lang:item.kaleidoscopecookery.recipe_item_has_recipe>  
+    texture: minecraft:item/custom/cook/recipe_item_has_recipe  
+    behavior:  
+      type: furniture_item  
+      rules:  
+        wall:  
+          alignment: any 
+      furniture:  
+        settings:  
+          item: kaleidoscopecookery:recipe_item  
+          hit_times: 3  
+          sounds:  
+            break: minecraft:block.metal.break  
+            place: minecraft:block.metal.place  
+            hit: minecraft:block.metal.hit  
+        behavior:  
+          - type: kaleidoscopecookery:recipe_furniture
+        loot:  
+          template: default:loot_table/furniture  
+          arguments:  
+            item: kaleidoscopecookery:recipe_item  
+        variants:  
+          wall:                       
+            loot_spawn_offset: 0,0,0.3  
+            elements:  
+              - type: item_display  
+                item: show:recipe_block 
+                position: 0,0,0.5      
+                pitch: 90            
+                billboard: fixed  
+            hitboxes:  
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false 
+                position: 0.3,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0.2,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0.1,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: 0,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.1,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false 
+                position: -0.2,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+              - type: interaction  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false
+                position: -0.3,-0.4,0.05  
+                width: 0.1
+                height: 0.8
+                interactive: false
+                invisible: true
+
+      
+#食谱书
+  show:recipe_block:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/recipe_block

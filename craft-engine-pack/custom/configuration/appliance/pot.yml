@@ -1,0 +1,188 @@
+items:
+# 以下为方块配置
+  kaleidoscopecookery:pot:        
+    material: nether_brick        
+    data:        
+      item-name: <!i><lang:item.kaleidoscopecookery.pot>      
+    model: minecraft:block/custom/cook/block/pot    
+    behavior:        
+      type: block_item        
+      block:        
+        loot:        
+          template: default:loot_table/self        
+        settings:        
+          template:        
+            - default:sound/metal        
+          overrides:        
+            hardness: 0.5        
+            resistance: 1.0        
+            replaceable: false        
+            is-redstone-conductor: false        
+            is-suffocating: false        
+            instrument: basedrum        
+            map-color: 15        
+            tags:        
+              - minecraft:mineable/pickaxe        
+            correct-tools:        
+              template: default:pickaxe_power/level_1        
+        behaviors:           
+          - type: kaleidoscopecookery:cooking_pot     
+        states:            
+          properties:            
+            facing:            
+              type: 4-direction            
+              default: north    
+            has_base:    
+              type: boolean    
+              default: false  
+            has_oil:  
+              type: boolean  
+              default: false  
+          appearances:        
+            north:            
+              state: iron_trapdoor[open=false, half=bottom, powered=true]       
+              transparent: true       
+              entity-renderer:        
+                item: show:pot        
+                yaw: 180        
+            south:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]       
+              transparent: true       
+              entity-renderer:        
+                item: show:pot         
+            east:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]   
+              transparent: true       
+              entity-renderer:        
+                item: show:pot        
+                yaw: -90       
+            west:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]      
+              transparent: true       
+              entity-renderer:        
+                item: show:pot      
+                yaw: 90    
+            north_base:            
+              state: iron_trapdoor[open=false, half=bottom, powered=true]         
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base        
+                yaw: 180        
+            south_base:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]        
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base         
+            east_base:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]     
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base        
+                yaw: -90       
+            west_base:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]    
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base      
+                yaw: 90    
+            north_oil:            
+              state: iron_trapdoor[open=false, half=bottom, powered=true]       
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_has_oil        
+                yaw: 180        
+            south_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]       
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_has_oil         
+            east_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]   
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_has_oil        
+                yaw: -90       
+            west_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]      
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_has_oil      
+                yaw: 90    
+            north_base_oil:            
+              state: iron_trapdoor[open=false, half=bottom, powered=true]         
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base_has_oil        
+                yaw: 180        
+            south_base_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]        
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base_has_oil         
+            east_base_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]     
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base_has_oil        
+                yaw: -90       
+            west_base_oil:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]    
+              transparent: true       
+              entity-renderer:        
+                item: show:pot_base_has_oil      
+                yaw: 90  
+          variants:        
+            facing=north,has_base=false,has_oil=false:        
+              appearance: north        
+            facing=south,has_base=false,has_oil=false:        
+              appearance: south        
+            facing=east,has_base=false,has_oil=false:        
+              appearance: east        
+            facing=west,has_base=false,has_oil=false:        
+              appearance: west    
+            facing=north,has_base=true,has_oil=false:        
+              appearance: north_base        
+            facing=south,has_base=true,has_oil=false:        
+              appearance: south_base        
+            facing=east,has_base=true,has_oil=false:        
+              appearance: east_base        
+            facing=west,has_base=true,has_oil=false:        
+              appearance: west_base  
+            facing=north,has_base=false,has_oil=true:        
+              appearance: north_oil        
+            facing=south,has_base=false,has_oil=true:        
+              appearance: south_oil        
+            facing=east,has_base=false,has_oil=true:        
+              appearance: east_oil        
+            facing=west,has_base=false,has_oil=true:        
+              appearance: west_oil    
+            facing=north,has_base=true,has_oil=true:        
+              appearance: north_base_oil        
+            facing=south,has_base=true,has_oil=true:        
+              appearance: south_base_oil        
+            facing=east,has_base=true,has_oil=true:        
+              appearance: east_base_oil        
+            facing=west,has_base=true,has_oil=true:        
+              appearance: west_base_oil
+
+
+# 炒锅
+  show:pot:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/pot
+
+  show:pot_has_oil:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/pot_has_oil
+
+  show:pot_base:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/pot_base
+
+  show:pot_base_has_oil:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/pot_base_has_oil

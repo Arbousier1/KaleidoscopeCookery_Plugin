@@ -1,0 +1,78 @@
+items:
+
+# 以下为物品配置
+  kaleidoscopecookery:kitchen_shovel_no_oil:
+    material: golden_shovel
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.kitchen_shovel_no_oil>  
+    texture: minecraft:item/custom/cook/kitchen_shovel_no_oil
+
+    
+  kaleidoscopecookery:kitchen_shovel_has_oil:
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.kitchen_shovel_has_oil>
+    material: golden_shovel
+    texture: minecraft:item/custom/cook/kitchen_shovel_has_oil
+
+    
+  kaleidoscopecookery:stockpot_lid:
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.stockpot_lid>
+    material: shield
+    models:
+      - minecraft:item/custom/cook/stockpot_lid_normal
+      - minecraft:item/custom/cook/stockpot_lid_using
+
+    
+  kaleidoscopecookery:oil:
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.oil>
+    texture: minecraft:item/custom/cook/oil
+
+    
+  kaleidoscopecookery:millstone_stone:
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.millstone_stone>
+    texture: minecraft:item/custom/cook/millstone_stick
+
+    
+  kaleidoscopecookery:diamond_kitchen_knife:
+    material: golden_shovel
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.diamond_kitchen_knife>
+    texture: minecraft:item/custom/cook/diamond_kitchen_knife
+
+    
+  kaleidoscopecookery:gold_kitchen_knife:
+    material: golden_shovel
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.gold_kitchen_knife>
+    texture: minecraft:item/custom/cook/gold_kitchen_knife
+
+    
+  kaleidoscopecookery:iron_kitchen_knife:
+    material: golden_shovel
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.iron_kitchen_knife>
+    texture: minecraft:item/custom/cook/iron_kitchen_knife
+
+    
+  kaleidoscopecookery:netherite_kitchen_knife:
+    material: golden_shovel
+    data:    
+      item-name: <!i><lang:item.kaleidoscopecookery.netherite_kitchen_knife>
+    texture: minecraft:item/custom/cook/netherite_kitchen_knife
+
+
+  kaleidoscopecookery:trashcan_helmet:
+    material: leather_helmet
+    model:
+      type: minecraft:model
+      path: minecraft:item/leather_helmet
+    settings:
+      equippable:  
+        slot: head  
+        asset-id: kaleidoscopecookery:trashcan_helmet  
+        camera_overlay: minecraft:misc/zhezhao
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.trashcan_helmet>"

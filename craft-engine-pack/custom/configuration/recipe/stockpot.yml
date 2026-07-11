@@ -1,0 +1,20 @@
+# 配置：汤锅食材分类和汤锅配方。
+# ========== 高汤锅分类食材 + 汤底表 ==========
+stock_food_raw:
+  liquid:                                                  # 唯一汤底表
+    - { item: minecraft:water_bucket,         show: show:stove_water }
+    - { item: minecraft:cod_bucket,           show: show:stove_water }   # 鱼类水算水
+    - { item: minecraft:salmon_bucket,        show: show:stove_water }
+    - { item: minecraft:tropical_fish_bucket, show: show:stove_water }
+    - { item: minecraft:pufferfish_bucket,    show: show:stove_water }
+    - { item: minecraft:axolotl_bucket,       show: show:stove_water }
+    - { item: minecraft:tadpole_bucket,       show: show:stove_water }
+    - { item: minecraft:lava_bucket,          show: show:stove_lava }
+  meat:
+    - minecraft:beef
+    - minecraft:cod
+    - minecraft:salmon
+  vegetable:
+    - minecraft:potato
+
+# Original-mod stockpot recipes are in generated_stockpot.yml.

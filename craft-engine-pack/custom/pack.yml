@@ -1,0 +1,5 @@
+author: Nicoppara and KaleidoscopeCookery contributors
+version: 1.0.3
+description: KaleidoscopeCookery assets and configuration for CraftEngine
+namespace: kaleidoscopecookery
+enable: true

@@ -1,0 +1,36 @@
+accurate_foods:
+  # 蒸笼：馒头（kaleidoscopecookery:mantou）
+  # 材料：生面团
+  kaleidoscopecookery:steamer_mantou:
+    require: kaleidoscopecookery:raw_dough
+    result: kaleidoscopecookery:mantou
+    cook: steamer
+    lore:
+      - "<gray><lang:lore.kaleidoscopecookery.recipe.accurate.mantou>"
+
+  # 沙威玛烤架：熟牛肉（minecraft:cooked_beef）
+  # 材料：生牛肉
+  kaleidoscopecookery:shawarma_cooked_beef:
+    require: minecraft:beef
+    result: minecraft:cooked_beef
+    cook: shawarma
+    lore:
+      - "<gray><lang:lore.kaleidoscopecookery.recipe.accurate.grilled_meat>"
+
+  # 沙威玛烤架：熟兔肉（minecraft:cooked_rabbit）
+  # 材料：生兔肉
+  kaleidoscopecookery:shawarma_cooked_rabbit:
+    require: minecraft:rabbit
+    result: minecraft:cooked_rabbit
+    cook: shawarma
+    lore:
+      - "<gray><lang:lore.kaleidoscopecookery.recipe.accurate.grilled_meat>"
+
+  # 石磨：铁矿石
+  # 材料：铁矿石，随机产出铁锭或金锭
+  kaleidoscopecookery:millstone_iron_ore:
+    require: minecraft:iron_ore
+    result:
+      - minecraft:iron_ingot 45
+      - minecraft:gold_ingot 45
+    cook: millstone

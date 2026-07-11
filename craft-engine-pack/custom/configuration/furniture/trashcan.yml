@@ -1,0 +1,62 @@
+items:
+              
+  kaleidoscopecookery:trashcan:  
+    material: nether_brick  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.trashcan>
+    model: minecraft:block/custom/cook/block/trashcan
+    behavior:  
+      type: furniture_item  
+      rules:  
+        ground:
+          rotation: four
+          alignment: CENTER  
+      furniture:  
+        settings:  
+          item: kaleidoscopecookery:trashcan
+          hit_times: 5  
+          sounds:  
+            break: minecraft:block.metal.break  
+            place: minecraft:block.metal.place  
+            hit: minecraft:block.metal.hit  
+        behaviors:
+          - type: kaleidoscopecookery:trashcan
+            mask_image: "<image:kaleidoscopecookery:trashcan>"
+        loot:  
+          template: default:loot_table/furniture  
+          arguments:  
+            item: kaleidoscopecookery:trashcan
+        variants:  
+          ground: 
+            loot_spawn_offset: 0,0,0.3  
+            hitboxes:  
+              - type: shulker  
+                can_use_item_on: true  
+                can_be_hit_by_projectile: true  
+                blocks_building: false  
+                position: 0,0,0
+                scale: 0.8
+                peek: 30
+                direction: UP
+                interaction_entity: false
+                interactive: false
+                invisible: true
+
+      
+# 垃圾桶
+  show:trashcan_1:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/trashcan_1
+
+      
+  show:trashcan_2:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/trashcan_2
+
+      
+  show:trashcan_3:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/trashcan_3

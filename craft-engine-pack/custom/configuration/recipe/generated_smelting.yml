@@ -1,0 +1,73 @@
+recipes:
+  # 熔炉：熟羊排（kaleidoscopecookery:cooked_lamb_chops）
+  # 材料：生羊排
+  kaleidoscopecookery:smelt_cooked_lamb_chops_from_raw_lamb_chops:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_lamb_chops
+    result:
+      id: kaleidoscopecookery:cooked_lamb_chops
+      count: 1
+    time: 200
+    experience: 0.35
+  # 熔炉：熟牛杂（kaleidoscopecookery:cooked_cow_offal）
+  # 材料：生牛杂
+  kaleidoscopecookery:smelt_cooked_cow_offal_from_raw_cow_offal:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cow_offal
+    result:
+      id: kaleidoscopecookery:cooked_cow_offal
+      count: 1
+    time: 200
+    experience: 0.35
+  # 熔炉：熟五花肉（kaleidoscopecookery:cooked_pork_belly）
+  # 材料：生五花肉
+  kaleidoscopecookery:smelt_cooked_pork_belly_from_raw_pork_belly:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_pork_belly
+    result:
+      id: kaleidoscopecookery:cooked_pork_belly
+      count: 1
+    time: 200
+    experience: 0.35
+  # 熔炉：熟切制小肉（kaleidoscopecookery:cooked_cut_small_meats）
+  # 材料：生切制小肉
+  kaleidoscopecookery:smelt_cooked_cut_small_meats_from_raw_cut_small_meats:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cut_small_meats
+    result:
+      id: kaleidoscopecookery:cooked_cut_small_meats
+      count: 1
+    time: 200
+    experience: 0.35
+  # 熔炉：熟丸子（kaleidoscopecookery:cooked_meatball）
+  # 材料：生丸子
+  kaleidoscopecookery:smelt_cooked_meatball_from_raw_meatball:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_meatball
+    result:
+      id: kaleidoscopecookery:cooked_meatball
+      count: 1
+    time: 200
+    experience: 0.35
+  # 熔炉：烤包子（kaleidoscopecookery:samsa）
+  # 材料：裹馅面食
+  kaleidoscopecookery:smelt_samsa_from_stuffed_dough_food:
+    type: smelting
+    category: food
+    ingredients:
+      - kaleidoscopecookery:stuffed_dough_food
+    result:
+      id: kaleidoscopecookery:samsa
+      count: 1
+    time: 200
+    experience: 0.35

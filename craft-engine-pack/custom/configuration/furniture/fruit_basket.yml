@@ -1,0 +1,72 @@
+items:
+
+# 果篮                
+  kaleidoscopecookery:fruit_basket:  
+    material: nether_brick  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.fruit_basket>
+    texture: minecraft:item/custom/cook/fruit_basket
+    behavior:  
+      type: block_item  
+      block:              
+        settings:          
+          template:        
+            - default:sound/metal        
+          overrides:        
+            hardness: 3.0        
+            resistance: 4.5        
+            replaceable: false        
+            is-redstone-conductor: true        
+            is-suffocating: true        
+            instrument: basedrum        
+            map-color: 15        
+            tags:        
+              - minecraft:mineable/pickaxe        
+            correct-tools:        
+              template: default:pickaxe_power/level_1 
+        behavior:  
+          - type: kaleidoscopecookery:fruit_basket
+        states:  
+          properties:  
+            facing:  
+              type: horizontal_direction  
+          appearances:  
+            facing=north:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=north]
+              transparent: true
+              entity_renderer:  
+                item: show:fruit_basket  
+            facing=south:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=south]
+              transparent: true
+              entity_renderer:  
+                item: show:fruit_basket  
+                rotation: 180  
+            facing=east:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]
+              transparent: true
+              entity_renderer:  
+                item: show:fruit_basket  
+                rotation: 90  
+            facing=west:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=west]
+              transparent: true
+              entity_renderer:  
+                item: show:fruit_basket  
+                rotation: 270  
+          variants:  
+            facing=north:  
+              appearance: facing=north  
+            facing=south:  
+              appearance: facing=south  
+            facing=east:  
+              appearance: facing=east  
+            facing=west:  
+              appearance: facing=west
+
+      
+# 果篮
+  show:fruit_basket:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/fruit_basket

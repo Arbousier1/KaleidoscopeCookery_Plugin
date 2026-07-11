@@ -1,0 +1,211 @@
+items:
+              
+  kaleidoscopecookery:steamer:
+    data:
+      item_name: <!i><lang:item.kaleidoscopecookery.steamer>
+    texture: minecraft:item/custom/cook/steamer_no_items
+    behavior:
+      type: block_item
+      block:
+        loot:        
+          template: default:loot_table/self   
+        settings:
+          template:
+            - default:sound/wood
+          overrides:
+            hardness: 0.5
+            resistance: 1.0
+            replaceable: false
+            is-redstone-conductor: false
+            is-suffocating: false
+            instrument: bass
+            map-color: 12
+            can_occlude: false
+            use_shape_for_light_occlusion: false
+            block_light: 0
+          tags:
+            - minecraft:mineable/axe
+        behaviors:
+          - type: kaleidoscopecookery:steamer
+          - type: kaleidoscopecookery:stacked_extra_drop
+            extra-drops:
+              - property: type
+                value: double
+                item: kaleidoscopecookery:steamer
+                amount: 1
+        states:
+          properties:
+            type:
+              type: slab_type
+              default: bottom
+            has_lid:
+              type: boolean
+              default: false
+            has_base:
+              type: boolean
+              default: false
+            facing:
+              type: horizontal_direction
+              default: north
+          appearances:
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north:
+              state: sculk_sensor[power=1]
+              model: { path: minecraft:block/custom/cook/block/steamer_half, y: 180 }
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south:
+              state: sculk_sensor[power=2]
+              model: { path: minecraft:block/custom/cook/block/steamer_half }
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east:
+              state: sculk_sensor[power=3]
+              model: { path: minecraft:block/custom/cook/block/steamer_half, y: 270 }
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west:
+              state: sculk_sensor[power=4]
+              model: { path: minecraft:block/custom/cook/block/steamer_half, y: 90 }
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north:
+              state: sculk_sensor[power=5]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_base, y: 180 }
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south:
+              state: sculk_sensor[power=6]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_base }
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east:
+              state: sculk_sensor[power=7]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_base, y: 270 }
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west:
+              state: sculk_sensor[power=8]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_base, y: 90 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north:
+              state: sculk_sensor[power=9]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid, y: 180 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south:
+              state: sculk_sensor[power=10]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid }
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east:
+              state: sculk_sensor[power=11]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid, y: 270 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west:
+              state: sculk_sensor[power=12]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid, y: 90 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north:
+              state: sculk_sensor[power=13]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid_base, y: 180 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south:
+              state: sculk_sensor[power=14]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid_base }
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east:
+              state: sculk_sensor[power=15]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid_base, y: 270 }
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west:
+              state: sculk_sensor[power=15, sculk_sensor_phase=cooldown]
+              model: { path: minecraft:block/custom/cook/block/steamer_half_lid_base, y: 90 }
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=north:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full, y: 180 }
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=south:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full }
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=east:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full, y: 270 }
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=west:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full, y: 90 }
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=north:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_base, y: 180 }
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=south:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_base }
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=east:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_base, y: 270 }
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=west:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_base, y: 90 }
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=north:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid, y: 180 }
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=south:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid }
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=east:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid, y: 270 }
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=west:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid, y: 90 }
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=north:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid_base, y: 180 }
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=south:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid_base }
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=east:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid_base, y: 270 }
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=west:
+              auto_state: non_tintable_leaves
+              model: { path: minecraft:block/custom/cook/block/steamer_full_lid_base, y: 90 }
+          variants:
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east 
+            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west  
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north  
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south  
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east  
+            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west: 
+              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west  
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north  
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south  
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east  
+            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west  
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north  
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south  
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east  
+            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west: 
+              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west  
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=north: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=north  
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=south: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=south  
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=east: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=east  
+            type=double,waterlogged=false,has_lid=false,has_base=false,facing=west: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=west  
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=north: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=north  
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=south: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=south  
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=east: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=east  
+            type=double,waterlogged=false,has_lid=false,has_base=true,facing=west: 
+              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=west  
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=north: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=north  
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=south: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=south  
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=east: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=east  
+            type=double,waterlogged=false,has_lid=true,has_base=false,facing=west: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=west  
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=north: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=north  
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=south: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=south  
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=east: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=east  
+            type=double,waterlogged=false,has_lid=true,has_base=true,facing=west: 
+              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=west

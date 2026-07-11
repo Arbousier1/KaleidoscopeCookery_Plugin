@@ -1,0 +1,46 @@
+images:
+  kaleidoscopecookery:beef: 
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/beef.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:cooked_beef:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/cooked_beef.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:potato:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/potato.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:rotten_flesh:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/rotten_flesh.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:rabbit:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/rabbit.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:cooked_rabbit:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/cooked_rabbit.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:cod:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/cod.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:cooked_cod:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/cooked_cod.png"  
+    height: 16
+    ascent: 13
+  kaleidoscopecookery:water_bucket:
+    font: kaleidoscopecookery:food
+    file: "minecraft:item/water_bucket.png"  
+    height: 16
+    ascent: 13

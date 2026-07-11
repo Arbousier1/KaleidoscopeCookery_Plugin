@@ -1,0 +1,108 @@
+teapot_result:
+  # 茶壶：花茶（kaleidoscopecookery:flower_tea）
+  # 材料：小花标签（原 mod: #minecraft:small_flowers）
+  flower_tea_from_dandelion:
+    fluid: minecraft:water
+    require: minecraft:dandelion 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_poppy:
+    fluid: minecraft:water
+    require: minecraft:poppy 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_blue_orchid:
+    fluid: minecraft:water
+    require: minecraft:blue_orchid 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_allium:
+    fluid: minecraft:water
+    require: minecraft:allium 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_azure_bluet:
+    fluid: minecraft:water
+    require: minecraft:azure_bluet 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_red_tulip:
+    fluid: minecraft:water
+    require: minecraft:red_tulip 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_orange_tulip:
+    fluid: minecraft:water
+    require: minecraft:orange_tulip 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_white_tulip:
+    fluid: minecraft:water
+    require: minecraft:white_tulip 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_pink_tulip:
+    fluid: minecraft:water
+    require: minecraft:pink_tulip 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_oxeye_daisy:
+    fluid: minecraft:water
+    require: minecraft:oxeye_daisy 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_cornflower:
+    fluid: minecraft:water
+    require: minecraft:cornflower 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_lily_of_the_valley:
+    fluid: minecraft:water
+    require: minecraft:lily_of_the_valley 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_wither_rose:
+    fluid: minecraft:water
+    require: minecraft:wither_rose 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  flower_tea_from_torchflower:
+    fluid: minecraft:water
+    require: minecraft:torchflower 12
+    result: kaleidoscopecookery:flower_tea
+    time: 240
+  # 茶壶：大麦茶（kaleidoscopecookery:barley_tea）
+  # 材料：小麦种子
+  barley_tea_from_wheat_seeds:
+    fluid: minecraft:water
+    require: minecraft:wheat_seeds 12
+    result: kaleidoscopecookery:barley_tea
+    time: 240
+  # 茶壶：铁观音（kaleidoscopecookery:tieguanyin）
+  # 材料：铁粒
+  tieguanyin_from_iron_nugget:
+    fluid: minecraft:water
+    require: minecraft:iron_nugget 12
+    result: kaleidoscopecookery:tieguanyin
+    time: 240
+  # 茶壶：碧螺春（kaleidoscopecookery:biluochun）
+  # 材料：鹦鹉螺壳
+  biluochun_from_nautilus_shell:
+    fluid: minecraft:water
+    require: minecraft:nautilus_shell 12
+    result: kaleidoscopecookery:biluochun
+    time: 240
+  # 茶壶：乌龙茶（kaleidoscopecookery:oolong）
+  # 材料：龙息
+  oolong_from_dragon_breath:
+    fluid: minecraft:water
+    require: minecraft:dragon_breath 12
+    result: kaleidoscopecookery:oolong
+    time: 240
+  # 茶壶：樱吹雪（kaleidoscopecookery:sakura_fubuki）
+  # 材料：粉红色花簇
+  sakura_fubuki_from_pink_petals:
+    fluid: minecraft:water
+    require: minecraft:pink_petals 12
+    result: kaleidoscopecookery:sakura_fubuki
+    time: 240

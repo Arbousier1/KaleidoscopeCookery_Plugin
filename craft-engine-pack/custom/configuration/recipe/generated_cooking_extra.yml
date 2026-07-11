@@ -1,0 +1,121 @@
+recipes:
+  kaleidoscopecookery:smoke_cooked_lamb_chops_from_raw_lamb_chops:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_lamb_chops
+    result:
+      id: kaleidoscopecookery:cooked_lamb_chops
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_cooked_lamb_chops_from_raw_lamb_chops:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_lamb_chops
+    result:
+      id: kaleidoscopecookery:cooked_lamb_chops
+      count: 1
+    time: 600
+    experience: 0.35
+  kaleidoscopecookery:smoke_cooked_cow_offal_from_raw_cow_offal:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cow_offal
+    result:
+      id: kaleidoscopecookery:cooked_cow_offal
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_cooked_cow_offal_from_raw_cow_offal:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cow_offal
+    result:
+      id: kaleidoscopecookery:cooked_cow_offal
+      count: 1
+    time: 600
+    experience: 0.35
+  kaleidoscopecookery:smoke_cooked_pork_belly_from_raw_pork_belly:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_pork_belly
+    result:
+      id: kaleidoscopecookery:cooked_pork_belly
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_cooked_pork_belly_from_raw_pork_belly:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_pork_belly
+    result:
+      id: kaleidoscopecookery:cooked_pork_belly
+      count: 1
+    time: 600
+    experience: 0.35
+  kaleidoscopecookery:smoke_cooked_cut_small_meats_from_raw_cut_small_meats:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cut_small_meats
+    result:
+      id: kaleidoscopecookery:cooked_cut_small_meats
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_cooked_cut_small_meats_from_raw_cut_small_meats:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_cut_small_meats
+    result:
+      id: kaleidoscopecookery:cooked_cut_small_meats
+      count: 1
+    time: 600
+    experience: 0.35
+  kaleidoscopecookery:smoke_cooked_meatball_from_raw_meatball:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_meatball
+    result:
+      id: kaleidoscopecookery:cooked_meatball
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_cooked_meatball_from_raw_meatball:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:raw_meatball
+    result:
+      id: kaleidoscopecookery:cooked_meatball
+      count: 1
+    time: 600
+    experience: 0.35
+  kaleidoscopecookery:smoke_samsa_from_stuffed_dough_food:
+    type: smoking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:stuffed_dough_food
+    result:
+      id: kaleidoscopecookery:samsa
+      count: 1
+    time: 100
+    experience: 0.35
+  kaleidoscopecookery:campfire_cook_samsa_from_stuffed_dough_food:
+    type: campfire_cooking
+    category: food
+    ingredients:
+      - kaleidoscopecookery:stuffed_dough_food
+    result:
+      id: kaleidoscopecookery:samsa
+      count: 1
+    time: 600
+    experience: 0.35

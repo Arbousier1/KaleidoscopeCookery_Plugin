@@ -1,0 +1,263 @@
+items:
+
+# 茶壶              
+  kaleidoscopecookery:teapot:  
+    material: nether_brick  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.teapot>  
+      lore:  
+        - "<!i><white><image:kaleidoscopecookery:tea_left><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_empty><shift:-1><image:kaleidoscopecookery:tea_right>"  
+      components:  
+        max_stack_size: 1  
+    model:  
+      type: minecraft:select  
+      property: minecraft:display_context  
+      cases:  
+        - when:  
+            - gui  
+            - ground  
+            - fixed  
+            - on_shelf  
+          model:  
+            type: minecraft:model  
+            path: kaleidoscopecookery:item/teapot  
+            generation:  
+              parent: minecraft:item/generated  
+              textures:  
+                layer0: item/custom/cook/teapot  
+      fallback:  
+        type: minecraft:model  
+        path: minecraft:block/custom/cook/block/teapot
+    behavior:
+      type: kaleidoscopecookery:teapot_item
+      block:
+        settings:
+          template:
+            - default:sound/metal
+          overrides:
+            hardness: 3.0
+            resistance: 4.5
+            replaceable: false
+            is_redstone_conductor: true
+            is_suffocating: true
+            instrument: basedrum
+            map_color: 15
+            tags:
+              - minecraft:mineable/pickaxe
+            correct_tools:
+              template: default:pickaxe_power/level_1
+        behaviors:
+          - type: kaleidoscopecookery:teapot
+            msg_put: "kaleidoscopecookery.message.teapot.put"
+            msg_processing: "kaleidoscopecookery.message.teapot.processing"
+            msg_finished: "kaleidoscopecookery.message.teapot.finished"
+        states:
+          properties:
+            facing:
+              type: 4-direction
+              default: north
+            has_base:
+              type: boolean
+              default: false
+            has_chains:
+              type: boolean
+              default: false
+          appearances:
+            # 无底座无链子 只放透明碰撞块 壶身/盖子由插件假实体渲染
+            north:    { state: oxidized_copper_lantern, transparent: true }
+            south:    { state: oxidized_copper_lantern, transparent: true }
+            east:     { state: oxidized_copper_lantern, transparent: true }
+            west:     { state: oxidized_copper_lantern, transparent: true }
+            # 脚下无支撑 显示底座
+            north_base:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_base, yaw: 180 }
+            south_base:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_base, yaw: 0 }
+            east_base:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_base, yaw: -90 }
+            west_base:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_base, yaw: 90 }
+            # 上方有铁链 显示链子
+            north_chains:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_stick, yaw: 180 }
+            south_chains:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_stick, yaw: 0 }
+            east_chains:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_stick, yaw: -90 }
+            west_chains:
+              state: oxidized_copper_lantern
+              transparent: true
+              entity_renderer: { item: show:teapot_stick, yaw: 90 }
+          variants:
+            facing=north,has_base=false,has_chains=false: { appearance: north }
+            facing=south,has_base=false,has_chains=false: { appearance: south }
+            facing=east,has_base=false,has_chains=false:  { appearance: east }
+            facing=west,has_base=false,has_chains=false:  { appearance: west }
+            facing=north,has_base=true,has_chains=false:  { appearance: north_base }
+            facing=south,has_base=true,has_chains=false:  { appearance: south_base }
+            facing=east,has_base=true,has_chains=false:   { appearance: east_base }
+            facing=west,has_base=true,has_chains=false:   { appearance: west_base }
+            facing=north,has_base=false,has_chains=true:  { appearance: north_chains }
+            facing=south,has_base=false,has_chains=true:  { appearance: south_chains }
+            facing=east,has_base=false,has_chains=true:   { appearance: east_chains }
+            facing=west,has_base=false,has_chains=true:   { appearance: west_chains }
+            # base 与 chains 互斥不会同真 占位映射到 base
+            facing=north,has_base=true,has_chains=true:   { appearance: north_base }
+            facing=south,has_base=true,has_chains=true:   { appearance: south_base }
+            facing=east,has_base=true,has_chains=true:    { appearance: east_base }
+            facing=west,has_base=true,has_chains=true:    { appearance: west_base }
+
+
+# 茶杯垫              
+  kaleidoscopecookery:teacup_coaster:  
+    material: nether_brick  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.teacup_coaster>
+    model: minecraft:block/custom/cook/block/tea_coaster
+    behavior:  
+      type: block_item  
+      block:              
+        settings:          
+          template:        
+            - default:sound/metal        
+          overrides:        
+            hardness: 3.0        
+            resistance: 4.5        
+            replaceable: false        
+            is-redstone-conductor: true        
+            is-suffocating: true        
+            instrument: basedrum        
+            map-color: 15        
+            tags:        
+              - minecraft:mineable/pickaxe        
+            correct-tools:        
+              template: default:pickaxe_power/level_1
+        behaviors:
+          - type: kaleidoscopecookery:teacup_coaster
+            empty_cup_display_model: show:empty_cup
+            empty_cup_item: kaleidoscopecookery:empty_cup
+        states:  
+          properties:  
+            facing:  
+              type: horizontal_direction  
+          appearances:  
+            facing=north:  
+              auto_state: lower_tripwire
+              transparent: true
+              entity_renderer:  
+                item: show:tea_coaster  
+            facing=south:  
+              auto_state: lower_tripwire
+              transparent: true
+              entity_renderer:  
+                item: show:tea_coaster   
+                rotation: 180  
+            facing=east:  
+              auto_state: lower_tripwire
+              transparent: true
+              entity_renderer:  
+                item: show:tea_coaster   
+                rotation: 90  
+            facing=west:  
+              auto_state: lower_tripwire
+              transparent: true
+              entity_renderer:  
+                item: show:tea_coaster  
+                rotation: 270  
+          variants:  
+            facing=north:  
+              appearance: facing=north  
+            facing=south:  
+              appearance: facing=south  
+            facing=east:  
+              appearance: facing=east  
+            facing=west:  
+              appearance: facing=west
+
+      
+# 茶壶
+  show:teapot_1:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/teapot_1
+
+      
+  show:teapot_2:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/teapot_2
+
+      
+  show:teapot_base:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/teapot_base
+
+      
+  show:teapot_stick:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/teapot_stick
+
+
+# 茶垫
+  show:tea_coaster:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea_coaster
+
+      
+# 各种茶
+  show:barley_tea:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/barley_tea
+
+  show:biluochun:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/biluochun
+
+  show:empty_cup:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/empty_cup
+
+  show:flower_tea:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/flower_tea
+
+  show:oolong_1:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/oolong_1
+
+  show:oolong_2:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/oolong_2
+
+  show:sakura_fubuki:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/sakura_fubuki
+
+  show:tieguanyin:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/tea/tieguanyin

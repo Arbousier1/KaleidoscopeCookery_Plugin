@@ -1,0 +1,41 @@
+# 配置：茶壶液体、茶杯显示和茶壶配方。
+teapot_liquid:
+  minecraft:water:
+    display_name: "kaleidoscopecookery.message.teapot.liquid.water"
+    bar_left: kaleidoscopecookery:tea_left
+    bar_right: kaleidoscopecookery:tea_right
+    bar_empty: kaleidoscopecookery:tea_empty
+    bar_water: kaleidoscopecookery:tea_water_full
+  minecraft:lava:
+    display_name: "kaleidoscopecookery.message.teapot.liquid.lava"
+    bar_left: kaleidoscopecookery:tea_left
+    bar_right: kaleidoscopecookery:tea_right
+    bar_empty: kaleidoscopecookery:tea_empty
+    bar_lava: kaleidoscopecookery:tea_lava_full
+
+tea_cup:
+  kaleidoscopecookery:barley_tea:
+    item: kaleidoscopecookery:barley_tea
+    display_model:
+      - show:barley_tea
+  kaleidoscopecookery:biluochun:
+    item: kaleidoscopecookery:biluochun
+    display_model:
+      - show:biluochun
+  kaleidoscopecookery:oolong:
+    item: kaleidoscopecookery:oolong
+    display_model:
+      - show:oolong_1
+      - show:oolong_2
+  kaleidoscopecookery:flower_tea:
+    item: kaleidoscopecookery:flower_tea
+    display_model:
+      - show:flower_tea
+  kaleidoscopecookery:sakura_fubuki:
+    item: kaleidoscopecookery:sakura_fubuki
+    display_model:
+      - show:sakura_fubuki
+  kaleidoscopecookery:tieguanyin:
+    item: kaleidoscopecookery:tieguanyin
+    display_model:
+      - show:tieguanyin

@@ -1,0 +1,49 @@
+categories:
+  # 分类：集中展示两个从素材目录接入的草帽物品。
+  kaleidoscopecookery:straw_hat_models:
+    name: "<!i><white><l10n:category.kaleidoscopecookery.straw_hat_models>"
+    icon: kaleidoscopecookery:straw_hat
+    hidden: true
+    list:
+      - kaleidoscopecookery:straw_hat
+      - kaleidoscopecookery:straw_hat_flower
+
+items:
+  # 普通草帽：用 leather_helmet 作为承载物品，让 Minecraft 可以把它装备到头部。
+  # 实际显示外观由下方 model.path 指向的 Blockbench 物品模型决定。
+  kaleidoscopecookery:straw_hat:
+    material: minecraft:leather_helmet
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.straw_hat>"
+      unbreakable: true
+      remove_components:
+        - attribute_modifiers
+      $$>=1.21.2:
+        equippable:
+          slot: head
+      lore:
+        - "<!i><gray><lang:lore.kaleidoscopecookery.straw_hat>"
+    model:
+      type: minecraft:model
+      # 资源包模型文件：
+      # custom/resourcepack/assets/minecraft/models/item/custom/cook/straw_hat/straw_hat.json
+      path: minecraft:item/custom/cook/straw_hat/straw_hat
+
+  # 缀花草帽：配方输出仍使用原版 ID，渲染则走独立模型和复制过来的 mob.png 贴图。
+  kaleidoscopecookery:straw_hat_flower:
+    material: minecraft:leather_helmet
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.straw_hat_flower>"
+      unbreakable: true
+      remove_components:
+        - attribute_modifiers
+      $$>=1.21.2:
+        equippable:
+          slot: head
+      lore:
+        - "<!i><gray><lang:lore.kaleidoscopecookery.straw_hat_flowery>"
+    model:
+      type: minecraft:model
+      # 资源包模型文件：
+      # custom/resourcepack/assets/minecraft/models/item/custom/cook/straw_hat_flower/straw_hat_flower.json
+      path: minecraft:item/custom/cook/straw_hat_flower/straw_hat_flower

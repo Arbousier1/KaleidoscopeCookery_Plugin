@@ -1,0 +1,907 @@
+items:
+              
+#  kaleidoscopecookery:steamer:  
+#    data:  
+#      item_name: <!i>蒸笼  
+#    texture: minecraft:item/custom/cook/steamer_no_items
+#    behavior:  
+#      type: block_item  
+#      block:  
+#        settings:  
+#          template:  
+#            - default:sound/wood  
+#          overrides:  
+#            hardness: 0.5  
+#            resistance: 1.0  
+#            replaceable: false  
+#            is-redstone-conductor: false  
+#            is-suffocating: false  
+#            instrument: bass  
+#            map-color: 12  
+#            can_occlude: false  
+#            use_shape_for_light_occlusion: false  
+#            block_light: 0
+#          tags:  
+#            - minecraft:mineable/axe  
+#        behaviors:  
+#          - type: kaleidoscopecookery:steamer  
+#        loot:  
+#          template: default:loot_table/self  
+#        states:  
+#          properties:  
+#            type:  
+#              type: slab_type  
+#              default: bottom  
+#            has_lid:  
+#              type: boolean  
+#              default: false  
+#            has_base:  
+#              type: boolean  
+#              default: false  
+#            facing:  
+#              type: horizontal_direction  
+#              default: north  
+#          appearances:  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half  
+#                yaw: 180  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half  
+#                yaw: 90
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half  
+#                yaw: 270
+#              
+#
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_base  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_base  
+#                yaw: 180  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_base  
+#                yaw: 90  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_base  
+#                yaw: 270
+#              
+# 
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid  
+#                yaw: 180  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid  
+#                yaw: 90  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid  
+#                yaw: 270
+#              
+#            # Bottom slab - has lid, has base  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid_base  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid_base  
+#                yaw: 180  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid_base  
+#                yaw: 90 
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west:  
+#              state: waxed_oxidized_cut_copper_slab[type=bottom,waterlogged=false]  
+#              transparent: true  
+#              entity-renderer:  
+#                item: show:steamer_half_lid_base  
+#                yaw: 270  
+#              
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=north:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=south:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full  
+#                yaw: 180  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=east:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full  
+#                yaw: 90  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=west:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full  
+#                yaw: 270
+#              
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=north:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_base  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=south:  
+#              state: barrier  
+#              entity-renderer:  
+#                item: show:steamer_full_base  
+#                yaw: 180  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=east:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_base  
+#                yaw: 90  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=west:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_base  
+#                yaw: 270
+#              
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=north:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=south:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid  
+#                yaw: 180  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=east:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid  
+#                yaw: 90  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=west:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid  
+#                yaw: 270
+#               
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=north:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid_base  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=south:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid_base  
+#                yaw: 180  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=east:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid_base  
+#                yaw: 90  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=west:  
+#              state: barrier 
+#              entity-renderer:  
+#                item: show:steamer_full_lid_base  
+#                yaw: 270
+#          variants:  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west  
+#            
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east  
+#            type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west:  
+#              appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west  
+#
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west  
+#            
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east  
+#            type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west:  
+#              appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west  
+#            
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=north:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=north  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=south:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=south  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=east:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=east  
+#            type=double,waterlogged=false,has_lid=false,has_base=false,facing=west:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=west  
+#            
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=north:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=north  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=south:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=south  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=east:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=east  
+#            type=double,waterlogged=false,has_lid=false,has_base=true,facing=west:  
+#              appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=west  
+#            
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=north:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=north  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=south:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=south  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=east:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=east  
+#            type=double,waterlogged=false,has_lid=true,has_base=false,facing=west:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=west  
+#            
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=north:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=north  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=south:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=south  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=east:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=east  
+#            type=double,waterlogged=false,has_lid=true,has_base=true,facing=west:  
+#              appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=west
+              
+#  kaleidoscopecookery:steamer_proxy:    
+#    behavior:    
+#      type: block_item    
+#      block:    
+#        settings:    
+#          overrides:    
+#            hardness: -1    
+#            replaceable: false  
+#            is-redstone-conductor: false    
+#            is-suffocating: false    
+#            can_occlude: false    
+#        behaviors:    
+#          - type: kaleidoscopecookery:steamer_proxy    
+#        states:    
+#          properties:    
+#            type:    
+#              type: slab_type    
+#              default: bottom    
+#            facing:    
+#              type: horizontal_direction    
+#              default: north    
+#            has_lid:  
+#              type: boolean    
+#              default: false   
+#            has_base:  
+#              type: boolean    
+#              default: false  
+#          appearances:    
+#              # Bottom slab - no lid, no base    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half    
+#                  y: 180    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half    
+#                  y: 270  
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half    
+#                  y: 90  
+#                  
+#              # Bottom slab - no lid, has base    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_base    
+#                  y: 180    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_base    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_base    
+#                  y: 270    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_base    
+#                  y: 270  
+#                  
+#              # Bottom slab - has lid, no base    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid    
+#                  y: 180    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid    
+#                  y: 270    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid    
+#                  y: 90  
+#                  
+#              # Bottom slab - has lid, has base    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid_base    
+#                  y: 180    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid_base    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid_base    
+#                  y: 270   
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_half_lid_base    
+#                  y: 90  
+#                  
+#              # Double slab - no lid, no base    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full    
+#                  y: 180    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full    
+#                  y: 270    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full    
+#                  y: 90  
+#                  
+#              # Double slab - no lid, has base    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_base    
+#                  y: 180    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_base    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_base    
+#                  y: 270    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_base    
+#                  y: 90  
+#                  
+#              # Double slab - has lid, no base    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid    
+#                  y: 180    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid    
+#                  y: 270    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid    
+#                  y: 90  
+#                  
+#              # Double slab - has lid, has base    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=north:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid_base    
+#                  y: 180    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=south:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid_base    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=east:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid_base    
+#                  y: 270    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=west:    
+#                auto_state: mushroom    
+#                model:    
+#                  path: minecraft:block/custom/cook/block/steamer_full_lid_base    
+#                  y: 90  
+#          variants:    
+#              # Bottom slab - no lid, no base    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=north    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=south    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=east    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=false,facing=west    
+#                
+#              # Bottom slab - no lid, has base    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=north    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=south    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=east    
+#              type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west:    
+#                appearance: type=bottom,waterlogged=false,has_lid=false,has_base=true,facing=west    
+#                
+#              # Bottom slab - has lid, no base    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=north    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=south    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=east    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=false,facing=west    
+#                
+#              # Bottom slab - has lid, has base    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=north    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=south    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=east    
+#              type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west:    
+#                appearance: type=bottom,waterlogged=false,has_lid=true,has_base=true,facing=west    
+#                
+#              # Double slab - no lid, no base    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=north:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=north    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=south:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=south    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=east:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=east    
+#              type=double,waterlogged=false,has_lid=false,has_base=false,facing=west:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=false,facing=west    
+#                
+#              # Double slab - no lid, has base    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=north:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=north    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=south:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=south    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=east:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=east    
+#              type=double,waterlogged=false,has_lid=false,has_base=true,facing=west:    
+#                appearance: type=double,waterlogged=false,has_lid=false,has_base=true,facing=west    
+#                
+#              # Double slab - has lid, no base    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=north:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=north    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=south:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=south    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=east:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=east    
+#              type=double,waterlogged=false,has_lid=true,has_base=false,facing=west:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=false,facing=west    
+#                
+#              # Double slab - has lid, has base    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=north:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=north    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=south:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=south    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=east:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=east    
+#              type=double,waterlogged=false,has_lid=true,has_base=true,facing=west:    
+#                appearance: type=double,waterlogged=false,has_lid=true,has_base=true,facing=west
+              
+  kaleidoscopecookery:stockpot:  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.stockpot>  
+    model: minecraft:block/custom/cook/block/stockpot  
+    behavior:  
+      type: block_item  
+      block:  
+        loot:  
+          template: default:loot_table/self  
+        settings:  
+          template:  
+            - default:sound/metal  
+          overrides:  
+            hardness: 0.5  
+            resistance: 1.0  
+            replaceable: false  
+            is_redstone_conductor: false  
+            is_suffocating: false  
+            instrument: basedrum  
+            map_color: 15  
+            tags:  
+              - minecraft:mineable/pickaxe  
+            correct_tools:  
+              template: default:pickaxe_power/level_1  
+        behaviors:  
+          - type: kaleidoscopecookery:stockpot  
+        states:  
+          properties:  
+            facing:  
+              type: 4-direction  
+              default: north  
+            has_lid:  
+              type: boolean  
+              default: false  
+            has_base:  
+              type: boolean  
+              default: false  
+            has_chains:  
+              type: boolean  
+              default: false  
+          appearances:  
+            north:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot  
+                yaw: 180  
+            south:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot  
+                yaw: 0  
+            east:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot  
+                yaw: -90  
+            west:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot  
+                yaw: 90  
+            north_base:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 180  
+            south_base:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 0  
+            east_base:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: -90  
+            west_base:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 90  
+            north_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains  
+                yaw: 180  
+            south_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains  
+                yaw: 0  
+            east_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains  
+                yaw: -90  
+            west_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains  
+                yaw: 90  
+            north_base_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 180  
+            south_base_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 0  
+            east_base_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: -90  
+            west_base_chains:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base  
+                yaw: 90  
+            north_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_has_lid  
+                yaw: 180  
+            south_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_has_lid  
+                yaw: 0  
+            east_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_has_lid  
+                yaw: -90  
+            west_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_has_lid  
+                yaw: 90  
+            north_base_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base_has_lid  
+                yaw: 180  
+            south_base_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base_has_lid  
+                yaw: 0  
+            east_base_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base_has_lid  
+                yaw: -90  
+            west_base_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_base_has_lid  
+                yaw: 90  
+            north_chains_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains_has_lid  
+                yaw: 180  
+            south_chains_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains_has_lid  
+                yaw: 0  
+            east_chains_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains_has_lid  
+                yaw: -90  
+            west_chains_lid:  
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true  
+              entity_renderer:  
+                item: show:stockpot_chains_has_lid  
+                yaw: 90  
+          variants:  
+            facing=north,has_base=false,has_chains=false,has_lid=false:  
+              appearance: north  
+            facing=south,has_base=false,has_chains=false,has_lid=false:  
+              appearance: south  
+            facing=east,has_base=false,has_chains=false,has_lid=false:  
+              appearance: east  
+            facing=west,has_base=false,has_chains=false,has_lid=false:  
+              appearance: west  
+            facing=north,has_base=true,has_chains=false,has_lid=false:  
+              appearance: north_base  
+            facing=south,has_base=true,has_chains=false,has_lid=false:  
+              appearance: south_base  
+            facing=east,has_base=true,has_chains=false,has_lid=false:  
+              appearance: east_base  
+            facing=west,has_base=true,has_chains=false,has_lid=false:  
+              appearance: west_base  
+            facing=north,has_base=false,has_chains=true,has_lid=false:  
+              appearance: north_chains  
+            facing=south,has_base=false,has_chains=true,has_lid=false:  
+              appearance: south_chains  
+            facing=east,has_base=false,has_chains=true,has_lid=false:  
+              appearance: east_chains  
+            facing=west,has_base=false,has_chains=true,has_lid=false:  
+              appearance: west_chains  
+            facing=north,has_base=true,has_chains=true,has_lid=false:  
+              appearance: north_base_chains  
+            facing=south,has_base=true,has_chains=true,has_lid=false:  
+              appearance: south_base_chains  
+            facing=east,has_base=true,has_chains=true,has_lid=false:  
+              appearance: east_base_chains  
+            facing=west,has_base=true,has_chains=true,has_lid=false:  
+              appearance: west_base_chains  
+            facing=north,has_base=false,has_chains=false,has_lid=true:  
+              appearance: north_lid  
+            facing=south,has_base=false,has_chains=false,has_lid=true:  
+              appearance: south_lid  
+            facing=east,has_base=false,has_chains=false,has_lid=true:  
+              appearance: east_lid  
+            facing=west,has_base=false,has_chains=false,has_lid=true:  
+              appearance: west_lid  
+            facing=north,has_base=true,has_chains=false,has_lid=true:  
+              appearance: north_base_lid  
+            facing=south,has_base=true,has_chains=false,has_lid=true:  
+              appearance: south_base_lid  
+            facing=east,has_base=true,has_chains=false,has_lid=true:  
+              appearance: east_base_lid  
+            facing=west,has_base=true,has_chains=false,has_lid=true:  
+              appearance: west_base_lid  
+            facing=north,has_base=false,has_chains=true,has_lid=true:  
+              appearance: north_chains_lid  
+            facing=south,has_base=false,has_chains=true,has_lid=true:  
+              appearance: south_chains_lid  
+            facing=east,has_base=false,has_chains=true,has_lid=true:  
+              appearance: east_chains_lid  
+            facing=west,has_base=false,has_chains=true,has_lid=true:  
+              appearance: west_chains_lid
+
+      
+# 蒸笼
+#  show:steamer_full:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_full
+#  show:steamer_full_base:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_full_base
+#  show:steamer_full_lid:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_full_lid
+#  show:steamer_full_lid_base:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_full_lid_base
+#  show:steamer_half:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_half
+#  show:steamer_half_base:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_half_base
+#  show:steamer_half_lid:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_half_lid
+#  show:steamer_half_lid_base:  
+#    model:  
+#      type: minecraft:model  
+#      path: minecraft:block/custom/cook/block/steamer_half_lid_base
+              
+  show:stockpot:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot
+
+      
+  show:stockpot_base:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot_base
+
+      
+  show:stockpot_base_has_lid:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot_base_has_lid
+
+      
+  show:stockpot_chains:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot_chains
+
+      
+  show:stockpot_chains_has_lid:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot_chains_has_lid
+
+      
+  show:stockpot_has_lid:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/stockpot_has_lid

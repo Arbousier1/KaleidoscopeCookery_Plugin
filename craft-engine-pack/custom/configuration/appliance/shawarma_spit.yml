@@ -1,0 +1,176 @@
+items:
+              
+#烤架
+  kaleidoscopecookery:shawarma_spit:  
+    data:  
+      item_name: <!i><lang:item.kaleidoscopecookery.shawarma_spit> 
+    texture: minecraft:item/custom/cook/shawarma_spit
+    behavior:  
+      type: double_high_block_item  
+      block:  
+        loot:  
+          template: default:loot_table/door
+        settings:  
+          template:  
+            - default:sound/metal  
+          overrides:  
+            hardness: 3.0  
+            resistance: 4.5  
+            replaceable: false  
+            is_redstone_conductor: true  
+            is_suffocating: true  
+            instrument: basedrum  
+            map_color: 15  
+            tags:  
+              - minecraft:mineable/pickaxe  
+            correct_tools:  
+              template: default:pickaxe_power/level_1  
+        behavior:  
+          - type: double_high_block  
+          - type: kaleidoscopecookery:shawarma_spit
+        states:  
+          properties:  
+            half:  
+              type: double_block_half  
+              default: lower  
+            facing:  
+              type: 4-direction  
+              default: north  
+            powered:  
+              type: boolean  
+              default: false  
+          appearances:  
+            lower_north_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_lower  
+            lower_north_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_lower  
+            lower_east_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_lower  
+                rotation: 90  
+            lower_east_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_lower  
+                rotation: 90  
+            lower_south_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_lower  
+                rotation: 180  
+            lower_south_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_lower  
+                rotation: 180  
+            lower_west_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_lower  
+                rotation: 270  
+            lower_west_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_lower  
+                rotation: 270  
+            upper_north_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_upper  
+            upper_north_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_upper  
+            upper_east_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_upper  
+                rotation: 90  
+            upper_east_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_upper  
+                rotation: 90  
+            upper_south_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_upper  
+                rotation: 180  
+            upper_south_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_upper  
+                rotation: 180  
+            upper_west_unpowered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_upper  
+                rotation: 270  
+            upper_west_powered:  
+              state: barrier  
+              entity_renderer:  
+                item: show:shawarma_spit_powered_upper  
+                rotation: 270  
+          variants:  
+            half=lower,facing=north,powered=false:  
+              appearance: lower_north_unpowered  
+            half=lower,facing=north,powered=true:  
+              appearance: lower_north_powered  
+            half=lower,facing=east,powered=false:  
+              appearance: lower_east_unpowered  
+            half=lower,facing=east,powered=true:  
+              appearance: lower_east_powered  
+            half=lower,facing=south,powered=false:  
+              appearance: lower_south_unpowered  
+            half=lower,facing=south,powered=true:  
+              appearance: lower_south_powered  
+            half=lower,facing=west,powered=false:  
+              appearance: lower_west_unpowered  
+            half=lower,facing=west,powered=true:  
+              appearance: lower_west_powered  
+            half=upper,facing=north,powered=false:  
+              appearance: upper_north_unpowered  
+            half=upper,facing=north,powered=true:  
+              appearance: upper_north_powered  
+            half=upper,facing=east,powered=false:  
+              appearance: upper_east_unpowered  
+            half=upper,facing=east,powered=true:  
+              appearance: upper_east_powered  
+            half=upper,facing=south,powered=false:  
+              appearance: upper_south_unpowered  
+            half=upper,facing=south,powered=true:  
+              appearance: upper_south_powered  
+            half=upper,facing=west,powered=false:  
+              appearance: upper_west_unpowered  
+            half=upper,facing=west,powered=true:  
+              appearance: upper_west_powered
+
+      
+#烤架
+  show:shawarma_spit_lower:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/shawarma_spit_lower
+
+      
+  show:shawarma_spit_powered_lower:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/shawarma_spit_powered_lower
+
+      
+  show:shawarma_spit_powered_upper:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/shawarma_spit_powered_upper
+
+      
+  show:shawarma_spit_upper:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/shawarma_spit_upper

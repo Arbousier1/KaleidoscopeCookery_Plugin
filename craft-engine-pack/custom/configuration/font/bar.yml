@@ -1,0 +1,26 @@
+images:
+  kaleidoscopecookery:tea_empty: 
+    font: kaleidoscopecookery:trashcan
+    file: "minecraft:font/bar/empty.png"  
+    height: 8
+    ascent: 8
+  kaleidoscopecookery:tea_lava_full: 
+    font: kaleidoscopecookery:trashcan
+    file: "minecraft:font/bar/lava_full.png"  
+    height: 8
+    ascent: 8
+  kaleidoscopecookery:tea_water_full: 
+    font: kaleidoscopecookery:trashcan
+    file: "minecraft:font/bar/water_full.png"  
+    height: 8
+    ascent: 8
+  kaleidoscopecookery:tea_left: 
+    font: kaleidoscopecookery:trashcan
+    file: "minecraft:font/bar/left.png"  
+    height: 8
+    ascent: 8
+  kaleidoscopecookery:tea_right: 
+    font: kaleidoscopecookery:trashcan
+    file: "minecraft:font/bar/right.png"  
+    height: 8
+    ascent: 8

@@ -1,0 +1,82 @@
+# 配置：厨凳工作台配方。
+templates:
+  kaleidoscopecookery:cook_stool_recipe:
+    type: shaped
+    category: building
+    pattern:
+      - AAA
+      - B B
+    ingredients:
+      A: minecraft:${wood_type}_planks
+      B: minecraft:${wood_type}_slab
+    result:
+      id: kaleidoscopecookery:cook_stool_${wood_type}
+      count: 1
+
+recipes:
+  # 配方：金合欢木厨凳（kaleidoscopecookery:cook_stool_acacia）
+  # 材料：金合欢木板 x3、金合欢木台阶 x2
+  kaleidoscopecookery:cook_stool_acacia:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: acacia
+  # 配方：竹厨凳（kaleidoscopecookery:cook_stool_bamboo）
+  # 材料：竹板 x3、竹台阶 x2
+  kaleidoscopecookery:cook_stool_bamboo:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: bamboo
+  # 配方：白桦木厨凳（kaleidoscopecookery:cook_stool_birch）
+  # 材料：白桦木板 x3、白桦木台阶 x2
+  kaleidoscopecookery:cook_stool_birch:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: birch
+  # 配方：樱花木厨凳（kaleidoscopecookery:cook_stool_cherry）
+  # 材料：樱花木板 x3、樱花木台阶 x2
+  kaleidoscopecookery:cook_stool_cherry:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: cherry
+  # 配方：绯红木厨凳（kaleidoscopecookery:cook_stool_crimson）
+  # 材料：绯红木板 x3、绯红木台阶 x2
+  kaleidoscopecookery:cook_stool_crimson:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: crimson
+  # 配方：深色橡木厨凳（kaleidoscopecookery:cook_stool_dark_oak）
+  # 材料：深色橡木木板 x3、深色橡木台阶 x2
+  kaleidoscopecookery:cook_stool_dark_oak:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: dark_oak
+  # 配方：丛林木厨凳（kaleidoscopecookery:cook_stool_jungle）
+  # 材料：丛林木板 x3、丛林木台阶 x2
+  kaleidoscopecookery:cook_stool_jungle:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: jungle
+  # 配方：红树木厨凳（kaleidoscopecookery:cook_stool_mangrove）
+  # 材料：红树木板 x3、红树木台阶 x2
+  kaleidoscopecookery:cook_stool_mangrove:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: mangrove
+  # 配方：橡木厨凳（kaleidoscopecookery:cook_stool_oak）
+  # 材料：橡木木板 x3、橡木台阶 x2
+  kaleidoscopecookery:cook_stool_oak:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: oak
+  # 配方：云杉木厨凳（kaleidoscopecookery:cook_stool_spruce）
+  # 材料：云杉木板 x3、云杉木台阶 x2
+  kaleidoscopecookery:cook_stool_spruce:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: spruce
+  # 配方：诡异木厨凳（kaleidoscopecookery:cook_stool_warped）
+  # 材料：诡异木板 x3、诡异木台阶 x2
+  kaleidoscopecookery:cook_stool_warped:
+    template: kaleidoscopecookery:cook_stool_recipe
+    arguments:
+      wood_type: warped

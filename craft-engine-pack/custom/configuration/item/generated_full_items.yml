@@ -1,0 +1,1054 @@
+categories:
+  kaleidoscopecookery:generated_full_items:
+    name: "<!i><white><l10n:category.kaleidoscopecookery.generated_full_items>"
+    icon: kaleidoscopecookery:tomato
+    hidden: true
+    list:
+      - kaleidoscopecookery:oil_block
+      - kaleidoscopecookery:chili_ristra
+      - kaleidoscopecookery:strung_mushrooms
+      - kaleidoscopecookery:straw_block
+      - kaleidoscopecookery:scarecrow
+      - kaleidoscopecookery:transmutation_lunch_bag
+      - kaleidoscopecookery:sickle
+      - kaleidoscopecookery:farmer_chest_plate
+      - kaleidoscopecookery:farmer_leggings
+      - kaleidoscopecookery:farmer_boots
+      - kaleidoscopecookery:tomato_seed
+      - kaleidoscopecookery:chili_seed
+      - kaleidoscopecookery:lettuce_seed
+      - kaleidoscopecookery:rice
+      - kaleidoscopecookery:wild_rice
+      - kaleidoscopecookery:tomato
+      - kaleidoscopecookery:red_chili
+      - kaleidoscopecookery:green_chili
+      - kaleidoscopecookery:lettuce
+      - kaleidoscopecookery:rice_panicle
+      - kaleidoscopecookery:caterpillar
+      - kaleidoscopecookery:flour
+      - kaleidoscopecookery:stuffed_dough_food
+      - kaleidoscopecookery:raw_zongzi
+      - kaleidoscopecookery:raw_bamboo_tube_rice
+      - kaleidoscopecookery:fried_egg
+      - kaleidoscopecookery:donkey_burger
+      - kaleidoscopecookery:baozi
+      - kaleidoscopecookery:dumpling
+      - kaleidoscopecookery:samsa
+      - kaleidoscopecookery:meat_pie
+      - kaleidoscopecookery:qingtuan
+      - kaleidoscopecookery:sticky_candy
+      - kaleidoscopecookery:sticky_rice_cake
+      - kaleidoscopecookery:zongzi
+      - kaleidoscopecookery:bamboo_tube_rice
+      - kaleidoscopecookery:cooked_rice
+      - kaleidoscopecookery:egg_fried_rice
+      - kaleidoscopecookery:scramble_egg_with_tomatoes
+      - kaleidoscopecookery:scramble_egg_with_tomatoes_rice_bowl
+      - kaleidoscopecookery:braised_beef
+      - kaleidoscopecookery:braised_beef_rice_bowl
+      - kaleidoscopecookery:stir_fried_pork_with_peppers
+      - kaleidoscopecookery:stir_fried_pork_with_peppers_rice_bowl
+      - kaleidoscopecookery:sweet_and_sour_pork
+      - kaleidoscopecookery:sweet_and_sour_pork_rice_bowl
+      - kaleidoscopecookery:fish_flavored_shredded_pork
+      - kaleidoscopecookery:fish_flavored_shredded_pork_rice_bowl
+      - kaleidoscopecookery:pork_bone_soup
+      - kaleidoscopecookery:seafood_miso_soup
+      - kaleidoscopecookery:fearsome_thick_soup
+      - kaleidoscopecookery:lamb_and_radish_soup
+      - kaleidoscopecookery:braised_beef_with_potatoes
+      - kaleidoscopecookery:wild_mushroom_rabbit_soup
+      - kaleidoscopecookery:pufferfish_soup
+      - kaleidoscopecookery:borscht
+      - kaleidoscopecookery:beef_meatball_soup
+      - kaleidoscopecookery:chicken_and_mushroom_stew
+      - kaleidoscopecookery:laba_congee
+      - kaleidoscopecookery:beef_noodle
+      - kaleidoscopecookery:hui_noodle
+      - kaleidoscopecookery:udon_noodle
+      - kaleidoscopecookery:hot_dry_noodles
+      - kaleidoscopecookery:sashimi
+      - kaleidoscopecookery:raw_lamb_chops
+      - kaleidoscopecookery:raw_cow_offal
+      - kaleidoscopecookery:raw_pork_belly
+      - kaleidoscopecookery:raw_cut_small_meats
+      - kaleidoscopecookery:raw_meatball
+      - kaleidoscopecookery:cooked_lamb_chops
+      - kaleidoscopecookery:cooked_cow_offal
+      - kaleidoscopecookery:cooked_pork_belly
+      - kaleidoscopecookery:cooked_cut_small_meats
+      - kaleidoscopecookery:cooked_meatball
+      - kaleidoscopecookery:cold_cut_ham_slices
+      - kaleidoscopecookery:sakura_fubuki
+
+items:
+  kaleidoscopecookery:oil_block:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.oil_block>"
+    texture: minecraft:item/custom/cook/oil_block
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.item_block_visual>"
+
+  kaleidoscopecookery:chili_ristra:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chili_ristra>"
+    texture: minecraft:item/custom/cook/chili_ristra
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.hanging_shearing>"
+
+  kaleidoscopecookery:strung_mushrooms:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.strung_mushrooms>"
+    texture: minecraft:item/custom/cook/strung_mushrooms
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.hanging_shearing>"
+
+  kaleidoscopecookery:straw_block:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.straw_block>"
+    texture: minecraft:item/custom/cook/straw_block
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.block_simplified>"
+
+  kaleidoscopecookery:scarecrow:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.scarecrow>"
+    texture: minecraft:item/custom/cook/scarecrow
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.field_protection>"
+
+  kaleidoscopecookery:transmutation_lunch_bag:
+    material: minecraft:bundle
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.transmutation_lunch_bag>"
+    texture: minecraft:item/custom/cook/transmutation_lunch_bag
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.storage_transmutation>"
+
+  kaleidoscopecookery:sickle:
+    material: minecraft:iron_hoe
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sickle>"
+    texture: minecraft:item/custom/cook/sickle
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.crop_harvest>"
+
+  kaleidoscopecookery:farmer_chest_plate:
+    material: minecraft:leather_chestplate
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.farmer_chest_plate>"
+    texture: minecraft:item/custom/cook/farmer_chest_plate
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.armor>"
+
+  kaleidoscopecookery:farmer_leggings:
+    material: minecraft:leather_leggings
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.farmer_leggings>"
+    texture: minecraft:item/custom/cook/farmer_leggings
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.armor>"
+
+  kaleidoscopecookery:farmer_boots:
+    material: minecraft:leather_boots
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.farmer_boots>"
+    texture: minecraft:item/custom/cook/farmer_boots
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.armor>"
+
+  kaleidoscopecookery:tomato_seed:
+    material: minecraft:wheat_seeds
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.tomato_seed>"
+    texture: minecraft:item/custom/cook/tomato_seed
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.seed_crop>"
+
+  kaleidoscopecookery:chili_seed:
+    material: minecraft:wheat_seeds
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chili_seed>"
+    texture: minecraft:item/custom/cook/chili_seed
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.seed_crop>"
+
+  kaleidoscopecookery:lettuce_seed:
+    material: minecraft:wheat_seeds
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.lettuce_seed>"
+    texture: minecraft:item/custom/cook/lettuce_seed
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.seed_crop>"
+
+  kaleidoscopecookery:rice:
+    material: minecraft:wheat_seeds
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.rice>"
+    texture: minecraft:item/custom/cook/rice
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.seed_paddy>"
+
+  kaleidoscopecookery:wild_rice:
+    material: minecraft:wheat_seeds
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.wild_rice>"
+    texture: minecraft:item/custom/cook/wild_rice
+    lore:
+      - "<!i><gray><lang:lore.kaleidoscopecookery.config_only.seed_paddy>"
+
+  kaleidoscopecookery:tomato:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.tomato>"
+      components:
+        minecraft:food:
+          nutrition: 2
+          saturation: 2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/tomato
+
+  kaleidoscopecookery:red_chili:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.red_chili>"
+    texture: minecraft:item/custom/cook/red_chili
+
+  kaleidoscopecookery:green_chili:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.green_chili>"
+    texture: minecraft:item/custom/cook/green_chili
+
+  kaleidoscopecookery:lettuce:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.lettuce>"
+      components:
+        minecraft:food:
+          nutrition: 2
+          saturation: 0
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/lettuce
+
+  kaleidoscopecookery:rice_panicle:
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.rice_panicle>"
+    texture: minecraft:item/custom/cook/rice_panicle
+
+  kaleidoscopecookery:caterpillar:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.caterpillar>"
+      components:
+        minecraft:food:
+          nutrition: 18
+          saturation: 7.2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/caterpillar
+
+  kaleidoscopecookery:flour:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.flour>"
+    texture: minecraft:item/custom/cook/flour
+
+  kaleidoscopecookery:stuffed_dough_food:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.stuffed_dough_food>"
+    texture: minecraft:item/custom/cook/stuffed_dough_food
+
+  kaleidoscopecookery:raw_zongzi:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_zongzi>"
+    texture: minecraft:item/custom/cook/raw_zongzi
+
+  kaleidoscopecookery:raw_bamboo_tube_rice:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_bamboo_tube_rice>"
+      components:
+        minecraft:food:
+          nutrition: 10
+          saturation: 10
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_bamboo_tube_rice
+
+  kaleidoscopecookery:fried_egg:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.fried_egg>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 4
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/fried_egg
+
+  kaleidoscopecookery:donkey_burger:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.donkey_burger>"
+      components:
+        minecraft:food:
+          nutrition: 12
+          saturation: 19.2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/donkey_burger
+
+  kaleidoscopecookery:baozi:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.baozi>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 16
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/baozi
+
+  kaleidoscopecookery:dumpling:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.dumpling>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 16
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/dumpling
+
+  kaleidoscopecookery:samsa:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.samsa>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 16
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/samsa
+
+  kaleidoscopecookery:meat_pie:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.meat_pie>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 16
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/meat_pie
+
+  kaleidoscopecookery:qingtuan:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.qingtuan>"
+      components:
+        minecraft:food:
+          nutrition: 5
+          saturation: 6
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/qingtuan
+
+  kaleidoscopecookery:sticky_candy:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sticky_candy>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 12
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/sticky_candy
+
+  kaleidoscopecookery:sticky_rice_cake:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sticky_rice_cake>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 14
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/sticky_rice_cake
+
+  kaleidoscopecookery:zongzi:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.zongzi>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 10
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/zongzi
+
+  kaleidoscopecookery:bamboo_tube_rice:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.bamboo_tube_rice>"
+      components:
+        minecraft:food:
+          nutrition: 10
+          saturation: 10
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/bamboo_tube_rice
+
+  kaleidoscopecookery:cooked_rice:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_rice>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 12
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_rice
+
+  kaleidoscopecookery:egg_fried_rice:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.egg_fried_rice>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 14
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/egg_fried_rice
+
+  kaleidoscopecookery:scramble_egg_with_tomatoes:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.scramble_egg_with_tomatoes>"
+      components:
+        minecraft:food:
+          nutrition: 9
+          saturation: 10.998
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/scramble_egg_with_tomatoes
+
+  kaleidoscopecookery:scramble_egg_with_tomatoes_rice_bowl:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.scramble_egg_with_tomatoes_rice_bowl>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/scramble_egg_with_tomatoes_rice_bowl
+
+  kaleidoscopecookery:braised_beef:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.braised_beef>"
+      components:
+        minecraft:food:
+          nutrition: 9
+          saturation: 10.998
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/braised_beef
+
+  kaleidoscopecookery:braised_beef_rice_bowl:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.braised_beef_rice_bowl>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/braised_beef_rice_bowl
+
+  kaleidoscopecookery:stir_fried_pork_with_peppers:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.stir_fried_pork_with_peppers>"
+      components:
+        minecraft:food:
+          nutrition: 9
+          saturation: 10.998
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/stir_fried_pork_with_peppers
+
+  kaleidoscopecookery:stir_fried_pork_with_peppers_rice_bowl:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.stir_fried_pork_with_peppers_rice_bowl>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/stir_fried_pork_with_peppers_rice_bowl
+
+  kaleidoscopecookery:sweet_and_sour_pork:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sweet_and_sour_pork>"
+      components:
+        minecraft:food:
+          nutrition: 9
+          saturation: 10.998
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/sweet_and_sour_pork
+
+  kaleidoscopecookery:sweet_and_sour_pork_rice_bowl:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sweet_and_sour_pork_rice_bowl>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/sweet_and_sour_pork_rice_bowl
+
+  kaleidoscopecookery:fish_flavored_shredded_pork:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.fish_flavored_shredded_pork>"
+      components:
+        minecraft:food:
+          nutrition: 9
+          saturation: 10.998
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/fish_flavored_shredded_pork
+
+  kaleidoscopecookery:fish_flavored_shredded_pork_rice_bowl:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.fish_flavored_shredded_pork_rice_bowl>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/fish_flavored_shredded_pork_rice_bowl
+
+  kaleidoscopecookery:pork_bone_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.pork_bone_soup>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/pork_bone_soup
+
+  kaleidoscopecookery:seafood_miso_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.seafood_miso_soup>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/seafood_miso_soup
+
+  kaleidoscopecookery:fearsome_thick_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.fearsome_thick_soup>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 0
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/fearsome_thick_soup
+
+  kaleidoscopecookery:lamb_and_radish_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.lamb_and_radish_soup>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/lamb_and_radish_soup
+
+  kaleidoscopecookery:braised_beef_with_potatoes:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.braised_beef_with_potatoes>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/braised_beef_with_potatoes
+
+  kaleidoscopecookery:wild_mushroom_rabbit_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.wild_mushroom_rabbit_soup>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/wild_mushroom_rabbit_soup
+
+  kaleidoscopecookery:pufferfish_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.pufferfish_soup>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 0
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/pufferfish_soup
+
+  kaleidoscopecookery:borscht:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.borscht>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/borscht
+
+  kaleidoscopecookery:beef_meatball_soup:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.beef_meatball_soup>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/beef_meatball_soup
+
+  kaleidoscopecookery:chicken_and_mushroom_stew:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.chicken_and_mushroom_stew>"
+      components:
+        minecraft:food:
+          nutrition: 6
+          saturation: 8.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/chicken_and_mushroom_stew
+
+  kaleidoscopecookery:laba_congee:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.laba_congee>"
+      components:
+        minecraft:food:
+          nutrition: 12
+          saturation: 12
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/laba_congee
+
+  kaleidoscopecookery:beef_noodle:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.beef_noodle>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/beef_noodle
+
+  kaleidoscopecookery:hui_noodle:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.hui_noodle>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/hui_noodle
+
+  kaleidoscopecookery:udon_noodle:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.udon_noodle>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/udon_noodle
+
+  kaleidoscopecookery:hot_dry_noodles:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.hot_dry_noodles>"
+      components:
+        minecraft:food:
+          nutrition: 14
+          saturation: 18.004
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/hot_dry_noodles
+
+  kaleidoscopecookery:sashimi:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sashimi>"
+      components:
+        minecraft:food:
+          nutrition: 1
+          saturation: 1
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/sashimi
+
+  kaleidoscopecookery:raw_lamb_chops:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_lamb_chops>"
+      components:
+        minecraft:food:
+          nutrition: 1
+          saturation: 1
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_lamb_chops
+
+  kaleidoscopecookery:raw_cow_offal:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_cow_offal>"
+      components:
+        minecraft:food:
+          nutrition: 2
+          saturation: 1.2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_cow_offal
+
+  kaleidoscopecookery:raw_pork_belly:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_pork_belly>"
+      components:
+        minecraft:food:
+          nutrition: 2
+          saturation: 1.2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_pork_belly
+
+  kaleidoscopecookery:raw_cut_small_meats:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_cut_small_meats>"
+      components:
+        minecraft:food:
+          nutrition: 2
+          saturation: 1.2
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_cut_small_meats
+
+  kaleidoscopecookery:raw_meatball:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.raw_meatball>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 2.4
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/raw_meatball
+
+  kaleidoscopecookery:cooked_lamb_chops:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_lamb_chops>"
+      components:
+        minecraft:food:
+          nutrition: 3
+          saturation: 4.8
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_lamb_chops
+
+  kaleidoscopecookery:cooked_cow_offal:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_cow_offal>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 6.4
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_cow_offal
+
+  kaleidoscopecookery:cooked_pork_belly:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_pork_belly>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 6.4
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_pork_belly
+
+  kaleidoscopecookery:cooked_cut_small_meats:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_cut_small_meats>"
+      components:
+        minecraft:food:
+          nutrition: 4
+          saturation: 6.4
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_cut_small_meats
+
+  kaleidoscopecookery:cooked_meatball:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cooked_meatball>"
+      components:
+        minecraft:food:
+          nutrition: 8
+          saturation: 12.8
+          can_always_eat: true
+        minecraft:consumable:
+          consume_seconds: 1.6
+          animation: eat
+    texture: minecraft:item/custom/cook/food/cooked_meatball
+
+  kaleidoscopecookery:cold_cut_ham_slices:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.cold_cut_ham_slices>"
+    texture: minecraft:item/custom/cook/cold_cut_ham_slices
+
+  kaleidoscopecookery:sakura_fubuki:
+    category: cook:food
+    material: minecraft:paper
+    data:
+      item_name: "<!i><lang:item.kaleidoscopecookery.sakura_fubuki>"
+    texture: minecraft:item/custom/cook/tea/sakura_fubuki
+

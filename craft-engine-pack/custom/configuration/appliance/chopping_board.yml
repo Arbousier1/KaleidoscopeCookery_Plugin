@@ -1,0 +1,96 @@
+items:
+              
+# 砧板
+  kaleidoscopecookery:chopping_board:        
+    material: nether_brick        
+    data:        
+      item-name: <!i><lang:item.kaleidoscopecookery.chopping_board>
+    model: minecraft:block/custom/cook/block/chopping_board      
+    behavior:        
+      type: block_item        
+      block:        
+        loot:        
+          template: default:loot_table/self        
+        settings:        
+          template:        
+            - default:sound/metal        
+          overrides:        
+            hardness: 3.0        
+            resistance: 4.5        
+            replaceable: false        
+            is-redstone-conductor: true        
+            is-suffocating: true        
+            instrument: basedrum        
+            map-color: 15        
+            tags:        
+              - minecraft:mineable/pickaxe        
+            correct-tools:        
+              template: default:pickaxe_power/level_1   
+        behavior:
+          - type: sturdy_base_block
+            direction: down                # 检查支撑的方向（默认 down）
+            support_types:                 # 所需的支撑类型（默认 ["full"]）
+              - full
+            stackable: false               # 是否允许堆叠在同类型方块上
+            max_height: 0                  # 堆叠时的最大高度（需 >1）
+            delay: 0                       # 检查延迟（刻），0 = 立即破坏
+          - type: kaleidoscopecookery:chopping_board
+            diamond_knife_item: "craftengine:kaleidoscopecookery:diamond_kitchen_knife"
+            gold_knife_item: "craftengine:kaleidoscopecookery:gold_kitchen_knife"
+            iron_knife_item: "craftengine:kaleidoscopecookery:iron_kitchen_knife"
+            netherite_knife_item: "craftengine:kaleidoscopecookery:netherite_kitchen_knife"
+            knives:
+              - "craftengine:kaleidoscopecookery:diamond_kitchen_knife"
+              - "craftengine:kaleidoscopecookery:gold_kitchen_knife"
+              - "craftengine:kaleidoscopecookery:iron_kitchen_knife"
+              - "craftengine:kaleidoscopecookery:netherite_kitchen_knife"
+              # CraftEngine 自定义物品写法：craftengine:<namespace>:<id>
+              # 其他 Bukkit/模组物品写法：<namespace>:<id>
+              # - "craftengine:example:custom_knife"
+              # - "minecraft:iron_sword"
+              # - "farmersdelight:iron_knife"
+        states:        
+          properties:        
+            facing:        
+              type: 4-direction        
+              default: north        
+          appearances:        
+            north:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]
+              transparent: true 
+              entity-renderer:        
+                item: show:chopping_board      
+                yaw: 180        
+            south:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]     
+              transparent: true 
+              entity-renderer:        
+                item: show:chopping_board 
+            east:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]    
+              transparent: true 
+              entity-renderer:        
+                item: show:chopping_board
+                yaw: -90      
+            west:        
+              state: iron_trapdoor[open=false, half=bottom, powered=true]
+              transparent: true 
+              entity-renderer:        
+                item: show:chopping_board 
+                yaw: 90        
+          variants:        
+            facing=north:        
+              appearance: north        
+            facing=south:        
+              appearance: south        
+            facing=east:        
+              appearance: east        
+            facing=west:        
+              appearance: west
+
+      
+# 砧板
+  show:chopping_board:
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/chopping_board

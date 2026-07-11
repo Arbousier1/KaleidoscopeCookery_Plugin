@@ -1,0 +1,223 @@
+items:
+              
+  kaleidoscopecookery:enamel_basin:      
+    material: nether_brick      
+    data:      
+      item-name: <!i><lang:item.kaleidoscopecookery.enamel_basin>  
+    texture: minecraft:item/custom/cook/enamel_basin   
+    behavior:      
+      type: block_item      
+      block:      
+        loot:      
+          template: default:loot_table/self      
+        settings:      
+          template:      
+            - default:sound/metal      
+          overrides:      
+            hardness: 0.5      
+            resistance: 1.0      
+            replaceable: false      
+            is-redstone-conductor: false      
+            is-suffocating: false      
+            instrument: basedrum      
+            map-color: 15      
+            tags:      
+              - minecraft:mineable/pickaxe      
+            correct-tools:      
+              template: default:pickaxe_power/level_1   
+        behaviors:       
+          - type: kaleidoscopecookery:cooking_enamel_basin      
+        states:          
+          properties:          
+            facing:          
+              type: 4-direction          
+              default: north  
+            oil_level:  
+              type: int  
+              default: 0  
+              min: 0  
+              max: 4  
+          appearances:      
+            base_north:          
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_base     
+                yaw: 180      
+            base_south:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]   
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_base      
+            base_east:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_base     
+                yaw: -90     
+            base_west:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_base  
+                yaw: 90  
+            empty_north:          
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_empty     
+                yaw: 180      
+            empty_south:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]   
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_empty      
+            empty_east:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_empty     
+                yaw: -90     
+            empty_west:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_empty  
+                yaw: 90  
+            low_north:          
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_low     
+                yaw: 180      
+            low_south:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]   
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_low      
+            low_east:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_low     
+                yaw: -90     
+            low_west:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_low  
+                yaw: 90  
+            middle_north:          
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_middle     
+                yaw: 180      
+            middle_south:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]   
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_middle      
+            middle_east:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_middle     
+                yaw: -90     
+            middle_west:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_middle  
+                yaw: 90  
+            high_north:          
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_high     
+                yaw: 180      
+            high_south:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]   
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_high      
+            high_east:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_high     
+                yaw: -90     
+            high_west:      
+              state: soul_campfire[lit=false, signal_fire=true, facing=east]  
+              transparent: true     
+              entity-renderer:      
+                item: show:enamel_basin_high  
+                yaw: 90  
+          variants:  
+            facing=north,oil_level=0:  
+              appearance: base_north  
+            facing=south,oil_level=0:  
+              appearance: base_south  
+            facing=east,oil_level=0:  
+              appearance: base_east  
+            facing=west,oil_level=0:  
+              appearance: base_west  
+            facing=north,oil_level=1:  
+              appearance: empty_north  
+            facing=south,oil_level=1:  
+              appearance: empty_south  
+            facing=east,oil_level=1:  
+              appearance: empty_east  
+            facing=west,oil_level=1:  
+              appearance: empty_west  
+            facing=north,oil_level=2:  
+              appearance: low_north  
+            facing=south,oil_level=2:  
+              appearance: low_south  
+            facing=east,oil_level=2:  
+              appearance: low_east  
+            facing=west,oil_level=2:  
+              appearance: low_west  
+            facing=north,oil_level=3:  
+              appearance: middle_north  
+            facing=south,oil_level=3:  
+              appearance: middle_south  
+            facing=east,oil_level=3:  
+              appearance: middle_east  
+            facing=west,oil_level=3:  
+              appearance: middle_west  
+            facing=north,oil_level=4:  
+              appearance: high_north  
+            facing=south,oil_level=4:  
+              appearance: high_south  
+            facing=east,oil_level=4:  
+              appearance: high_east  
+            facing=west,oil_level=4:  
+              appearance: high_west
+
+
+# 猪油瓷盆
+  show:enamel_basin_base:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/enamel_basin/base
+
+  show:enamel_basin_empty:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/enamel_basin/empty
+
+  show:enamel_basin_high:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/enamel_basin/high
+
+  show:enamel_basin_low:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/enamel_basin/low
+
+  show:enamel_basin_middle:  
+    model:  
+      type: minecraft:model  
+      path: minecraft:block/custom/cook/block/enamel_basin/middle

@@ -1,0 +1,18 @@
+chopping_board_raws:
+  # 砧板：鳕鱼切片
+  # 材料：生鳕鱼
+  kaleidoscopecookery:cod:
+    require: minecraft:cod
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cod
+    mode: single
+    result:
+      - minecraft:cooked_cod 1 100
+
+  kaleidoscopecookery:cooked_chicken:
+    require: minecraft:cooked_chicken
+    stage: 5
+    values: cb:block/custom/cook/block/chopping_board/cooked_chicken
+    mode: single
+    result:
+      - minecraft:cooked_cod 1 100

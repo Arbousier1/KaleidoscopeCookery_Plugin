@@ -1,0 +1,2834 @@
+categories:  
+  cook:food:  
+    icon: cook:blaze_lamb_chop
+    name: "<gradient:#FF6B35:#FFD700><l10n:category.cook.food></gradient>"
+    list:  
+      - cook:blaze_lamb_chop  
+      - cook:braised_fish  
+      - cook:chorus_fried_egg  
+      - cook:cold_style_sashimi  
+      - cook:crystal_lamb_chop  
+      - cook:dark_cuisine  
+      - cook:desert_style_sashimi  
+      - cook:dongpo_pork  
+      - cook:end_style_sashimi  
+      - cook:fondant_pie  
+      - cook:fondant_spider_eye  
+      - cook:frost_lamb_chop  
+      - cook:golden_salad  
+      - cook:nether_style_sashimi  
+      - cook:pan_seared_knight_steak  
+      - cook:slime_ball_meal  
+      - cook:spicy_chicken  
+      - cook:stargazy_pie  
+      - cook:suspicious_stir_fry  
+      - cook:sweet_and_sour_ender_pearls  
+      - cook:tundra_style_sashimi  
+      - cook:yakitori
+      - cook:shengjian_mantou
+      
+##############    
+# 模板    
+##############    
+    
+templates#items:        
+  cook:furniture/consumable_item:          
+    material: nether_brick          
+    data:          
+      item-name: <!i>${item_name}        
+      components:      
+        minecraft:max_stack_size: 1      
+    model:          
+      template: internal:model/simplified_generated          
+      arguments:          
+        path: block/custom/cook/block/food/item/${__ID__}          
+    behavior:          
+      type: craftengine:furniture_item          
+      furniture: ${__NAMESPACE__}:${__ID__}          
+      rules:          
+        ground:          
+          rotation: any          
+          alignment: any      
+      
+  cook:furniture/consumable_display:        
+    material: nether_brick        
+    model:        
+      path: ${model_path}    
+
+##############    
+# 物品配置    
+##############    
+
+items:
+  # 1. 烈焰烤羊排
+  cook:blaze_lamb_chop:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#FF6B35><lang:item.cook.blaze_lamb_chop>"
+  cook:blaze_lamb_chop_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/blaze_lamb_chop_0
+  cook:blaze_lamb_chop_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/blaze_lamb_chop_1
+  cook:blaze_lamb_chop_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/blaze_lamb_chop_2
+  cook:blaze_lamb_chop_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/blaze_lamb_chop_3
+
+  # 2. 红烧鱼
+  cook:braised_fish:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#FFA500><lang:item.cook.braised_fish>"
+  cook:braised_fish_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/braised_fish_0
+  cook:braised_fish_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/braised_fish_1
+  cook:braised_fish_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/braised_fish_2
+  cook:braised_fish_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/braised_fish_3
+  cook:braised_fish_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/braised_fish_4
+
+  # 3. 紫颂煎蛋
+  cook:chorus_fried_egg:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#9B59B6><lang:item.cook.chorus_fried_egg>"
+  cook:chorus_fried_egg_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/chorus_fried_egg_0
+  cook:chorus_fried_egg_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/chorus_fried_egg_1
+  cook:chorus_fried_egg_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/chorus_fried_egg_2
+  cook:chorus_fried_egg_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/chorus_fried_egg_3
+
+  # 4. 寒带风味刺身
+  cook:cold_style_sashimi:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#00CED1><lang:item.cook.cold_style_sashimi>"
+  cook:cold_style_sashimi_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/cold_style_sashimi_0
+  cook:cold_style_sashimi_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/cold_style_sashimi_1
+  cook:cold_style_sashimi_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/cold_style_sashimi_2
+  cook:cold_style_sashimi_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/cold_style_sashimi_3
+  cook:cold_style_sashimi_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/cold_style_sashimi_4
+
+  # 5. 水晶羊排
+  cook:crystal_lamb_chop:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#87CEEB><lang:item.cook.crystal_lamb_chop>"
+  cook:crystal_lamb_chop_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/crystal_lamb_chop_0
+  cook:crystal_lamb_chop_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/crystal_lamb_chop_1
+  cook:crystal_lamb_chop_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/crystal_lamb_chop_2
+  cook:crystal_lamb_chop_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/crystal_lamb_chop_3
+
+  # 6. 暗黑料理
+  cook:dark_cuisine:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#2C2C2C><lang:item.cook.dark_cuisine>"
+  cook:dark_cuisine_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dark_cuisine_0
+  cook:dark_cuisine_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dark_cuisine_1
+  cook:dark_cuisine_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dark_cuisine_2
+  cook:dark_cuisine_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dark_cuisine_3
+
+  # 7. 沙漠风味刺身
+  cook:desert_style_sashimi:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#EDC9AF><lang:item.cook.desert_style_sashimi>"
+  cook:desert_style_sashimi_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/desert_style_sashimi_0
+  cook:desert_style_sashimi_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/desert_style_sashimi_1
+  cook:desert_style_sashimi_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/desert_style_sashimi_2
+  cook:desert_style_sashimi_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/desert_style_sashimi_3
+  cook:desert_style_sashimi_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/desert_style_sashimi_4
+
+  # 8. 东坡肉
+  cook:dongpo_pork:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#8B4513><lang:item.cook.dongpo_pork>"
+  cook:dongpo_pork_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dongpo_pork_0
+  cook:dongpo_pork_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dongpo_pork_1
+  cook:dongpo_pork_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dongpo_pork_2
+  cook:dongpo_pork_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/dongpo_pork_3
+
+  # 9. 末地风刺身
+  cook:end_style_sashimi:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#8B008B><lang:item.cook.end_style_sashimi>"
+  cook:end_style_sashimi_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/end_style_sashimi_0
+  cook:end_style_sashimi_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/end_style_sashimi_1
+  cook:end_style_sashimi_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/end_style_sashimi_2
+  cook:end_style_sashimi_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/end_style_sashimi_3
+  cook:end_style_sashimi_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/end_style_sashimi_4
+
+  # 10. 翻糖派
+  cook:fondant_pie:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#FFB6C1><lang:item.cook.fondant_pie>"
+  cook:fondant_pie_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_pie_0
+  cook:fondant_pie_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_pie_1
+  cook:fondant_pie_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_pie_2
+  cook:fondant_pie_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_pie_3
+  cook:fondant_pie_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_pie_4
+
+  # 11. 翻糖蛛眼
+  cook:fondant_spider_eye:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#8B008B><lang:item.cook.fondant_spider_eye>"
+  cook:fondant_spider_eye_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_spider_eye_0
+  cook:fondant_spider_eye_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_spider_eye_1
+  cook:fondant_spider_eye_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_spider_eye_2
+  cook:fondant_spider_eye_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_spider_eye_3
+  cook:fondant_spider_eye_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/fondant_spider_eye_4
+
+  # 12. 凛冬羊排
+  cook:frost_lamb_chop:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#B0E0E6><lang:item.cook.frost_lamb_chop>"
+  cook:frost_lamb_chop_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/frost_lamb_chop_0
+  cook:frost_lamb_chop_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/frost_lamb_chop_1
+  cook:frost_lamb_chop_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/frost_lamb_chop_2
+  cook:frost_lamb_chop_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/frost_lamb_chop_3
+
+  # 13. 黄金沙拉
+  cook:golden_salad:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#FFD700><lang:item.cook.golden_salad>"
+  cook:golden_salad_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_0
+  cook:golden_salad_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_1
+  cook:golden_salad_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_2
+  cook:golden_salad_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_3
+  cook:golden_salad_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_4
+  cook:golden_salad_display_5:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_5
+  cook:golden_salad_display_6:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/golden_salad_6
+
+  # 14. 下界风味刺身
+  cook:nether_style_sashimi:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#DC143C><lang:item.cook.nether_style_sashimi>"
+  cook:nether_style_sashimi_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/nether_style_sashimi_0
+  cook:nether_style_sashimi_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/nether_style_sashimi_1
+  cook:nether_style_sashimi_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/nether_style_sashimi_2
+  cook:nether_style_sashimi_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/nether_style_sashimi_3
+  cook:nether_style_sashimi_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/nether_style_sashimi_4
+
+  # 15. 香煎骑士牛排
+  cook:pan_seared_knight_steak:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#CD853F><lang:item.cook.pan_seared_knight_steak>"
+  cook:pan_seared_knight_steak_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/pan_seared_knight_steak_0
+  cook:pan_seared_knight_steak_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/pan_seared_knight_steak_1
+  cook:pan_seared_knight_steak_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/pan_seared_knight_steak_2
+  cook:pan_seared_knight_steak_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/pan_seared_knight_steak_3
+  cook:pan_seared_knight_steak_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/pan_seared_knight_steak_4
+
+  # 16. 粘液饭
+  cook:slime_ball_meal:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#7CFC00><lang:item.cook.slime_ball_meal>"
+  cook:slime_ball_meal_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/slime_ball_meal_0
+  cook:slime_ball_meal_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/slime_ball_meal_1
+  cook:slime_ball_meal_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/slime_ball_meal_2
+  cook:slime_ball_meal_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/slime_ball_meal_3
+
+  # 17. 辣子鸡
+  cook:spicy_chicken:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#FF4500><lang:item.cook.spicy_chicken>"
+  cook:spicy_chicken_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/spicy_chicken_0
+  cook:spicy_chicken_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/spicy_chicken_1
+  cook:spicy_chicken_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/spicy_chicken_2
+  cook:spicy_chicken_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/spicy_chicken_3
+  cook:spicy_chicken_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/spicy_chicken_4
+
+  # 18. 仰望星空派
+  cook:stargazy_pie:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#4169E1><lang:item.cook.stargazy_pie>"
+  cook:stargazy_pie_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/stargazy_pie_0
+  cook:stargazy_pie_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/stargazy_pie_1
+  cook:stargazy_pie_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/stargazy_pie_2
+  cook:stargazy_pie_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/stargazy_pie_3
+  cook:stargazy_pie_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/stargazy_pie_4
+
+  # 19. 迷之炒菜
+  cook:suspicious_stir_fry:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#556B2F><lang:item.cook.suspicious_stir_fry>"
+  cook:suspicious_stir_fry_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/suspicious_stir_fry_0
+  cook:suspicious_stir_fry_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/suspicious_stir_fry_1
+
+  # 20. 珍珠咕噜肉
+  cook:sweet_and_sour_ender_pearls:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#9370DB><lang:item.cook.sweet_and_sour_ender_pearls>"
+  cook:sweet_and_sour_ender_pearls_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/sweet_and_sour_ender_pearls_0
+  cook:sweet_and_sour_ender_pearls_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/sweet_and_sour_ender_pearls_1
+  cook:sweet_and_sour_ender_pearls_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/sweet_and_sour_ender_pearls_2
+  cook:sweet_and_sour_ender_pearls_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/sweet_and_sour_ender_pearls_3
+
+  # 21. 苔原风味刺身
+  cook:tundra_style_sashimi:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#E0FFFF><lang:item.cook.tundra_style_sashimi>"
+  cook:tundra_style_sashimi_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/tundra_style_sashimi_0
+  cook:tundra_style_sashimi_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/tundra_style_sashimi_1
+  cook:tundra_style_sashimi_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/tundra_style_sashimi_2
+  cook:tundra_style_sashimi_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/tundra_style_sashimi_3
+  cook:tundra_style_sashimi_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/tundra_style_sashimi_4
+
+  # 22. 烧鸟串
+  cook:yakitori:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#D2691E><lang:item.cook.yakitori>"
+  cook:yakitori_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/yakitori_0
+  cook:yakitori_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/yakitori_1
+  cook:yakitori_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/yakitori_2
+  cook:yakitori_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/yakitori_3
+  cook:yakitori_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/yakitori_4
+
+  # 23. 生煎馒头
+  cook:shengjian_mantou:
+    template: cook:furniture/consumable_item
+    arguments:
+      item_name: "<#F4A460><lang:item.cook.shengjian_mantou>"
+  cook:shengjian_mantou_display_0:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/shengjian_mantou_0
+  cook:shengjian_mantou_display_1:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/shengjian_mantou_1
+  cook:shengjian_mantou_display_2:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/shengjian_mantou_2
+  cook:shengjian_mantou_display_3:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/shengjian_mantou_3
+  cook:shengjian_mantou_display_4:
+    template: cook:furniture/consumable_display
+    arguments:
+      model_path: block/custom/cook/block/food/shengjian_mantou_4
+
+##############    
+# 家具配置    
+############## 
+
+furniture:
+  # 1. 烈焰烤羊排
+  cook:blaze_lamb_chop:
+    settings:
+      item: cook:blaze_lamb_chop
+      hit_times: 3
+      sounds:
+        place: minecraft:block.wood.place
+        break: minecraft:block.wood.break
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:blaze_lamb_chop
+    variants:
+      ground:
+        elements:
+          - item: cook:blaze_lamb_chop_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:blaze_lamb_chop_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:blaze_lamb_chop_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:blaze_lamb_chop_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+            volume: 1.0
+            pitch: 1.0
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 2. 红烧鱼
+  cook:braised_fish:
+    settings:
+      item: cook:braised_fish
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:braised_fish
+    variants:
+      ground:
+        elements:
+          - item: cook:braised_fish_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:braised_fish_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:braised_fish_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:braised_fish_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:braised_fish_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 3. 紫颂煎蛋
+  cook:chorus_fried_egg:
+    settings:
+      item: cook:chorus_fried_egg
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:chorus_fried_egg
+    variants:
+      ground:
+        elements:
+          - item: cook:chorus_fried_egg_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:chorus_fried_egg_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:chorus_fried_egg_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:chorus_fried_egg_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 4. 寒带风味刺身 (5阶段模版)
+  cook:cold_style_sashimi:
+    settings:
+      item: cook:cold_style_sashimi
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:cold_style_sashimi
+    variants:
+      ground:
+        elements:
+          - item: cook:cold_style_sashimi_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:cold_style_sashimi_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:cold_style_sashimi_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:cold_style_sashimi_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:cold_style_sashimi_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 2
+          - type: set_saturation
+            add: true
+            saturation: 1.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 5. 水晶羊排
+  cook:crystal_lamb_chop:
+    settings:
+      item: cook:crystal_lamb_chop
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:crystal_lamb_chop
+    variants:
+      ground:
+        elements:
+          - item: cook:crystal_lamb_chop_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:crystal_lamb_chop_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:crystal_lamb_chop_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:crystal_lamb_chop_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 6. 暗黑料理
+  cook:dark_cuisine:
+    settings:
+      item: cook:dark_cuisine
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:dark_cuisine
+    variants:
+      ground:
+        elements:
+          - item: cook:dark_cuisine_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:dark_cuisine_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:dark_cuisine_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:dark_cuisine_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 1
+          - type: set_saturation
+            add: true
+            saturation: 0.5
+          - type: potion_effect
+            potion-effect: minecraft:glowing
+            duration: 300
+            amplifier: 0
+            particles: true
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 7. 沙漠风味刺身
+  cook:desert_style_sashimi:
+    settings:
+      item: cook:desert_style_sashimi
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:desert_style_sashimi
+    variants:
+      ground:
+        elements:
+          - item: cook:desert_style_sashimi_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:desert_style_sashimi_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:desert_style_sashimi_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:desert_style_sashimi_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:desert_style_sashimi_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 8. 东坡肉
+  cook:dongpo_pork:
+    settings:
+      item: cook:dongpo_pork
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:dongpo_pork
+    variants:
+      ground:
+        elements:
+          - item: cook:dongpo_pork_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:dongpo_pork_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:dongpo_pork_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:dongpo_pork_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 5
+          - type: set_saturation
+            add: true
+            saturation: 3.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 9. 末地风味刺身
+  cook:end_style_sashimi:
+    settings:
+      item: cook:end_style_sashimi
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:end_style_sashimi
+    variants:
+      ground:
+        elements:
+          - item: cook:end_style_sashimi_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:end_style_sashimi_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:end_style_sashimi_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:end_style_sashimi_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:end_style_sashimi_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 10. 翻糖派
+  cook:fondant_pie:
+    settings:
+      item: cook:fondant_pie
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:fondant_pie
+    variants:
+      ground:
+        elements:
+          - item: cook:fondant_pie_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:fondant_pie_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:fondant_pie_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:fondant_pie_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:fondant_pie_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 11. 翻糖蛛眼
+  cook:fondant_spider_eye:
+    settings:
+      item: cook:fondant_spider_eye
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:fondant_spider_eye
+    variants:
+      ground:
+        elements:
+          - item: cook:fondant_spider_eye_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:fondant_spider_eye_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:fondant_spider_eye_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:fondant_spider_eye_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:fondant_spider_eye_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 2
+          - type: set_saturation
+            add: true
+            saturation: 1.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 12. 凛冬羊排
+  cook:frost_lamb_chop:
+    settings:
+      item: cook:frost_lamb_chop
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:frost_lamb_chop
+    variants:
+      ground:
+        elements:
+          - item: cook:frost_lamb_chop_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:frost_lamb_chop_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:frost_lamb_chop_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:frost_lamb_chop_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 13. 黄金沙拉 (7阶段)
+  cook:golden_salad:
+    settings:
+      item: cook:golden_salad
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:golden_salad
+    variants:
+      ground:
+        elements:
+          - item: cook:golden_salad_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:golden_salad_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:golden_salad_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:golden_salad_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:golden_salad_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_5:
+        elements:
+          - item: cook:golden_salad_display_5
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_6:
+        elements:
+          - item: cook:golden_salad_display_6
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 2
+          - type: set_saturation
+            add: true
+            saturation: 1.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_5
+              - when: stage_5
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_6
+              - when: stage_6
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 14. 下界风味刺身
+  cook:nether_style_sashimi:
+    settings:
+      item: cook:nether_style_sashimi
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:nether_style_sashimi
+    variants:
+      ground:
+        elements:
+          - item: cook:nether_style_sashimi_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:nether_style_sashimi_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:nether_style_sashimi_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:nether_style_sashimi_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:nether_style_sashimi_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 15. 香煎骑士牛排
+  cook:pan_seared_knight_steak:
+    settings:
+      item: cook:pan_seared_knight_steak
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:pan_seared_knight_steak
+    variants:
+      ground:
+        elements:
+          - item: cook:pan_seared_knight_steak_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:pan_seared_knight_steak_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:pan_seared_knight_steak_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:pan_seared_knight_steak_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:pan_seared_knight_steak_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 5
+          - type: set_saturation
+            add: true
+            saturation: 3.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 16. 粘液饭
+  cook:slime_ball_meal:
+    settings:
+      item: cook:slime_ball_meal
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:slime_ball_meal
+    variants:
+      ground:
+        elements:
+          - item: cook:slime_ball_meal_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:slime_ball_meal_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:slime_ball_meal_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:slime_ball_meal_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 17. 辣子鸡
+  cook:spicy_chicken:
+    settings:
+      item: cook:spicy_chicken
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:spicy_chicken
+    variants:
+      ground:
+        elements:
+          - item: cook:spicy_chicken_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:spicy_chicken_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:spicy_chicken_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:spicy_chicken_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:spicy_chicken_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 18. 仰望星空派
+  cook:stargazy_pie:
+    settings:
+      item: cook:stargazy_pie
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:stargazy_pie
+    variants:
+      ground:
+        elements:
+          - item: cook:stargazy_pie_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:stargazy_pie_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:stargazy_pie_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:stargazy_pie_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:stargazy_pie_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 19. 迷之炒菜
+  cook:suspicious_stir_fry:
+    settings:
+      item: cook:suspicious_stir_fry
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:suspicious_stir_fry
+    variants:
+      ground:
+        elements:
+          - item: cook:suspicious_stir_fry_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:suspicious_stir_fry_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 1
+          - type: set_saturation
+            add: true
+            saturation: 0.5
+          - type: potion_effect
+            potion-effect: minecraft:levitation
+            duration: 200
+            amplifier: 0
+          - type: potion_effect
+            potion-effect: minecraft:slow_falling
+            duration: 300
+            amplifier: 0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 20. 珍珠咕噜肉
+  cook:sweet_and_sour_ender_pearls:
+    settings:
+      item: cook:sweet_and_sour_ender_pearls
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:sweet_and_sour_ender_pearls
+    variants:
+      ground:
+        elements:
+          - item: cook:sweet_and_sour_ender_pearls_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:sweet_and_sour_ender_pearls_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:sweet_and_sour_ender_pearls_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:sweet_and_sour_ender_pearls_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 2.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 21. 苔原风味刺身
+  cook:tundra_style_sashimi:
+    settings:
+      item: cook:tundra_style_sashimi
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:tundra_style_sashimi
+    variants:
+      ground:
+        elements:
+          - item: cook:tundra_style_sashimi_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:tundra_style_sashimi_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:tundra_style_sashimi_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:tundra_style_sashimi_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:tundra_style_sashimi_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 3
+          - type: set_saturation
+            add: true
+            saturation: 1.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 22. 烧鸟串
+  cook:yakitori:
+    settings:
+      item: cook:yakitori
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:yakitori
+    variants:
+      ground:
+        elements:
+          - item: cook:yakitori_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:yakitori_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:yakitori_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:yakitori_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:yakitori_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.5
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
+
+  # 23. 生煎馒头
+  cook:shengjian_mantou:
+    settings:
+      item: cook:shengjian_mantou
+      hit_times: 3
+    loot:
+      template: default:loot_table/furniture
+      arguments:
+        item: cook:shengjian_mantou
+    variants:
+      ground:
+        elements:
+          - item: cook:shengjian_mantou_display_0
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_1:
+        elements:
+          - item: cook:shengjian_mantou_display_1
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_2:
+        elements:
+          - item: cook:shengjian_mantou_display_2
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_3:
+        elements:
+          - item: cook:shengjian_mantou_display_3
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+      stage_4:
+        elements:
+          - item: cook:shengjian_mantou_display_4
+            scale: 1
+            position: 0,0.5,0
+        hitboxes:
+          - position: 0,0,0
+            type: interaction
+            width: 1
+            height: 0.5
+            interactive: true
+    events:
+      - on: right_click
+        functions:
+          - type: set_food
+            add: true
+            food: 4
+          - type: set_saturation
+            add: true
+            saturation: 2.0
+          - type: play_sound
+            sound: minecraft:entity.generic.eat
+          - type: swing_hand
+          - type: when
+            source: <arg:furniture.variant>
+            cases:
+              - when: ground
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_1
+              - when: stage_1
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_2
+              - when: stage_2
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_3
+              - when: stage_3
+                functions:
+                  - type: set_furniture_variant
+                    variant: stage_4
+              - when: stage_4
+                functions:
+                  - type: remove_furniture
+                    drop-loot: false
