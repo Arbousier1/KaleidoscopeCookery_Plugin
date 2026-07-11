@@ -32,6 +32,12 @@ jobs:
           ref: main
           path: craft-engine
 
+      - name: Set CraftEngine build identity
+        shell: bash
+        run: |
+          git -C craft-engine config user.name 'GitHub Actions'
+          git -C craft-engine config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
       # Main sources target Java 21, while the Minecraft 26.x NMS bridges
       # target Java 25. Gradle discovers both installed toolchains.
       - name: Set up Java 21
