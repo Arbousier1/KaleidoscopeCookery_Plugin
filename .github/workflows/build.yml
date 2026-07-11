@@ -108,6 +108,8 @@ jobs:
           mkdir -p run/plugins/CraftEngine/resources
           mkdir -p run/plugins/KaleidoscopeCookeryPlugin
           cp craft-engine/target/craft-engine-bukkit-plugin-*.jar run/plugins/
+          cp -R craft-engine/common-files/src/main/resources/resources/. run/plugins/CraftEngine/resources/
+          find run/plugins/CraftEngine/resources -name _index.json -delete
           cp -R craft-engine-pack/custom run/plugins/CraftEngine/resources/custom
           cat > run/plugins/KaleidoscopeCookeryPlugin/config.yml <<'EOF'
           console:
