@@ -107,6 +107,9 @@ tasks.named('assemble') {
 tasks {
     runServer {
         minecraftVersion("26.1.2")
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(25)
+        }
     }
 }
 
