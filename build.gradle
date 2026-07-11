@@ -17,6 +17,9 @@ def nmsVersions = [
 ]
 
 repositories {
+    if (providers.gradleProperty("craftEngineVersion").isPresent()) {
+        mavenLocal()
+    }
     mavenCentral()
     maven {
         name = "papermc-repo"
@@ -42,6 +45,9 @@ repositories {
     }
 }
 
+def craftEngineVersion = providers.gradleProperty("craftEngineVersion").getOrElse("26.7")
+def craftEngineNmsHelperVersion = providers.gradleProperty("craftEngineNmsHelperVersion").getOrElse("1.0.213")
+
 nmsVersions.each { sourceSetName, version ->
     sourceSets.create(sourceSetName) {
         java.srcDir("src/nms/${version.path}/java")
@@ -52,12 +58,12 @@ nmsVersions.each { sourceSetName, version ->
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly("net.momirealms:craft-engine-bukkit:26.7")
-    compileOnly("net.momirealms:craft-engine-core:26.7")
-    compileOnly("net.momirealms:craft-engine-adventure:26.7")
-    compileOnly("net.momirealms:craft-engine-bukkit-proxy:26.7")
-    compileOnly("net.momirealms:craft-engine-nms-helper-mojmap:1.0.213")
-    compileOnly("net.momirealms:craft-engine-nms-helper:1.0.213")
+    compileOnly("net.momirealms:craft-engine-bukkit:${craftEngineVersion}")
+    compileOnly("net.momirealms:craft-engine-core:${craftEngineVersion}")
+    compileOnly("net.momirealms:craft-engine-adventure:${craftEngineVersion}")
+    compileOnly("net.momirealms:craft-engine-bukkit-proxy:${craftEngineVersion}")
+    compileOnly("net.momirealms:craft-engine-nms-helper-mojmap:${craftEngineNmsHelperVersion}")
+    compileOnly("net.momirealms:craft-engine-nms-helper:${craftEngineNmsHelperVersion}")
     compileOnly("io.netty:netty-all:4.1.100.Final")
     compileOnly("com.mojang:datafixerupper:8.0.16")
     compileOnly("net.momirealms:sparrow-util:0.112")

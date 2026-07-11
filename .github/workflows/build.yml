@@ -17,13 +17,20 @@ concurrency:
 
 jobs:
   build:
-    name: CraftEngine 26.7 compatibility
+    name: CraftEngine main compatibility
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Check out latest CraftEngine source
+        uses: actions/checkout@v4
+        with:
+          repository: Xiao-MoMi/craft-engine
+          ref: main
+          path: craft-engine
 
       # Main sources target Java 21, while the Minecraft 26.x NMS bridges
       # target Java 25. Gradle discovers both installed toolchains.
@@ -42,8 +49,43 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build and test
-        run: ./gradlew build --stacktrace --no-daemon
+      - name: Read CraftEngine source versions
+        id: craft_engine
+        shell: bash
+        run: |
+          craft_engine_version="$(grep '^project_version=' craft-engine/gradle.properties | cut -d= -f2-)"
+          nms_helper_version="$(grep '^nms_helper_version=' craft-engine/gradle.properties | cut -d= -f2-)"
+          echo "version=${craft_engine_version}" >> "$GITHUB_OUTPUT"
+          echo "nms_helper_version=${nms_helper_version}" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git -C craft-engine rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Publish latest CraftEngine APIs to Maven Local
+        working-directory: craft-engine
+        run: >-
+          ./gradlew
+          :core:publishToMavenLocal
+          :core:adventure:publishToMavenLocal
+          :bukkit:proxy:publishToMavenLocal
+          :bukkit:publishToMavenLocal
+          -Dorg.gradle.jvmargs=-Xmx4G
+          --stacktrace
+          --no-daemon
+
+      - name: Build and test against latest CraftEngine source
+        run: >-
+          ./gradlew build
+          -PcraftEngineVersion=${{ steps.craft_engine.outputs.version }}
+          -PcraftEngineNmsHelperVersion=${{ steps.craft_engine.outputs.nms_helper_version }}
+          --stacktrace
+          --no-daemon
+
+      - name: Record tested CraftEngine revision
+        if: always()
+        shell: bash
+        run: |
+          echo "### CraftEngine source under test" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Version: \`${{ steps.craft_engine.outputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Commit: \`${{ steps.craft_engine.outputs.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload plugin JAR
         if: success()
