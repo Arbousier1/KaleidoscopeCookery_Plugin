@@ -62,7 +62,7 @@ jobs:
       - name: Publish latest CraftEngine APIs to Maven Local
         working-directory: craft-engine
         run: >-
-          ./gradlew
+          bash ./gradlew
           :core:publishToMavenLocal
           :core:adventure:publishToMavenLocal
           :bukkit:proxy:publishToMavenLocal
@@ -73,7 +73,7 @@ jobs:
 
       - name: Build and test against latest CraftEngine source
         run: >-
-          ./gradlew build
+          bash ./gradlew build
           -PcraftEngineVersion=${{ steps.craft_engine.outputs.version }}
           -PcraftEngineNmsHelperVersion=${{ steps.craft_engine.outputs.nms_helper_version }}
           --stacktrace
