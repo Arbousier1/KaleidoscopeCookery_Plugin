@@ -191,6 +191,10 @@ public final class ItemTags {
     private static final class ItemTagsParser extends SectionConfigParser {
         private int count;
 
+        public Key type() {
+            return Key.of("kaleidoscopecookery:item_tags");
+        }
+
         @Override
         public String[] sectionId() {
             return new String[]{"item_tags", "item-tags", "item_tag", "item-tag"};

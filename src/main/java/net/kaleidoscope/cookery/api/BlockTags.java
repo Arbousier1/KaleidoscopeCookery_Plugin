@@ -128,6 +128,10 @@ public final class BlockTags {
    private static final class BlockTagsParser extends SectionConfigParser {
       private int count;
 
+      public Key type() {
+         return Key.of("kaleidoscopecookery:block_tags");
+      }
+
       public String[] sectionId() {
          return new String[]{"block_tags", "block-tags", "block_tag", "block-tag"};
       }

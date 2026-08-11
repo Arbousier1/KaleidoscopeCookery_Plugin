@@ -3,11 +3,11 @@ import net.kaleidoscope.cookery.block.entity.TeapotController;
 import net.kaleidoscope.cookery.block.entity.render.TrackedPlayers;
 import net.kaleidoscope.cookery.nms.NmsBridgeProvider;
 
+import net.momirealms.craftengine.bukkit.api.BukkitAdaptor;
 import net.momirealms.craftengine.bukkit.block.behavior.BukkitBlockBehavior;
 import net.momirealms.craftengine.bukkit.util.BlockStateUtils;
 import net.momirealms.craftengine.bukkit.util.DirectionUtils;
 import net.momirealms.craftengine.bukkit.util.LocationUtils;
-import net.momirealms.craftengine.bukkit.world.BukkitWorldManager;
 import net.momirealms.craftengine.core.block.BlockDefinition;
 import net.momirealms.craftengine.core.block.ImmutableBlockState;
 import net.momirealms.craftengine.core.block.behavior.BlockBehaviorFactory;
@@ -158,7 +158,7 @@ public final class TeapotBehavior extends BukkitBlockBehavior implements EntityB
     public Object playerWillDestroy(Object thisBlock, Object[] args) {
         Object nmsPlayer = args.length > 3 ? args[3] : null;
         if (isCreativePlayer(nmsPlayer)) {
-            CEWorld ceWorld = BukkitWorldManager.instance().getWorld(LevelProxy.INSTANCE.getWorld(args[0]).getUID());
+            CEWorld ceWorld = BukkitAdaptor.adapt(LevelProxy.INSTANCE.getWorld(args[0])).storageWorld();
             BlockEntity be = ceWorld.getBlockEntityAtIfLoaded(LocationUtils.fromBlockPos(args[1]));
             if (be != null) {
                 be.controller.let(TeapotController.class, this.controllerId, TeapotController::markCreativeBreak);

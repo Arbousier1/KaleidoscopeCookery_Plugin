@@ -4,6 +4,10 @@ plugins {
     id("com.gradleup.shadow") version "9.2.2"
 }
 
+def craftEngineVersion = "26.8-SNAPSHOT"
+def craftEngineNmsHelperVersion = "1.0.229"
+def craftEngineDevDir = providers.gradleProperty("craftEngineDevDir").orNull
+
 def nmsVersions = [
         nmsV121R1: [path: 'v1_21_R1', dependency: '1.21.1-R0.1-SNAPSHOT', classifier: 'remapped-mojang'],
         nmsV121R2: [path: 'v1_21_R2', dependency: '1.21.3-R0.1-SNAPSHOT', classifier: 'remapped-mojang'],
@@ -52,25 +56,34 @@ nmsVersions.each { sourceSetName, version ->
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly("net.momirealms:craft-engine-bukkit:26.7.4")
-    compileOnly("net.momirealms:craft-engine-core:26.7.4")
-    compileOnly("net.momirealms:craft-engine-adventure:26.7.4")
-    compileOnly("net.momirealms:craft-engine-bukkit-proxy:26.7.4")
-    compileOnly("net.momirealms:craft-engine-nms-helper-mojmap:1.0.213")
-    compileOnly("net.momirealms:craft-engine-nms-helper:1.0.213")
-    compileOnly("io.netty:netty-all:4.1.100.Final")
-    compileOnly("com.mojang:datafixerupper:8.0.16")
-    compileOnly("net.momirealms:sparrow-util:0.112")
-    compileOnly("net.momirealms:sparrow-nbt:0.18.8")
-    compileOnly("net.momirealms:sparrow-nbt-legacy-codec:0.18.8")
-    compileOnly("net.momirealms:sparrow-nbt-codec:0.18.4")
-    compileOnly("net.momirealms:sparrow-nbt-adventure:0.18.4")
+    if (craftEngineDevDir != null) {
+        compileOnly(files(
+                "${craftEngineDevDir}/bukkit/build/libs/craft-engine-bukkit-${craftEngineVersion}.jar",
+                "${craftEngineDevDir}/core/build/libs/craft-engine-core-${craftEngineVersion}.jar",
+                "${craftEngineDevDir}/core/adventure/build/libs/adventure-bundle.jar",
+                "${craftEngineDevDir}/bukkit/proxy/build/libs/proxy.jarinjar"
+        ))
+    } else {
+        compileOnly("net.momirealms:craft-engine-bukkit:${craftEngineVersion}")
+        compileOnly("net.momirealms:craft-engine-core:${craftEngineVersion}")
+        compileOnly("net.momirealms:craft-engine-adventure:${craftEngineVersion}")
+        compileOnly("net.momirealms:craft-engine-bukkit-proxy:${craftEngineVersion}")
+    }
+    compileOnly("net.momirealms:craft-engine-nms-helper-mojmap:${craftEngineNmsHelperVersion}")
+    compileOnly("net.momirealms:craft-engine-nms-helper:${craftEngineNmsHelperVersion}")
+    compileOnly("io.netty:netty-all:4.1.135.Final")
+    compileOnly("com.mojang:datafixerupper:10.0.21")
+    compileOnly("net.momirealms:sparrow-util:0.119")
+    compileOnly("net.momirealms:sparrow-nbt:0.20")
+    compileOnly("net.momirealms:sparrow-nbt-legacy-codec:0.20")
+    compileOnly("net.momirealms:sparrow-nbt-codec:0.20")
+    compileOnly("net.momirealms:sparrow-nbt-adventure:0.20")
     compileOnly("net.momirealms:sparrow-heart:0.69")
     compileOnly("net.momirealms:sparrow-metadata:1.13")
-    compileOnly("net.momirealms:sparrow-reflection:0.31")
+    compileOnly("net.momirealms:sparrow-reflection:0.33")
     compileOnly("net.momirealms:sparrow-reflection-proxy-scanner:1.1")
     compileOnly("me.clip:placeholderapi:2.11.6")
-    implementation("net.momirealms:antigrieflib:1.0.11")
+    implementation("net.momirealms:antigrieflib:1.0.16")
     implementation("org.bstats:bstats-bukkit:3.2.1")
 
     nmsVersions.each { sourceSetName, version ->

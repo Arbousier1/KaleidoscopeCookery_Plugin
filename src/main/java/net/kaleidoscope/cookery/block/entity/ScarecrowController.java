@@ -19,6 +19,7 @@ import net.momirealms.craftengine.core.entity.player.InteractionHand;
 import net.momirealms.craftengine.core.entity.player.InteractionResult;
 import net.momirealms.craftengine.core.entity.player.Player;
 import net.momirealms.craftengine.core.item.Item;
+import net.momirealms.craftengine.core.plugin.CraftEngine;
 import net.momirealms.craftengine.core.util.ItemUtils;
 import net.momirealms.craftengine.core.util.Key;
 import net.momirealms.craftengine.core.world.BlockPos;
@@ -379,7 +380,8 @@ public final class ScarecrowController extends FurnitureController {
     }
 
     @Override
-    public void onUnload(boolean isStopping) {
+    public void onUnload() {
+        boolean isStopping = CraftEngine.instance().isStopping();
         INDEX.unregister(this);
         // 这里跑在区块系统的实体状态变更回调里 移除实体会被 Paper 拒绝并刷一整页栈
         // 锚点是 setPersistent(false) 的 跟着区块一起消失 忘掉 uuid 就行

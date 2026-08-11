@@ -61,6 +61,10 @@ public final class DishCarriers {
     private static final class DishCarrierParser extends SectionConfigParser {
         private int count;
 
+        public Key type() {
+            return Key.of("kaleidoscopecookery:dish_carriers");
+        }
+
         @Override
         public String[] sectionId() {
             return new String[]{"dish_carrier", "dish-carrier", "dish_carriers", "dish-carriers"};

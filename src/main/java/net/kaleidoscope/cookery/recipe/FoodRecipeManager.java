@@ -268,6 +268,7 @@ public final class FoodRecipeManager {
    }
 
    private abstract static class CookeryIdParser extends IdSectionConfigParser {
+      private final Key type;
       private final LoadingStage stage;
       private final List<LoadingStage> dependencies;
       private final String[] sectionIds;
@@ -278,10 +279,15 @@ public final class FoodRecipeManager {
       private int count;
 
       CookeryIdParser(LoadingStage stage, List<LoadingStage> dependencies, RecipeSourceIndex.Kind kind, String... sectionIds) {
+         this.type = Key.of("kaleidoscopecookery:" + sectionIds[0]);
          this.stage = stage;
          this.dependencies = dependencies;
          this.kind = kind;
          this.sectionIds = sectionIds;
+      }
+
+      public Key type() {
+         return this.type;
       }
 
       public String[] sectionId() {
@@ -396,15 +402,21 @@ public final class FoodRecipeManager {
    }
 
    private abstract static class CookerySectionParser extends SectionConfigParser {
+      private final Key type;
       private final LoadingStage stage;
       private final List<LoadingStage> dependencies;
       private final String[] sectionIds;
       private int count;
 
       CookerySectionParser(LoadingStage stage, List<LoadingStage> dependencies, String... sectionIds) {
+         this.type = Key.of("kaleidoscopecookery:" + sectionIds[0]);
          this.stage = stage;
          this.dependencies = dependencies;
          this.sectionIds = sectionIds;
+      }
+
+      public Key type() {
+         return this.type;
       }
 
       public String[] sectionId() {
